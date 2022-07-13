@@ -17,7 +17,7 @@ hero:
           link: https://editor.bridge-core.app/
         - theme: alt
           text: Read More
-          link: https://github.com/vuejs/vitepress
+          link: /guide/
 
 features:
     - icon: 🚀
