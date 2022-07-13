@@ -27,7 +27,7 @@ import emeriti from './data/team/emeriti.json'
   <VPTeamPageSection>
     <template #title>Team Emeriti</template>
     <template #lead>
-      We honor the valuable contributions the following no longer active contributors have made to the project.
+      We honor the valuable contributions the following, no longer active, contributors have made to the project in the past.
     </template>
     <template #members>
       <VPTeamMembers size="small" :members="emeriti" />
