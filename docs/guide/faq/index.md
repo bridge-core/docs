@@ -1,6 +1,6 @@
 ---
 description: 'Find answers for frequently asked questions on addons and bridge.'
-sidebar: 'editor'
+sidebar: 'guide'
 author: '7dev7urandom'
 ---
 

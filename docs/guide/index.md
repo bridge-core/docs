@@ -1,6 +1,6 @@
 ---
 description: ''
-sidebar: 'editor'
+sidebar: 'guide'
 author: 'joelant05'
 ---
 

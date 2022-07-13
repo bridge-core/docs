@@ -1,6 +1,6 @@
 ---
 description: ''
-sidebar: 'extensions'
+sidebar: 'other'
 ---
 
 # Default File Types

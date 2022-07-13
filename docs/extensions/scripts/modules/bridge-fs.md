@@ -1,6 +1,6 @@
 ---
 description: ''
-sidebar: 'extensions'
+sidebar: 'scripts'
 ---
 
 # @bridge/fs

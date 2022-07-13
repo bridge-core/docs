@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { generateSidebar } from './generateSidebar'
 import { getLatestBridgeVersion } from './latestBridgeVersion'
 
 // const latestBridgeVersion = await getLatestBridgeVersion()
@@ -105,5 +106,9 @@ export default defineConfig({
 				],
 			},
 		],
+		sidebar: {
+			'/guide/': generateSidebar('guide'),
+			'/extensions/': generateSidebar('extensions'),
+		}
 	},
 })

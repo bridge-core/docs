@@ -1,6 +1,6 @@
 ---
 description: ''
-sidebar: 'editor'
+sidebar: 'other'
 author: 'solveddev'
 prev: '/editor-docs/faq/'
 ---

@@ -1,6 +1,6 @@
 ---
 description: 'Are you looking for help to get started with bridge.? This guide aims to introduce you to the editor and make you more familiar with how to use it.'
-sidebar: 'editor'
+sidebar: 'guide'
 author: 'joelant05'
 ---
 

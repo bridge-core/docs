@@ -1,6 +1,6 @@
 ---
 description: 'Find out how to migrate your bridge. v1 projects to bridge. v2!'
-sidebar: 'editor'
+sidebar: 'guide'
 author: 'joelant05'
 ---
 
