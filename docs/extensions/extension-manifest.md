@@ -65,7 +65,7 @@ The API version is only relevent for bridge. v1 and can be either `1` or `2`. It
 
 ### `tags`
 
-**Type: Array<string>**
+**Type: `string[]`**
 
 The tags list should be an array of extension tag ids. Available tag ids can be found [here](https://github.com/bridge-core/editor-packages/blob/main/packages/common/extensionTags.json).
 
