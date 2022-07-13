@@ -30,14 +30,36 @@ export default defineConfig({
 
 			{ text: 'Extensions', link: '/extensions/' },
 			{ text: 'Creations', link: '/creations/' },
-			{ text: 'Team', link: '/team' },
-			// {
-			// 	text: 'Resources',
-			// 	items: [
-			// 		{ text: 'Team', link: '/team' },
-			// { items: [{ text: 'Creations', link: '/creations/' }] },
-			// 	],
-			// },
+			{
+				text: 'Resources',
+				items: [
+					{ text: 'Team', link: '/team' },
+					{
+						items: [
+							{
+								text: 'Editor Data',
+								link: 'https://github.com/bridge-core/editor-packages',
+							},
+							{
+								text: 'Dash',
+								link: 'https://github.com/bridge-core/dash-compiler',
+							},
+							{
+								text: 'Standalone Dash',
+								link: 'https://github.com/bridge-core/deno-dash-compiler',
+							},
+							{
+								text: 'Molang',
+								link: 'https://github.com/bridge-core/molang',
+							},
+							{
+								text: 'Model Viewer',
+								link: 'https://github.com/bridge-core/model-viewer',
+							},
+						],
+					},
+				],
+			},
 
 			{
 				text: `v2.2.13`,
