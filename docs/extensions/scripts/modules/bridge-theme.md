@@ -20,7 +20,7 @@ Get the color code of the given color name, from the current theme.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `name` | [`TColorName`](../README.md#tcolorname) | The name of the color to get. |
+| `name` | [`TColorName`](/extensions/scripts/index.html#tcolorname) | The name of the color to get. |
 
 #### Returns
 

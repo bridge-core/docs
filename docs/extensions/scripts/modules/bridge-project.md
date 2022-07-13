@@ -56,7 +56,7 @@ Check whether the current project contains the specified packs.
 
 | Name    | Type                                      | Description                |
 | :------ | :---------------------------------------- | :------------------------- |
-| `packs` | [`PackTypeId`](../README.md#packtypeid)[] | The pack ids to check for. |
+| `packs` | [`PackTypeId`](/extensions/scripts/index.html#packtypeid)[] | The pack ids to check for. |
 
 #### Returns
 
