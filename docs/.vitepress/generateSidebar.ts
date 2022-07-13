@@ -50,7 +50,7 @@ export function generateSidebar(directory: string) {
         const elementTitle = ((formattedFileName === 'Index' && capitalize(parentFolder) === mainCategoryName) || formattedFileName !== 'Index' ? formattedFileName : capitalize(parentFolder))
         const element = {
             text: frontMatter.data.title ?? elementTitle,
-            link: `/${directory}/${formattedPath.replace('.md', '')}`,
+            link: `/${directory}/${formattedPath.replace('.md', '').replace(/\\/g, '/')}.html`,
             data: frontMatter.data
         }
 
