@@ -47,8 +47,9 @@ export function generateSidebar(directory: string) {
         const pathParts = dirname(file).split('/')
         const parentFolder = pathParts[pathParts.length - 1].replace(/-/g, ' ')
 
+        const elementTitle = ((formattedFileName === 'Index' && capitalize(parentFolder) === mainCategoryName) || formattedFileName !== 'Index' ? formattedFileName : capitalize(parentFolder))
         const element = {
-            text: (formattedFileName === 'Index' && capitalize(parentFolder) === mainCategoryName) || formattedFileName !== 'Index' ? formattedFileName : capitalize(parentFolder),
+            text: frontMatter.data.title ?? elementTitle,
             link: `/${directory}/${formattedPath.replace('.md', '')}`,
             data: frontMatter.data
         }
