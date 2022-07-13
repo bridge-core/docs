@@ -11,7 +11,7 @@ This is the documentation for bridge.'s Extension API. We are still working on b
 
 ## General
 
-bridge. loads extensions per project. This means that every workspace can have an unique set of extensions. Extensions are a composition of JSON, JavaScript and Vue files. Publicly available extensions can be found [here](/created-extensions/).
+bridge. loads extensions per project. This means that every workspace can have an unique set of extensions. Extensions are a composition of JSON, JavaScript and Vue files. Publicly available extensions can be found [here](https://github.com/bridge-core/plugins/tree/master/plugins).
 
 ## Getting Started
 
