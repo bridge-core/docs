@@ -10,6 +10,7 @@ const ogTitle = 'bridge.'
 const ogUrl = 'https://bridge-core.app'
 
 export default defineConfig({
+	base: '/docs/',
 	title: 'bridge.',
 	description: 'The IDE for Minecraft Add-Ons',
 	lastUpdated: true,
@@ -47,7 +48,11 @@ export default defineConfig({
 		nav: [
 			{ text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
 
-			{ text: 'Extensions', link: '/extensions/', activeMatch: '/extensions/' },
+			{
+				text: 'Extensions',
+				link: '/extensions/',
+				activeMatch: '/extensions/',
+			},
 			{ text: 'Creations', link: '/creations/' },
 			{
 				text: 'Resources',
@@ -109,6 +114,6 @@ export default defineConfig({
 		sidebar: {
 			'/guide/': generateSidebar('guide'),
 			'/extensions/': generateSidebar('extensions'),
-		}
+		},
 	},
 })
