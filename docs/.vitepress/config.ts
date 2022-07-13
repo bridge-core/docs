@@ -90,6 +90,14 @@ export default defineConfig({
 						text: 'Contributing ',
 						link: 'https://github.com/bridge-core/editor/CONTRIBUTING.md',
 					},
+					{
+						items: [
+							{
+								text: 'bridge. v1 ',
+								link: 'https://github.com/bridge-core/bridge./',
+							},
+						],
+					},
 				],
 			},
 		],
