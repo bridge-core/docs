@@ -4,9 +4,23 @@ import matter from 'gray-matter'
 import fs from 'fs'
 import { iterateDir } from './utils/iterateDir'
 
+interface ISidebarItemWithData {
+    text: string
+    link: string
+    data: {
+        [key: string]: any
+    }
+}
+interface ISidebarGroup {
+    text?: string
+    items: ISidebarItemWithData[]
+    collapsed?: boolean
+    collapsible?: boolean
+}
+
 export function generateSidebar(directory: string) {
     const mainCategoryName = capitalize(directory)
-    const sidebar: DefaultTheme.SidebarGroup[] = [
+    const sidebar: ISidebarGroup[] = [
         {
             text: mainCategoryName,
             items: [],
@@ -35,7 +49,8 @@ export function generateSidebar(directory: string) {
 
         const element = {
             text: (formattedFileName === 'Index' && capitalize(parentFolder) === mainCategoryName) || formattedFileName !== 'Index' ? formattedFileName : capitalize(parentFolder),
-            link: `/${directory}/${formattedPath.replace('.md', '')}`
+            link: `/${directory}/${formattedPath.replace('.md', '')}`,
+            data: frontMatter.data
         }
 
         if (frontMatter.data.sidebar) {
@@ -52,6 +67,30 @@ export function generateSidebar(directory: string) {
                 })
             }
         }
+    }
+
+    for (const category of sidebar) {
+        // Sorting logic borrowed and slightly modified from bedrock wiki :)
+        category.items.sort(
+            ({ data: dataA, text: textA }, { data: dataB, text: textB }) => {
+                // Default to max int, so without nav order you will show second
+                // Multiply by category value if it exists
+                const navA =
+                    (dataA.nav_order || 50) * 100 ||
+                    Number.MAX_SAFE_INTEGER
+                const navB =
+                    (dataB.nav_order || 50) * 100 ||
+                    Number.MAX_SAFE_INTEGER
+    
+                // Tie goes to the text compare! (Will also apply for elements without nav order)
+                if (navA == navB) {
+                    return textA.localeCompare(textB)
+                }
+    
+                // Return nav order
+                return navA - navB
+            }
+        )
     }
 
     return sidebar

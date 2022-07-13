@@ -1,6 +1,7 @@
 ---
 description: "An overview of bridge.'s most notable features."
 sidebar: 'guide'
+nav_order: 2
 author: 'joelant05'
 ---
 

@@ -1,6 +1,7 @@
 ---
 description: ''
 sidebar: 'extensions'
+nav_order: 1
 prev: '/editor-docs/other/molang/'
 ---
 

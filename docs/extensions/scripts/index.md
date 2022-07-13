@@ -1,6 +1,7 @@
 ---
 description: ''
 sidebar: 'scripts'
+nav_order: 1
 ---
 
 # Scripts
