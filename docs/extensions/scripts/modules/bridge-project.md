@@ -17,9 +17,9 @@ Force compilation of the project using the specified compiler config.
 
 #### Parameters
 
-| Name         | Type     | Description                                                                                                                |
-| :----------- | :------- | :------------------------------------------------------------------------------------------------------------------------- |
-| `configFile` | `string` | The name of the compiler config to compiler with. The config should be in the "<projectName>/.bridge/compiler/" directory. |
+| Name         | Type     | Description                                                                                                                  |
+| :----------- | :------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| `configFile` | `string` | The name of the compiler config to compiler with. The config should be in the "\<projectName\>/.bridge/compiler/" directory. |
 
 #### Returns
 
