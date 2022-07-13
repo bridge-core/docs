@@ -1,4 +1,5 @@
 ---
+title: '@bridge/fetch-definition'
 description: ''
 sidebar: 'scripts'
 ---

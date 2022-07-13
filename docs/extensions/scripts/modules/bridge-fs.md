@@ -1,4 +1,5 @@
 ---
+title: '@bridge/fs'
 description: ''
 sidebar: 'scripts'
 ---

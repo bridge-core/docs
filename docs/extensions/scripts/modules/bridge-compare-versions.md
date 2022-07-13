@@ -1,4 +1,5 @@
 ---
+title: '@bridge/compare-versions'
 description: ''
 sidebar: 'scripts'
 ---

@@ -1,4 +1,5 @@
 ---
+title: '@bridge/com-mojang'
 description: ''
 sidebar: 'scripts'
 ---

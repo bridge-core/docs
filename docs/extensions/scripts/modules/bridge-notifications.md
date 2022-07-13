@@ -1,4 +1,5 @@
 ---
+title: '@bridge/notifications'
 description: ''
 sidebar: 'scripts'
 ---
