@@ -35,7 +35,6 @@ export function generateSidebar(directory: string) {
 
         const element = {
             text: (formattedFileName === 'Index' && capitalize(parentFolder) === mainCategoryName) || formattedFileName !== 'Index' ? formattedFileName : capitalize(parentFolder),
-            // text: formattedFileName !== 'Index' && capitalize(parentFolder) !== mainCategoryName ? formattedFileName : capitalize(parentFolder),
             link: `/${directory}/${formattedPath.replace('.md', '')}`
         }
 
