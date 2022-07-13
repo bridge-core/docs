@@ -1,6 +1,8 @@
 ---
 layout: 'home'
 sidebar: false
+title: 'The IDE for Minecraft Add-Ons'
+description: 'bridge. is a light-weight, yet powerful, IDE for Minecraft add-ons.'
 
 hero:
     name: bridge.

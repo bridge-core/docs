@@ -27,9 +27,18 @@ export default defineConfig({
 
 		nav: [
 			{ text: 'Guide', link: '/guide/' },
-			{ text: 'API', link: '/api/' },
-			{ text: 'Config', link: '/config/' },
+
+			{ text: 'Extensions', link: '/extensions/' },
+			{ text: 'Creations', link: '/creations/' },
 			{ text: 'Team', link: '/team' },
+			// {
+			// 	text: 'Resources',
+			// 	items: [
+			// 		{ text: 'Team', link: '/team' },
+			// { items: [{ text: 'Creations', link: '/creations/' }] },
+			// 	],
+			// },
+
 			{
 				text: `v2.2.13`,
 				items: [
