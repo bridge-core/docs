@@ -1,4 +1,5 @@
 ---
+title: '@bridge/env'
 description: ''
 sidebar: 'scripts'
 ---

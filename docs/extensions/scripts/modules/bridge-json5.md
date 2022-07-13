@@ -1,4 +1,5 @@
 ---
+title: '@bridge/json5'
 description: ''
 sidebar: 'scripts'
 ---

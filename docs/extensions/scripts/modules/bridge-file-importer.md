@@ -1,4 +1,5 @@
 ---
+title: '@bridge/file-importer'
 description: ''
 sidebar: 'scripts'
 ---

@@ -1,4 +1,5 @@
 ---
+title: '@bridge/tab'
 description: ''
 sidebar: 'scripts'
 ---

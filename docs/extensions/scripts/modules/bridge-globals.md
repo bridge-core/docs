@@ -1,4 +1,5 @@
 ---
+title: '@bridge/globals'
 description: ''
 sidebar: 'scripts'
 ---
