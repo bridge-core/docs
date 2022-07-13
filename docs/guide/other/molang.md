@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'other'
 author: 'solveddev'
-next: '/extension-docs/'
+next: '/extensions/'
 ---
 
 # MoLang

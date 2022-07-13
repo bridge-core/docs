@@ -2,7 +2,7 @@
 description: ''
 sidebar: 'other'
 author: 'solveddev'
-prev: '/editor-docs/faq/'
+prev: '/guide/faq/'
 ---
 
 # model-viewer

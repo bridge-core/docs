@@ -139,13 +139,13 @@ Here, the entity behavior file with a matching identifier to the spawn rule has 
 
 ### Custom Syntax
 
-bridge. has many different custom syntax capabilities. It's specialized compiler makes it easier to add custom syntax into projects. You can even create your own [compiler plugins](/extension-docs/compiler-plugins)!
+bridge. has many different custom syntax capabilities. It's specialized compiler makes it easier to add custom syntax into projects. You can even create your own [compiler plugins](/extensions/compiler-plugins)!
 
 Built-in custom syntax includes:
 
--   [Custom components](/extension-docs/custom-components/)
--   [Custom commands](/extension-docs/custom-commands/)
--   [Custom molang](/extension-docs/custom-molang)
+-   [Custom components](/extensions/custom-components/)
+-   [Custom commands](/extensions/custom-commands/)
+-   [Custom molang](/extensions/custom-molang)
 
 With more available on the extension store!
 
@@ -153,7 +153,7 @@ With more available on the extension store!
 
 bridge. features an extension API which allows you to customize UI add new tab types, presets, themes and much more!
 
-You can either [create your own extensions](/extension-docs/) or download extensions made by other creators from the extension store.
+You can either [create your own extensions](/extensions/) or download extensions made by other creators from the extension store.
 This can be found by clicking the **Extensions** button on the sidebar. From here you can download from a collection of extensions to modify and enhance your experience with bridge.
 
 ![Extension Store](./getting-started-14.png)

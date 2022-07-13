@@ -61,14 +61,14 @@ By default bridge. contains 6 different compiler plugins built-in:
     Registers entity identifiers to be fetched by the `getAlias()` function in compiler plugins.
 
 -   `customEntityComponents`, `customItemComponents`, `customBlockComponents`
-    Provides custom component functionality for entities, items and blocks. [Documentation](https://bridge-core.app/extension-docs/custom-components/).
+    Provides custom component functionality for entities, items and blocks. [Documentation](https://bridge-core.app/extensions/custom-components/).
 
     **Arguments:**
 
     -   `v1CompatMode: boolean` Enables v1 custom components. Recommended only for compatibility.
 
 -   `customCommands`
-    Provides custom command functionality for use in `.mcfunction` files and json files where commands are supported. [Documentation](https://bridge-core.app/extension-docs/custom-commands/)
+    Provides custom command functionality for use in `.mcfunction` files and json files where commands are supported. [Documentation](https://bridge-core.app/extensions/custom-commands/)
 
     **Arguments:**
 
@@ -94,7 +94,7 @@ By default bridge. contains 6 different compiler plugins built-in:
 
 A compiler plugin should be added by putting it in the `<EXTENSION NAME>/compiler` folder of an extension. The plugin can then be registered via the extension manifest.
 
-In the extension manifest you need a [`"compiler"`](/extension-docs/extension-manifest/#compiler) property.
+In the extension manifest you need a [`"compiler"`](/extensions/extension-manifest/#compiler) property.
 
 ### Compiler Plugin File Structure
 

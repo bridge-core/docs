@@ -50,7 +50,7 @@ author: 'joelant05'
 -   The extension store allows anyone to download extensions from a wide variety of developers each adding something different to bridge.
 -   Extensions can add new tab types, themes, presets, custom components and more!
 -   Develop your own custom addon syntax with compiler plugins to make repetitive task so much easier.
--   Learn more about extensions [here](/extension-docs/).
+-   Learn more about extensions [here](/extensions/).
 
 Some fantasic new extensions available on the extension store include:
 
