@@ -93,6 +93,10 @@ export default defineConfig({
 					{
 						items: [
 							{
+								text: 'bridge. Nightly ',
+								link: 'https://nightly.bridge-core.app/',
+							},
+							{
 								text: 'bridge. v1 ',
 								link: 'https://github.com/bridge-core/bridge./',
 							},
