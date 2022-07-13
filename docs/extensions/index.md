@@ -22,7 +22,7 @@ Inside this directory, you can create a new folder per extension you want to add
 ## Extension Manifest
 
 The extension manifest stores important data on your add-on like its version number, the extension name etc.
-More information on the extension manifest can be found [here](/extensions/extension-manifest/).
+More information on the extension manifest can be found [here](/extensions/extension-manifest).
 
 ## Scripts
 

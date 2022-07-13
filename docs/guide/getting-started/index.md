@@ -143,8 +143,8 @@ bridge. has many different custom syntax capabilities. It's specialized compiler
 
 Built-in custom syntax includes:
 
--   [Custom components](/extensions/custom-components/)
--   [Custom commands](/extensions/custom-commands/)
+-   [Custom components](/extensions/custom-components)
+-   [Custom commands](/extensions/custom-commands)
 -   [Custom molang](/extensions/custom-molang)
 
 With more available on the extension store!

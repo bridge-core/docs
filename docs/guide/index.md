@@ -27,7 +27,7 @@ Additionally, bridge. has a few more unique features which other editors do not 
 -   Support for extensions: From custom components and .molang files, to custom tab types for custom editors and file previews - bridge. extensions can do almost anything.
 -   Developing is generally significantly faster.
 
-For a full rundown of bridge.'s most notable features, check out [this page](/guide/features/)
+For a full rundown of bridge.'s most notable features, check out [this page](/guide/features)
 
 ## Extensions
 
