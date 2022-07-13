@@ -3,10 +3,28 @@ import { getLatestBridgeVersion } from './latestBridgeVersion'
 
 // const latestBridgeVersion = await getLatestBridgeVersion()
 
+const ogDescription = 'The light-weight, yet powerful, IDE for Minecraft'
+const ogImage = 'https://bridge-core.app/social-preview.png'
+const ogTitle = 'bridge.'
+const ogUrl = 'https://bridge-core.app'
+
 export default defineConfig({
 	title: 'bridge.',
 	description: 'The IDE for Minecraft Add-Ons',
 	lastUpdated: true,
+
+	head: [
+		['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+		['meta', { property: 'og:type', content: 'website' }],
+		['meta', { property: 'og:title', content: ogTitle }],
+		['meta', { property: 'og:image', content: ogImage }],
+		['meta', { property: 'og:url', content: ogUrl }],
+		['meta', { property: 'twitter:description', content: ogDescription }],
+		['meta', { property: 'twitter:title', content: ogTitle }],
+		['meta', { property: 'twitter:card', content: 'summary_large_image' }],
+		['meta', { property: 'twitter:image', content: ogImage }],
+		['meta', { property: 'twitter:url', content: ogUrl }],
+	],
 
 	themeConfig: {
 		logo: '/favicon.svg',
@@ -37,23 +55,23 @@ export default defineConfig({
 					{
 						items: [
 							{
-								text: 'Editor Data',
+								text: 'Editor Data ',
 								link: 'https://github.com/bridge-core/editor-packages',
 							},
 							{
-								text: 'Dash',
+								text: 'Dash ',
 								link: 'https://github.com/bridge-core/dash-compiler',
 							},
 							{
-								text: 'Standalone Dash',
+								text: 'Standalone Dash ',
 								link: 'https://github.com/bridge-core/deno-dash-compiler',
 							},
 							{
-								text: 'Molang',
+								text: 'Molang ',
 								link: 'https://github.com/bridge-core/molang',
 							},
 							{
-								text: 'Model Viewer',
+								text: 'Model Viewer ',
 								link: 'https://github.com/bridge-core/model-viewer',
 							},
 						],
