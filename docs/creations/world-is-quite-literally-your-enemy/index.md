@@ -1,7 +1,7 @@
 ---
 title: 'The World Is Quite Literally Your Enemy'
 image: './main.jpg'
-author: 'xxpoggyislitxx'
+author: 'mcjiprock'
 excerpt: 'This addons makes your world quite a bit more alive and you quite a bit less alive.'
 tags: [bridge-jam, world-is-your-enemy]
 download: 'https://discord.com/channels/602097536404160523/961112716863504465/985936185224482907'
