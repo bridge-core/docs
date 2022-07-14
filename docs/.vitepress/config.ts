@@ -9,7 +9,7 @@ import { loadCreations } from './loadCreations'
 loadCreations()
 loadAuthors()
 
-const base = '/docs/'
+const base = '/'
 
 const ogDescription = 'The light-weight, yet powerful, IDE for Minecraft'
 const ogImage = `https://bridge-core.app${base}social-preview.png`
@@ -17,7 +17,6 @@ const ogTitle = 'bridge.'
 const ogUrl = 'https://bridge-core.app'
 
 export default defineConfig({
-	base,
 	title: 'bridge.',
 	description: 'The IDE for Minecraft Add-Ons',
 	lastUpdated: true,
