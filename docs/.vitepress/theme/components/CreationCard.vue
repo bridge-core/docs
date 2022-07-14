@@ -114,11 +114,14 @@ h1 {
 .author {
 	display: flex;
 	align-items: center;
-	background: var(--vp-c-bg);
+	/* background: var(--vp-c-gray-light-4); */
 	border-radius: 12px;
 	padding: 4px 8px;
 	margin: 8px 0;
 }
+/* .dark .author {
+	background: var(--vp-c-bg);
+} */
 .author-logo {
 	height: 32px;
 	border-radius: 100%;
@@ -144,11 +147,14 @@ h1 {
 	margin-bottom: 16px;
 }
 .tag {
-	background: var(--vp-c-bg);
+	background: var(--vp-c-gray-light-4);
 	padding: 4px 8px;
 	border-radius: 12px;
 	flex: 1;
 	text-align: center;
 	white-space: nowrap;
+}
+.dark .tag {
+	background: var(--vp-c-bg);
 }
 </style>
