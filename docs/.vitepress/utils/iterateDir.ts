@@ -13,10 +13,7 @@ export function iterateDir(directory: string) {
         const path = join(directory, file)
 		const stats = fs.statSync(path)
 
-        if (
-            stats.isDirectory()
-            // && fs.existsSync(join(path, 'index.md'))
-        ) {
+        if (stats.isDirectory()) {
             allFiles.push(...iterateDir(path))
         } else if (stats.isFile()) {
             allFiles.push(path)
