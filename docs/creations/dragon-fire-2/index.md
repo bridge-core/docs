@@ -7,7 +7,7 @@ tags: [adventure, dragons]
 download: 'https://www.minecraft.net/en-us/marketplace/pdp?id=d3eb0ce8-6190-483d-9208-356dc209c173'
 ---
 
-![Thumbnail](./main.jpg)
+![Thumbnail](/creations/dragon-fire-2/main.jpg)
 
 The next edition in the DragonFire series is here! This is our BIGGEST map to date, featuring:
 

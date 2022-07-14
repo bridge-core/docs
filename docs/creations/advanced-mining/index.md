@@ -7,7 +7,7 @@ author: 'gamemode-one'
 download: 'https://www.minecraft.net/en-us/pdp?id=56952d12-3c9c-4597-886d-b62f77202e27'
 ---
 
-![Thumbnail](./main.jpg)
+![Thumbnail](/creations/advanced-mining/main.jpg)
 
 Mine your heart out with AWESOME new machinery! Combine & refine NEW ores, gems, metals, and materials!
 

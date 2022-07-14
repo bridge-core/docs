@@ -2,3 +2,4 @@ node_modules
 .DS_Store
 docs/.vitepress/dist
 docs/data/creations.json
+docs/public/creations

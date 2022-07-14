@@ -46,4 +46,4 @@ if(topThreeCreations.length > 3) {
 
 </script>
 
-<Creations title="Getting Inspired" imageBase="./creations/" :items="topThreeCreations"/>
+<Creations title="Getting Inspired" :items="topThreeCreations"/>

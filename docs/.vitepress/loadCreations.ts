@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { join } from 'path'
+import { dirname, join } from 'path'
 import matter from 'gray-matter'
 
 export function loadCreations() {
@@ -7,18 +7,13 @@ export function loadCreations() {
 		join(process.cwd(), 'docs', 'creations'),
 		{ withFileTypes: true }
 	)
-	const creations: {}[] = []
+	const creations: any[] = []
 
 	for (const entry of creationDirEntries) {
 		if (!entry.isDirectory()) continue
 
-		const creationPath = join(
-			process.cwd(),
-			'docs',
-			'creations',
-			entry.name,
-			'index.md'
-		)
+		const creationDir = join(process.cwd(), 'docs/creations', entry.name)
+		const creationPath = join(creationDir, 'index.md')
 
 		const str = fs.readFileSync(creationPath, 'utf8')
 		let frontMatter: matter.GrayMatterFile<string>
@@ -33,8 +28,19 @@ export function loadCreations() {
 		console.log(frontMatter.data)
 		creations.push({
 			...frontMatter.data,
-			image: './' + join(`./${entry.name}`, frontMatter.data.image),
+			image:
+				'/' + join(`creations/${entry.name}`, frontMatter.data.image),
 		})
+
+		// Copy thumbnails to public folder
+		const outputPath = join(
+			process.cwd(),
+			'docs/public/creations',
+			entry.name,
+			frontMatter.data.image
+		)
+		fs.mkdirSync(dirname(outputPath), { recursive: true })
+		fs.copyFileSync(join(creationDir, frontMatter.data.image), outputPath)
 	}
 
 	fs.writeFileSync(

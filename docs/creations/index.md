@@ -12,4 +12,4 @@ import creations from '../data/creations.json'
 
 </script>
 
-<Creations  :items="creations" />
+<Creations :items="creations" />

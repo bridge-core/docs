@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { withBase } from 'vitepress'
 import VPButton from 'vitepress/client/theme-default/components/VPButton.vue'
 export interface ICreation {
 	title: string
@@ -10,16 +11,13 @@ export interface ICreation {
 
 const props = defineProps<{
 	creation: ICreation
-	imageBase?: string
 }>()
 </script>
 
 <template>
 	<div class="card">
 		<img
-			:src="
-				imageBase ? imageBase + creation.image.slice(2) : creation.image
-			"
+			:src="withBase(creation.image)"
 			:alt="`Thumbnail of ${creation.title}`"
 		/>
 

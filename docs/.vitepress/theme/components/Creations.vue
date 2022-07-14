@@ -7,7 +7,6 @@ const props = defineProps<{
 	items: ICreation[]
 	title?: string
 	description?: string
-	imageBase?: string
 }>()
 
 const title = computed(() => props.title ?? 'Creations')
@@ -24,11 +23,7 @@ const description = computed(
 		<p>{{ description }}</p>
 
 		<div class="container">
-			<CreationCard
-				v-for="creation in items"
-				:creation="creation"
-				:imageBase="imageBase"
-			/>
+			<CreationCard v-for="creation in items" :creation="creation" />
 		</div>
 	</div>
 </template>
