@@ -12,7 +12,6 @@ export interface ICreation {
 	download: string
 }
 
-console.log(authors, props.creation.author, authors[props.creation.author])
 const props = defineProps<{
 	creation: ICreation
 }>()
