@@ -68,7 +68,7 @@ interface TemplateContext {
 	identifier: string
 	projectNamespace: string
 	client: {
-		create: (clientEntity: any, formatVersion = "1.10.0") => void
+		create: (clientEntity: any, formatVersion = '1.10.0') => void
 	}
 	dialogueScene: (sceneDefinition: any, openDialogue = true) => void
 	onActivated: (eventResponse: any) => void
@@ -79,8 +79,8 @@ interface TemplateContext {
 }
 ```
 
--	`sourceEntity(): any`
-	Access the source entity that your component currently gets applied to.
+-   `sourceEntity(): any`
+    Access the source entity that your component currently gets applied to.
 
 -   `animation(animation: any, condition?: string | false): void`
     Allows you to create a BP animation that is automatically linked to the entity. `animation` should be a JavaScript object containing the animation data that should be added to the animation name. `condition` is an optional parameter that allows you to set a molang condition for the animation to be run.
@@ -88,26 +88,26 @@ interface TemplateContext {
 -   `animationController(animationController: any, condition?: string | false): void`
     Allows you to create a BP animation controller that is automatically linked to the entity. `animationController` should be a JavaScript object containing the animation controller data that should be added to the animation controller name. `condition` is an optional parameter that allows you to set a molang condition for the animation controller to be run.
 
--	`client.create(clientEntity: any, formatVersion?: string): void`
-	Create a new client entity file for entities that use the custom component.
+-   `client.create(clientEntity: any, formatVersion?: string): void`
+    Create a new client entity file for entities that use the custom component.
 
--	`onActivated(eventResponse: any): void`
-	Trigger an event reponse whenever your component gets applied to this entity
+-   `onActivated(eventResponse: any): void`
+    Trigger an event reponse whenever your component gets applied to this entity
 
--	`onDeactivated(eventResponse: any): void`
-	Trigger an event reponse whenever your component gets removed from this entity
+-   `onDeactivated(eventResponse: any): void`
+    Trigger an event reponse whenever your component gets removed from this entity
 
--	`dialogueScene(sceneDefinition: any, openDialogue?: boolean): void`
-	Creates a new dialogue scene to be used within your add-on. This function is only available if your project target version is at least "1.17.40"
+-   `dialogueScene(sceneDefinition: any, openDialogue?: boolean): void`
+    Creates a new dialogue scene to be used within your add-on. This function is only available if your project target version is at least "1.17.40"
 
--	`lootTable(lootTable: any): string`
-     Creates a loot table for the entity and returns a string that points to this loot table
+-   `lootTable(lootTable: any): string`
+    Creates a loot table for the entity and returns a string that points to this loot table
 
--	`tradeTable(tradeTable: any): string`
-     Creates a trade table for the entity and returns a string that points to this trade table
+-   `tradeTable(tradeTable: any): string`
+    Creates a trade table for the entity and returns a string that points to this trade table
 
--	`spawnRule(spawnRule: any): void`
-     Creates a new spawn rule file for entities that uses the custom component
+-   `spawnRule(spawnRule: any): void`
+    Creates a new spawn rule file for entities that uses the custom component
 
 #### Item
 
@@ -148,14 +148,14 @@ interface TemplateContext {
 }
 ```
 
--	`sourceItem(): any`
-	Access the source item that your component currently gets applied to.
+-   `sourceItem(): any`
+    Access the source item that your component currently gets applied to.
 
--	`lootTable(lootTable: any): string`
-     Creates a loot table for the item and returns a string that points to this loot table
+-   `lootTable(lootTable: any): string`
+    Creates a loot table for the item and returns a string that points to this loot table
 
--	`recipe(recipe: any): void`
-     Creates a new recipe for items that uses the custom component
+-   `recipe(recipe: any): void`
+    Creates a new recipe for items that uses the custom component
 
 The `player` object gives access to these functions:
 
@@ -193,20 +193,20 @@ interface TemplateContext {
 }
 ```
 
--	`sourceBlock(): any`
-	Access the source block that your component currently gets applied to.
+-   `sourceBlock(): any`
+    Access the source block that your component currently gets applied to.
 
--	`onActivated(eventResponse: any): void`
-	Trigger an event reponse whenever your component gets applied to this block
+-   `onActivated(eventResponse: any): void`
+    Trigger an event reponse whenever your component gets applied to this block
 
--	`onDeactivated(eventResponse: any): void`
-	Trigger an event reponse whenever your component gets removed from this block
+-   `onDeactivated(eventResponse: any): void`
+    Trigger an event reponse whenever your component gets removed from this block
 
--	`lootTable(lootTable: any): string`
-     Creates a loot table for the block and returns a string that points to this loot table
+-   `lootTable(lootTable: any): string`
+    Creates a loot table for the block and returns a string that points to this loot table
 
--	`recipe(recipe: any): void`
-     Creates a new recipe for blocks that uses the custom component
+-   `recipe(recipe: any): void`
+    Creates a new recipe for blocks that uses the custom component
 
 ### Creating Files
 
@@ -216,13 +216,13 @@ Files can also be automatically created with custom components. Functions that c
 
 -   `animationController(animationController: any, condition: string | false): string` which returns the name of the animation controller
 
--	`client.create(clientEntity: any, formatVersion?: string): void`
+-   `client.create(clientEntity: any, formatVersion?: string): void`
 
--	`dialogueScene(sceneDefinition: any, openDialogue?: boolean): void`
+-   `dialogueScene(sceneDefinition: any, openDialogue?: boolean): void`
 
 ## Extension Manifest
 
-When you are creating a custom component in an extension you need to specify where it should be installed in the extension manifest using the [`contributeFiles`](/extensions/extension-manifest.html#contributeFiles) field.
+When you are creating a custom component in an extension you need to specify where it should be installed in the extension manifest using the [`contributeFiles`](/extensions/extension-manifest.html#contributefiles) field.
 
 ## Example
 

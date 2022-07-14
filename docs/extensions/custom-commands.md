@@ -41,7 +41,7 @@ Arguments:
 
 ## Extension Manifest
 
-When you are creating a custom command in an extension you need to specify where it should be installed in the extension manifest using the [`contributeFiles`](/extensions/extension-manifest.html#contributeFiles) field.
+When you are creating a custom command in an extension you need to specify where it should be installed in the extension manifest using the [`contributeFiles`](/extensions/extension-manifest.html#contributefiles) field.
 
 ## Example
 
