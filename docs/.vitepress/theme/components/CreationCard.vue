@@ -16,10 +16,19 @@ const props = defineProps<{
 
 <template>
 	<div class="card">
-		<img
-			:src="withBase(creation.image)"
-			:alt="`Thumbnail of ${creation.title}`"
-		/>
+		<picture :alt="`Thumbnail of ${creation.title}`">
+			<source
+				:srcset="
+					withBase(creation.image).replace(/\.(jpg|png)$/, '.avif')
+				"
+				type="image/avif"
+			/>
+			<source :srcset="withBase(creation.image)" />
+			<img
+				:src="withBase(creation.image)"
+				:alt="`Thumbnail of ${creation.title}`"
+			/>
+		</picture>
 
 		<div class="content">
 			<h1>{{ creation.title }}</h1>

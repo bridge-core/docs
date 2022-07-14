@@ -1,6 +1,7 @@
 import fs from 'fs'
 import { dirname, join } from 'path'
 import matter from 'gray-matter'
+import sharp from 'sharp'
 
 export function loadCreations() {
 	const creationDirEntries = fs.readdirSync(
@@ -25,7 +26,6 @@ export function loadCreations() {
 			)
 		}
 
-		console.log(frontMatter.data)
 		creations.push({
 			...frontMatter.data,
 			image:
@@ -40,6 +40,13 @@ export function loadCreations() {
 			frontMatter.data.image
 		)
 		fs.mkdirSync(dirname(outputPath), { recursive: true })
+
+		// Convert image to avif with sharp
+		sharp(join(creationDir, frontMatter.data.image))
+			.avif()
+			.toFile(outputPath.replace(/\.(jpg|png)$/, '.avif'))
+
+		// Copy normal image over as a fallback
 		fs.copyFileSync(join(creationDir, frontMatter.data.image), outputPath)
 	}
 
