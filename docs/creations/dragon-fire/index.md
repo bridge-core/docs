@@ -8,7 +8,7 @@ tags: [adventure, dragons]
 download: 'https://www.minecraft.net/en-us/pdp?id=d8a14066-38ad-4633-bab8-f50ab1817f1c'
 ---
 
-![Thumbnail](./main.jpg)
+![Thumbnail](./main.png)
 
 Developed by OutLandishly Crafted
 
