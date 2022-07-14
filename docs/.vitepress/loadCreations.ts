@@ -43,6 +43,7 @@ export function loadCreations() {
 
 		// Convert image to avif with sharp
 		sharp(join(creationDir, frontMatter.data.image))
+			.resize({ width: 600 })
 			.avif()
 			.toFile(outputPath.replace(/\.(jpg|png)$/, '.avif'))
 
