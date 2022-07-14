@@ -103,7 +103,7 @@ export default defineConfig({
 					},
 					{
 						text: 'Contributing ',
-						link: 'https://github.com/bridge-core/editor/CONTRIBUTING.md',
+						link: 'https://github.com/bridge-core/editor/blob/main/CONTRIBUTING.md',
 					},
 					{
 						items: [
