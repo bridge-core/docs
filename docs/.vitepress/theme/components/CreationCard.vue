@@ -37,7 +37,7 @@ const author = computed(() => authors[props.creation.author])
 		<div class="content">
 			<h1>{{ creation.title }}</h1>
 
-			<div class="author">
+			<div v-if="author" class="author">
 				<picture>
 					<source
 						:srcset="
@@ -125,6 +125,10 @@ h1 {
 	height: 32px;
 	border-radius: 100%;
 	margin-right: 12px;
+	background: var(--vp-c-gray-light-4);
+}
+.dark .author-logo {
+	background: var(--vp-c-bg);
 }
 .author-name {
 	display: flex;

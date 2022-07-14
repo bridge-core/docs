@@ -53,7 +53,18 @@ export function loadCreations() {
 
 	fs.writeFileSync(
 		join(process.cwd(), 'docs', 'data/creations.json'),
-		JSON.stringify(shuffle(creations))
+		JSON.stringify(
+			shuffle(creations).sort((a, b) => {
+				const aIsJamEntry = a.tags.includes('bridge-jam')
+				const bIsJamEntry = b.tags.includes('bridge-jam')
+
+				if (aIsJamEntry && bIsJamEntry) return 0
+				if (aIsJamEntry) return 1
+				if (bIsJamEntry) return -1
+
+				return 0
+			})
+		)
 	)
 }
 
