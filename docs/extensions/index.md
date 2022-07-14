@@ -5,25 +5,55 @@ nav_order: 1
 prev: '/guide/other/molang/'
 ---
 
-# Extension API
+# :jigsaw: Extension API
 
-This is the documentation for bridge.'s Extension API. We are still working on bringing more and more capabilities to the API.
+This is the documentation for bridge.'s Extension API. We are working on expanding and improving this API to bring more capabilities for creators to work with.
+
+In this page you will learn the following.
+
+- :heavy_check_mark: How to install an extension.
+- :heavy_check_mark: Where to begin creating your own extension.
+- :heavy_check_mark: The different capabilities of an extension.
 
 ## General
 
-bridge. loads extensions per project. This means that every workspace can have an unique set of extensions. Extensions are a composition of JSON, JavaScript and Vue files. Publicly available extensions can be found [here](https://github.com/bridge-core/plugins/tree/master/plugins).
+bridge. extensions allow creators to customize bridge.! Extensions can modify a variety of features in bridge., from changing the color theme of the app, to adding entirely custom file editors and viewers.
 
-## Getting Started
+## Installing Extensions
 
-Navigate to the directory where bridge. stores your projects. Choose the project to which you want to add the extension to and navigate to the `.bridge/extensions` folder. You can also add extensions globally in the `extensions` folder of bridge.'s root directory.
+In order to get started with bridge. extensions, you should be aware of how they are installed; an extension can be installed **globally** or **locally** and you will be given the option to choose which installation method to use. 
 
-Inside this directory, you can create a new folder per extension you want to add. Create a new JSON file in the root of your extension called _manifest.json_ (`.bridge/extensions/<EXTENSION NAME>/manifest.json`).
+A **global** extension is installed to a global extensions folder inside of bridge.'s [local storage](TODO). If you install extensions this way, you can access the extensions features in every project that you create.
 
-## Extension Manifest
+A **local** extension is installed in the `.bridge/extensions` folder inside of the project that you have selected when installing the extension. The extension will only be available to use in project that you have installed it to.
 
-The extension manifest stores important data on your add-on like its version number, the extension name etc.
-More information on the extension manifest can be found [here](/extensions/extension-manifest).
+To install an extension, navigate to bridge.'s extension store. Here you will be presented with all publically available extensions; here you can filter by tags (type of extension) or search. Once you have found the extension that may be useful to you, simply press **"DOWNLOAD"** and choose your install method. On the extension's card in the store, you may see extra options, such as a **share** button which allows you copy a link to the extension to quickly share it with others, and an **information** button which will link you to more information about the extension.
 
-## Scripts
+:::tip
+The extension store can be located by pressing the jigsaw icon in the app's sidebar.
+:::
 
-Scripts are loaded from the `<EXTENSION NAME>/scripts` folder. Scripts are written in JavaScript and allow extensions to deeply hook into bridge.'s functionality. You can create new windows, add new tab types and lots more.
+## Creating Extensions
+
+Feel like there's something missing in your development flow that you want to add, or you want to help others by publishing an extension on the store? Well you can create your own extensions to customize bridge. to your liking!
+
+:::info
+If you have an extension and want it published on the extension store, feel free to open a pull request to our [bridge-core/plugins](https://github.com/bridge-core/plugins) repo, adding your extension to the `plugins` directory. Thank you for the contribution :smiley: !
+:::
+
+To get started with creating an extension, you need to create a folder for it in the `.bridge/extensions` directory inside of a project and inside of this folder will be all of the files that make up your extension. Next you should create a [manifest](/extensions/extension-manifest) file inside of this folder. This contains important information about your extension for bridge. to load it.
+
+From here, you can follow one of the tutorials below on how to create different types of extensions.
+
+- TODO
+- ...
+
+## Capabilities
+
+There is a huge number of things you can create with bridge. extensions, but here is a rundown of the general capabilities.
+
+- :crayon: Editing how bridge. looks with themes.
+- :link: Snippets can be added quickly insert code into files.
+- :bricks: Adding new presets which can be used to quickly create files from a simple form UI.
+- :hammer_and_wrench: Creating new UI elements, such as custom sidebars, tabs, windows and more!
+- :gear: Extend bridge.'s compiler with [compiler plugins](/extensions/compiler-plugins), to allows for custom syntax and much more.
