@@ -18,8 +18,6 @@ jobs:
               with:
                   node-version: '16'
             - name: Install and Build 🔧
-              env:
-                  GA_ID: ${{ secrets.GA_ID }}
               run: |
                   npm install
                   npm run build
