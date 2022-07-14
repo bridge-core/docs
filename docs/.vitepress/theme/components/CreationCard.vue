@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { withBase } from 'vitepress'
 import VPButton from 'vitepress/client/theme-default/components/VPButton.vue'
+import authors from '../../../data/authors.json'
+
 export interface ICreation {
 	title: string
 	excerpt: string
@@ -9,14 +12,16 @@ export interface ICreation {
 	download: string
 }
 
+console.log(authors, props.creation.author, authors[props.creation.author])
 const props = defineProps<{
 	creation: ICreation
 }>()
+const author = computed(() => authors[props.creation.author])
 </script>
 
 <template>
 	<div class="card">
-		<picture :alt="`Thumbnail of ${creation.title}`">
+		<picture>
 			<source
 				:srcset="
 					withBase(creation.image).replace(/\.(jpg|png)$/, '.avif')
@@ -32,6 +37,38 @@ const props = defineProps<{
 
 		<div class="content">
 			<h1>{{ creation.title }}</h1>
+
+			<div class="author">
+				<picture>
+					<source
+						:srcset="
+							withBase(author.image).replace(
+								/\.(jpg|png)$/,
+								'.avif'
+							)
+						"
+						type="image/avif"
+					/>
+					<source :srcset="withBase(author.image)" />
+					<img
+						class="author-logo"
+						:src="withBase(author.image)"
+						:alt="`Logo of ${author.title}`"
+					/>
+				</picture>
+
+				<div class="author-name">
+					<span>{{ author.title }}</span>
+					<span class="author-position">{{ author.position }}</span>
+				</div>
+			</div>
+
+			<div class="tag-list">
+				<span class="tag" v-for="tag in creation.tags">
+					#{{ tag }}
+				</span>
+			</div>
+
 			<p>{{ creation.excerpt }}</p>
 		</div>
 
@@ -49,6 +86,7 @@ const props = defineProps<{
 
 <style scoped>
 .card {
+	text-align: left;
 	display: flex;
 	flex-flow: column;
 	background: var(--vp-c-bg-soft);
@@ -71,5 +109,46 @@ h1 {
 	display: flex;
 	justify-content: flex-end;
 	padding: 12px;
+}
+
+.author {
+	display: flex;
+	align-items: center;
+	background: var(--vp-c-bg);
+	border-radius: 12px;
+	padding: 4px 8px;
+	margin: 8px 0;
+}
+.author-logo {
+	height: 32px;
+	border-radius: 100%;
+	margin-right: 12px;
+}
+.author-name {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+}
+.author-position {
+	font-size: 12px;
+	color: var(--vp-c-text-soft);
+	margin-top: -4px;
+}
+
+.tag-list {
+	display: flex;
+	gap: 4px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 16px;
+}
+.tag {
+	background: var(--vp-c-bg);
+	padding: 4px 8px;
+	border-radius: 12px;
+	flex: 1;
+	text-align: center;
+	white-space: nowrap;
 }
 </style>

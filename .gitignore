@@ -3,3 +3,5 @@ node_modules
 docs/.vitepress/dist
 docs/data/creations.json
 docs/public/creations
+docs/data/authors.json
+docs/public/authors

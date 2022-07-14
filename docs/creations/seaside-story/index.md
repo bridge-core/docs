@@ -3,7 +3,7 @@ title: 'Seaside Story'
 image: './main.jpg'
 author: 'gamemode-one'
 excerpt: 'Live out your own peaceful ocean adventure!'
-tags: [ocean, fishing, relaxing, bridge-v2]
+tags: [ocean, fishing, relaxing]
 download: 'https://www.minecraft.net/en-us/marketplace/pdp?id=5c7cd39e-9903-477b-b013-1b6b6d2bd9ab'
 ---
 

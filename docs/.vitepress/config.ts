@@ -1,11 +1,13 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from './generateSidebar'
 import { getLatestBridgeVersion } from './latestBridgeVersion'
+import { loadAuthors } from './loadAuthors'
 import { loadCreations } from './loadCreations'
 
 // const latestBridgeVersion = await getLatestBridgeVersion()
 
 loadCreations()
+loadAuthors()
 
 const base = '/docs/'
 
