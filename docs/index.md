@@ -30,3 +30,20 @@ features:
       title: SEAMLESS!
       details: 'bridge. interacts seamlessly with Minecraft and syncs behavior packs, resource pack, skin packs and worlds to the com.mojang folder automatically'
 ---
+
+<script setup>
+import Creations from "./.vitepress/theme/components/Creations.vue"
+import creations from './data/creations.json'
+
+const topThreeCreations = creations.filter(creation => creation.featured)
+const notFeatured = creations.filter(creation => !creation.featured)
+while(topThreeCreations.length < 4) {
+  topThreeCreations.push(notFeatured.shift())
+}
+if(topThreeCreations.length > 3) {
+  topThreeCreations.splice(3)
+}
+
+</script>
+
+<Creations title="Getting Inspired" imageBase="./creations/" :items="topThreeCreations"/>

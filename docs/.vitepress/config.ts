@@ -1,22 +1,30 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from './generateSidebar'
 import { getLatestBridgeVersion } from './latestBridgeVersion'
+import { loadCreations } from './loadCreations'
 
 // const latestBridgeVersion = await getLatestBridgeVersion()
 
+loadCreations()
+
+const base = '/docs/'
+
 const ogDescription = 'The light-weight, yet powerful, IDE for Minecraft'
-const ogImage = 'https://bridge-core.app/social-preview.png'
+const ogImage = `https://bridge-core.app${base}social-preview.png`
 const ogTitle = 'bridge.'
 const ogUrl = 'https://bridge-core.app'
 
 export default defineConfig({
-	base: '/docs/',
+	base,
 	title: 'bridge.',
 	description: 'The IDE for Minecraft Add-Ons',
 	lastUpdated: true,
 
 	head: [
-		['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+		[
+			'link',
+			{ rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` },
+		],
 		['meta', { property: 'og:type', content: 'website' }],
 		['meta', { property: 'og:title', content: ogTitle }],
 		['meta', { property: 'og:image', content: ogImage }],
