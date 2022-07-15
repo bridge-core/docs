@@ -21,6 +21,7 @@ TODO: Describe most notable features here
 | ------------------- | ------------------ | --------------------- | ------------------------------------------- |
 | Syntax Highlighting | :white_check_mark: | :white_check_mark:    | :yellow_square:₂                            |
 | Code Completion     | :white_check_mark: | :white_check_mark:    | :yellow_square:₂                            |
+| .molang files       | :white_check_mark: | :yellow_square:₃      | :no_entry_sign:                             |
 
 ### Behavior Packs
 
@@ -35,10 +36,11 @@ TODO: Describe most notable features here
 | ----------------- | ------------------ | --------------------- | ------------------------------------------- |
 | Entity Previews   | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
 | Block Previews    | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
-| Particle Previews | :white_check_mark: | :yellow_square:₃      | :no_entry_sign:                             |
+| Particle Previews | :white_check_mark: | :yellow_square:₄      | :no_entry_sign:                             |
 
 ### Notes
 
 1. An instance of [VS Code](vscode.dev) running [Blockception's extension for Minecraft Bedrock Development](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension).
 2. Requires extra configuration
-3. Requires the Snowstorm extension for VS Code
+3. An additional tool is necessary to use these files
+4. Requires the Snowstorm extension for VS Code
