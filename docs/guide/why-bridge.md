@@ -17,13 +17,14 @@ TODO: Describe most notable features here
 
 ### Misc
 
-|                      | bridge.            | VS Code w/ extension₁ | [Notepad++](https://notepad-plus-plus.org/) |
-| -------------------- | ------------------ | --------------------- | ------------------------------------------- |
-| Easy Project Setup   | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
-| Open Any File/Folder | :white_check_mark: | :yellow_square:₂      | :yellow_square:₂                            |
-| Presets              | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
-| .molang files        | :white_check_mark: | :yellow_square:₃      | :no_entry_sign:                             |
-| Integrated Compiler  | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
+|                                | bridge.            | VS Code w/ extension₁ | [Notepad++](https://notepad-plus-plus.org/) |
+| ------------------------------ | ------------------ | --------------------- | ------------------------------------------- |
+| Easy Project Setup             | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
+| Open Any File/Folder           | :white_check_mark: | :yellow_square:₂      | :yellow_square:₂                            |
+| Presets                        | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
+| .molang files                  | :white_check_mark: | :yellow_square:₃      | :no_entry_sign:                             |
+| Integrated Compiler            | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
+| Supports Experimental Gameplay | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
 
 ### Code Editor
 
