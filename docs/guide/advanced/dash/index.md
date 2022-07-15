@@ -82,11 +82,13 @@ Build your project. Outputs to "builds/dist" folder within your project's root d
 If you run the built-in version of Dash, you can make use of bridge.'s compiler window to configure Dash.
 Simply open the compiler window by clicking on the corresponding sidebar icon:
 
-<img :style="{ height: '16rem' }" src="./compiler-window.png" alt="Screenshot of bridge.'s sidebar with an arrow pointing to the compiler window"/>
+<img :style="{ height: '16rem', borderRadius: '12px' }" src="./compiler-window.png" alt="Screenshot of bridge.'s sidebar with an arrow pointing to the compiler window"/>
 
 ### Watch Mode
 
-By default, Dash will watch any changes you make within bridge. and recompile affected files.
+By default, Dash will watch any changes you make within bridge. and recompile affected files. You can disable this behavior within the compiler window.
+
+<!-- TODO: Add image -->
 
 ### Production Builds
 
