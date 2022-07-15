@@ -1,8 +1,8 @@
 ---
+title: '🧩 Extension API'
 description: ''
 sidebar: 'extensions'
 nav_order: -1
-prev: '/guide/other/molang/'
 ---
 
 # :jigsaw: Extension API
@@ -43,10 +43,10 @@ If you have an extension and want it published on the extension store, feel free
 
 To get started with creating an extension, you need to create a folder for it in the `.bridge/extensions` directory inside of a project and inside of this folder will be all of the files that make up your extension. Next you should create a [manifest](/extensions/extension-manifest) file inside of this folder. This contains important information about your extension for bridge. to load it.
 
-From here, you can follow one of the tutorials below on how to create different types of extensions.
+From here, you can follow one of the guides below on how to create different types of extensions.
 
--   TODO
--   ...
+-   TODO: Link guide pages below
+-   [Presets](/extensions/presets/index)
 
 ## Capabilities
 
