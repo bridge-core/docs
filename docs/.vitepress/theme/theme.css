@@ -26,6 +26,6 @@
 	--vp-home-hero-image-filter: blur(56px);
 }
 
-img {
+.vp-doc img {
 	border-radius: 12px;
 }
