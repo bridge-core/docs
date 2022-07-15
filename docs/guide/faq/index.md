@@ -1,7 +1,9 @@
 ---
+title: 'FAQ'
 description: 'Find answers for frequently asked questions on addons and bridge.'
 sidebar: 'guide'
 author: '7dev7urandom'
+nav_order: 10
 ---
 
 # FAQ
