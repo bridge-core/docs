@@ -1,10 +1,10 @@
 ---
-title: 'Why bridge.?'
+title: '💡 Why bridge.?'
 sidebar: 'guide'
 nav_order: -1
 ---
 
-# Why bridge.?
+# :bulb: Why bridge.?
 
 ## Features
 

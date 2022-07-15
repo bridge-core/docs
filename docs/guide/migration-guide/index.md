@@ -1,11 +1,12 @@
 ---
+title: '🛠 Migration Guide'
 description: 'Find out how to migrate your bridge. v1 projects to bridge. v2!'
 sidebar: 'guide'
 author: 'joelant05'
 nav_order: 9
 ---
 
-# bridge. v2 Migration
+# :hammer_and_wrench: Migrate from bridge. v1
 
 ## What's different about bridge. v1 projects and bridge. v2 projects?
 

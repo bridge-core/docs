@@ -23,13 +23,13 @@ hero:
           link: /guide/
 
 features:
-    - icon: 🚀
+    - icon: ⚡️
       title: ZIPPY!
       details: 'Development with bridge. is faster thanks to its extendable compiler architecture , rich auto-completions and live previews of the things you work on'
     - icon: 🛠️
       title: EXTENDABLE!
       details: 'Custom components, custom commands, file presets and themes: You can do almost anything with extensions for bridge. and choose from an already great extension ecosystem'
-    - icon: 💤
+    - icon: 🚀
       title: SEAMLESS!
       details: 'bridge. interacts seamlessly with Minecraft and syncs behavior packs, resource pack, skin packs and worlds to the com.mojang folder automatically'
 ---

@@ -1,12 +1,12 @@
 ---
-title: 'FAQ'
+title: '❓ FAQ'
 description: 'Find answers for frequently asked questions on addons and bridge.'
 sidebar: 'guide'
 author: '7dev7urandom'
 nav_order: 10
 ---
 
-# FAQ
+# :question: FAQ
 
 There are many questions that are asked frequently within the bridge. Discord, and this document goes through them.
 

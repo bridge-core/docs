@@ -1,11 +1,11 @@
 ---
-description: ''
+title: '👣 Getting Started'
+description: 'Make your first steps with bridge. v2!'
 sidebar: 'guide'
-title: 'Getting Started'
 nav_order: 0
 ---
 
-# Getting Started
+# :footprints: Getting Started
 
 ## Setting up bridge.
 

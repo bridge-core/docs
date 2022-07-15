@@ -9,11 +9,11 @@ prev: '/guide/other/molang/'
 
 This is the documentation for bridge.'s Extension API. We are working on expanding and improving this API to bring more capabilities for creators to work with.
 
-In this page you will learn the following.
+In this page you will learn the following:
 
-- :heavy_check_mark: How to install an extension.
-- :heavy_check_mark: Where to begin creating your own extension.
-- :heavy_check_mark: The different capabilities of an extension.
+:ballot_box_with_check: How to install an extension.<br/>
+:ballot_box_with_check: Where to begin creating your own extension.<br/>
+:ballot_box_with_check: The different capabilities of an extension.<br/>
 
 ## General
 
@@ -21,7 +21,7 @@ bridge. extensions allow creators to customize bridge.! Extensions can modify a 
 
 ## Installing Extensions
 
-In order to get started with bridge. extensions, you should be aware of how they are installed; an extension can be installed **globally** or **locally** and you will be given the option to choose which installation method to use. 
+In order to get started with bridge. extensions, you should be aware of how they are installed; an extension can be installed **globally** or **locally** and you will be given the option to choose which installation method to use.
 
 A **global** extension is installed to a global extensions folder inside of bridge.'s [local storage](TODO). If you install extensions this way, you can access the extensions features in every project that you create.
 
@@ -45,15 +45,15 @@ To get started with creating an extension, you need to create a folder for it in
 
 From here, you can follow one of the tutorials below on how to create different types of extensions.
 
-- TODO
-- ...
+-   TODO
+-   ...
 
 ## Capabilities
 
 There is a huge number of things you can create with bridge. extensions, but here is a rundown of the general capabilities.
 
-- :crayon: Editing how bridge. looks with themes.
-- :link: Snippets can be added quickly insert code into files.
-- :bricks: Adding new presets which can be used to quickly create files from a simple form UI.
-- :hammer_and_wrench: Creating new UI elements, such as custom sidebars, tabs, windows and more!
-- :gear: Extend bridge.'s compiler with [compiler plugins](/extensions/compiler-plugins), to allows for custom syntax and much more.
+-   :crayon: Editing how bridge. looks with themes.
+-   :link: Snippets can be added quickly insert code into files.
+-   :bricks: Adding new presets which can be used to quickly create files from a simple form UI.
+-   :hammer_and_wrench: Creating new UI elements, such as custom sidebars, tabs, windows and more!
+-   :gear: Extend bridge.'s compiler with [compiler plugins](/extensions/compiler-plugins), to allows for custom syntax and much more.
