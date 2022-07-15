@@ -7,7 +7,7 @@ sidebar: 'advanced'
 # :package: Custom Components
 
 This page serves as an introduction to bridge.'s custom components which are available for use within your entity, block and item files.
-You will learn the following things inside this article:
+This article will cover the following topics:
 
 :ballot_box_with_check: What is a custom component?<br/>
 :ballot_box_with_check: How to install a custom component.<br/>

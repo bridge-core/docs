@@ -89,8 +89,8 @@ export function generateSidebar(directory: string) {
 			({ data: dataA, text: textA }, { data: dataB, text: textB }) => {
 				// Default to max int, so without nav order you will show second
 				// Multiply by category value if it exists
-				const navA = dataA.nav_order ?? 50
-				const navB = dataB.nav_order ?? 50
+				const navA = dataA.nav_order ?? 0
+				const navB = dataB.nav_order ?? 0
 
 				// Tie goes to the text compare! (Will also apply for elements without nav order)
 				if (navA == navB) {

@@ -1,7 +1,7 @@
 ---
 description: ''
 sidebar: 'extensions'
-nav_order: 1
+nav_order: -1
 prev: '/guide/other/molang/'
 ---
 

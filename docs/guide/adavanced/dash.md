@@ -7,7 +7,7 @@ sidebar: 'advanced'
 # ⚡️ Dash
 
 This page serves as an introduction to bridge.'s compiler Dash and its functionality.
-You will learn the following things inside this article:
+You will learn about the following topics inside of this article:
 
 :ballot_box_with_check: What is Dash?<br/>
 :ballot_box_with_check: How to run Dash.<br/>

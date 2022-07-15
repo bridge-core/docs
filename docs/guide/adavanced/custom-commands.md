@@ -6,13 +6,13 @@ sidebar: 'advanced'
 
 # :printer: Custom Commands
 
-This page serves as an introduction to bridge.'s custom commands which you can use wherever Minecraft accepts regular commands within its files.
+This page serves as an introduction to bridge.'s custom commands which you can use wherever Minecraft accepts regular commands.
 
 :::danger
 Custom commands cannot be used directly within Minecraft. They are only usable within your project files.
 :::
 
-You will learn the following things inside this article:
+Inside of this article, you will learn about the following topics:
 
 :ballot_box_with_check: What is a custom command?<br/>
 :ballot_box_with_check: How to install a custom command.<br/>
