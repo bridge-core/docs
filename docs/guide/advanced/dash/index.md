@@ -86,13 +86,13 @@ Build your project. Outputs to "builds/dist" folder within your project's root d
 If you run the built-in version of Dash, you can make use of bridge.'s compiler window to configure Dash.
 Simply open the compiler window by clicking on the corresponding sidebar icon:
 
-<img :style="{ height: '16rem', borderRadius: '12px' }" src="./compiler-window.png" alt="Screenshot of bridge.'s sidebar with an arrow pointing to the compiler window"/>
+<img :style="{ height: '16rem' }" src="./compiler-window.png" alt="Screenshot of bridge.'s sidebar with an arrow pointing to the compiler window"/>
 
 ### Watch Mode
 
 By default, Dash will watch any changes you make within bridge. and recompile affected files. You can disable this behavior within the compiler window.
 
-<!-- TODO: Add image -->
+![Screenshot of bridge.'s compiler window showing the watch mode configuration options](./watch-mode-config.png)
 
 ### Production Builds
 
@@ -112,12 +112,262 @@ Production builds can be configured with plugins to produce an optimized output.
 
 ### Default Profile
 
-TODO: Explain how to configure the default profile.
+The default build profile of Dash is located within your [project config](/guide/misc/project-config). You want to look for the `compiler` field within this file. Within this field, you can configure the plugins dash runs.
+
+```json
+{
+	"compiler": {
+		"plugins": [
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "MyProject"
+				}
+			]
+		]
+	}
+}
+```
+
+The `plugins` array either expects items of type `string` which is supposed to be the unique identifier of a compiler plugin or a tuple where the first item is the unique identifier of the plugin and the second item is an object containing the plugin's configuration.
+The position of a plugin in the `plugins` array is important as it determines the order in which the plugins are run. The first plugin in the array is run first, the second plugin in the array is run second and so on.
 
 ### Adding New Profiles
 
-TODO: Explain how to use compiler configs
+You can add arbitrary new build profiles by adding a new JSON file to the `.bridge/compiler/` folder within your project. The name of the JSON file does not matter and you can add as many profiles as you want.
+
+```json
+{
+	"icon": "mdi-rocket",
+	"name": "My Own Build Profile",
+	"description": "This is my very own build profile",
+	"plugins": [
+		"typeScript",
+		"entityIdentifierAlias",
+		"customEntityComponents",
+		"customItemComponents",
+		"customBlockComponents",
+		"customCommands",
+		"moLang",
+		"formatVersionCorrection",
+		[
+			"simpleRewrite",
+			{
+				"packName": "Test"
+			}
+		]
+	]
+}
+```
+
+### name
+
+-   Type: `string`
+-   Required: :white_check_mark:
+
+The `name` property states the name of the build profile. It is used to display a name for the build profile within the compiler window.
+
+### icon
+
+-   Type: `string`
+-   Required: :white_check_mark:
+
+The `icon` property gives you the option to assign an unique icon to the build profile.
+
+### description
+
+-   Type: `string`
+-   Required: :white_check_mark:
+
+Describe the purpose of the build profile.
+
+## Using Plugins
+
+### Built-in Plugins
+
+Dash comes with the following plugins built-in. You don't need to install them in order to use them.
+
+#### typeScript
+
+The TypeScript plugin is used to automatically transpile your project's TypeScript files into JavaScript.
+You can configure the TypeScript plugin with the following options:
+
+```json
+[
+	"typeScript",
+	{
+		// Generate a source map for the transpiled code
+		// Default: false
+		"inlineSourceMap": true
+	}
+]
+```
+
+#### entityIdentifierAlias
+
+This plugin register aliases for entity files which other plugins can use.
+
+#### customEntityComponents
+
+This plugin powers [custom entity components](/guide/advanced/custom-components). You can configure the plugin to run legacy custom entity components from bridge. v1.
+
+```json
+[
+	"customEntityComponents",
+	{
+		// Allows you to run legacy custom components from bridge. v1
+		// Default: false
+		"v1CompatMode": true
+	}
+]
+```
+
+#### customItemComponents
+
+This plugin powers [custom item components](/guide/advanced/custom-components). You can configure the plugin to run legacy custom item components from bridge. v1.
+
+```json
+[
+	"customItemComponents",
+	{
+		// Allows you to run legacy custom components from bridge. v1
+		// Default: false
+		"v1CompatMode": true
+	}
+]
+```
+
+#### customBlockComponents
+
+This plugin powers [custom block components](/guide/advanced/custom-components). You can configure the plugin to run legacy custom block components from bridge. v1.
+
+```json
+[
+	"customBlockComponents",
+	{
+		// Allows you to run legacy custom components from bridge. v1
+		// Default: false
+		"v1CompatMode": true
+	}
+]
+```
+
+#### customCommands
+
+This plugin powers [custom commands](/guide/advanced/custom-commands). Its options allow you to run old v1 custom commands and to add new command locations.
+
+```json
+[
+	"customCommands",
+	{
+		// Allows you to run old v1 custom commands
+		// Default: false
+		"v1CompatMode": true,
+		// Allows you to add new command locations
+		// Default: false
+		"include": {
+			// Define command locations per file type
+			"entity": [
+				// Glob pattern to describe where to look for commands
+				"minecraft:entity/components/my:component/run_commands",
+				"minecraft:entity/component_groups/*/my:component/run_commands"
+			]
+		}
+	}
+]
+```
+
+:::tip
+You can find all of bridge.'s [file types here](/extensions/other/default-file-types).
+:::
+
+:::info
+Glob patterns allow you to specify exactly where to look for commands within a JSON file.
+
+-   \* is a wildcard that matches any property
+-   \*\* is a wildcard that matches any property and its children
+-   Property names are separated by a slash (/)
+
+:::
+
+#### moLang
+
+This plugin powers [custom Molang files](/guide/advanced/molang-files). You can configure the plugin to add new Molang locations.
+
+```json
+[
+	"moLang",
+	{
+		// Allows you to add new Molang locations
+		// Default: false
+		"include": {
+			// Define Molang locations per file type
+			"entity": [
+				// Glob pattern to describe where to look for Molang files
+				"minecraft:entity/components/my:component/condition"
+			]
+		}
+	}
+]
+```
+
+#### formatVersionCorrection
+
+This plugin is used by bridge. to make format versions work within JSON files that Minecraft normally does not accept.
+
+#### simpleRewrite
+
+This plugin is rewriting the files of your add-ons to the com.mojang folder for development builds and to the `builds/dist` folder for production builds. It can be configured with the following options:
+
+```json
+[
+	"simpleRewrite",
+	{
+		// The output name of your add-on
+		// Default: "Bridge"
+		"packName": "MyProject"
+	}
+]
+```
+
+#### rewriteForPackaging
+
+This plugin is used to rewrite files within an add-on so that the project can later be packaged into a .mcaddon, .mctemplate or .mcworld file. You can configure the plugin with the following options:
+
+```json
+[
+    "rewriteForPackaging",
+    {
+        // The output name of your add-on
+        // Default: "Bridge"
+        "packName": "MyProject"
+        // Which package to create; this option is required
+        // Can be "mcaddon", "mctemplate" or "mcworld"
+        "format": "mcaddon"
+    }
+]
+```
+
+### Installing Plugins
+
+You can install additional compiler plugins from the extension store. Select the "Compiler" category to view all available plugins.
+:::tip
+You can read more about installing extensions [here](/extensions/#installing-extensions).
+:::
+
+Once you have installed a plugin, you can enable it by adding it to the `compiler` section of your [project config](/guide/misc/project-config). The identifiers of installed plugins get displayed below the extension description within the extension store. This is the name you need to add to your build profile to enable the plugin.
+
+![Screenshot of bridge.'s extension store showing how a plugin identifier gets displayed](./view-compiler-id.png)
 
 ## Writing Plugins
 
-TODO: Explain how to write plugins for dash & link to dedicated plugin docs
+Do you need a bit more from Dash than what is currently available?
+You can write your own compiler plugins to create anything you want. If you are interested in learning more about writing compiler plugins, you can [read about it here](/extensions/compiler-plugins).
