@@ -189,13 +189,11 @@ The `icon` property gives you the option to assign an unique icon to the build p
 
 Describe the purpose of the build profile.
 
-## Using Plugins
-
-### Built-in Plugins
+## Built-in Plugins
 
 Dash comes with the following plugins built-in. You don't need to install them in order to use them.
 
-#### typeScript
+### typeScript
 
 The TypeScript plugin is used to automatically transpile your project's TypeScript files into JavaScript.
 You can configure the TypeScript plugin with the following options:
@@ -211,11 +209,11 @@ You can configure the TypeScript plugin with the following options:
 ]
 ```
 
-#### entityIdentifierAlias
+### entityIdentifierAlias
 
 This plugin register aliases for entity files which other plugins can use.
 
-#### customEntityComponents
+### customEntityComponents
 
 This plugin powers [custom entity components](/guide/advanced/custom-components). You can configure the plugin to run legacy custom entity components from bridge. v1.
 
@@ -230,7 +228,7 @@ This plugin powers [custom entity components](/guide/advanced/custom-components)
 ]
 ```
 
-#### customItemComponents
+### customItemComponents
 
 This plugin powers [custom item components](/guide/advanced/custom-components). You can configure the plugin to run legacy custom item components from bridge. v1.
 
@@ -245,7 +243,7 @@ This plugin powers [custom item components](/guide/advanced/custom-components). 
 ]
 ```
 
-#### customBlockComponents
+### customBlockComponents
 
 This plugin powers [custom block components](/guide/advanced/custom-components). You can configure the plugin to run legacy custom block components from bridge. v1.
 
@@ -260,7 +258,7 @@ This plugin powers [custom block components](/guide/advanced/custom-components).
 ]
 ```
 
-#### customCommands
+### customCommands
 
 This plugin powers [custom commands](/guide/advanced/custom-commands). Its options allow you to run old v1 custom commands and to add new command locations.
 
@@ -298,7 +296,7 @@ Glob patterns allow you to specify exactly where to look for commands within a J
 
 :::
 
-#### moLang
+### moLang
 
 This plugin powers [custom Molang files](/guide/advanced/molang-files). You can configure the plugin to add new Molang locations.
 
@@ -319,11 +317,11 @@ This plugin powers [custom Molang files](/guide/advanced/molang-files). You can 
 ]
 ```
 
-#### formatVersionCorrection
+### formatVersionCorrection
 
 This plugin is used by bridge. to make format versions work within JSON files that Minecraft normally does not accept.
 
-#### simpleRewrite
+### simpleRewrite
 
 This plugin is rewriting the files of your add-ons to the com.mojang folder for development builds and to the `builds/dist` folder for production builds. It can be configured with the following options:
 
@@ -338,7 +336,7 @@ This plugin is rewriting the files of your add-ons to the com.mojang folder for 
 ]
 ```
 
-#### rewriteForPackaging
+### rewriteForPackaging
 
 This plugin is used to rewrite files within an add-on so that the project can later be packaged into a .mcaddon, .mctemplate or .mcworld file. You can configure the plugin with the following options:
 
@@ -356,7 +354,7 @@ This plugin is used to rewrite files within an add-on so that the project can la
 ]
 ```
 
-### Installing Plugins
+## Installing Plugins
 
 You can install additional compiler plugins from the extension store. Select the "Compiler" category to view all available plugins.
 :::tip
