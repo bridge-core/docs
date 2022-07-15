@@ -26,6 +26,10 @@ A compiler is a program that takes a source file, applies a set of transformatio
 
 As bridge. comes with Dash built-in, you do not need to install or setup it yourself. We are going to refer to this variant of Dash as "built-in Dash".
 
+:::info
+[Skip to the "Running Dash" section](#running-dash) if you are not interested in running Dash independently from bridge.
+:::
+
 ### Standalone Build
 
 You can also run a standalone build of Dash. This build is orders of magnitudes faster than the built-in version Dash and it can be used independently of bridge.
