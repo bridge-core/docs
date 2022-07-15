@@ -67,7 +67,7 @@ Build your project. Outputs to "builds/dist" folder within your project's root d
 ```bash
     dash_compiler build
     # Or configure options
-    dash_compiler build --out preview --reload 4350
+    dash_compiler build -m development -c path/to/config.json
 ```
 
 | Option                               | Alias | Description                | Description                                                      |
