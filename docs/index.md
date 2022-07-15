@@ -16,10 +16,7 @@ hero:
           text: Open Editor
           link: https://editor.bridge-core.app/
         - theme: alt
-          text: Why bridge.?
-          link: /guide/why-bridge
-        - theme: alt
-          text: Read Guide
+          text: Read More
           link: /guide/
 
 features:
