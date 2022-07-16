@@ -4,7 +4,7 @@ description: "Learn about the manifest used inside of bridge.'s presets."
 sidebar: 'presets'
 ---
 
-# :memo: Preset Manifest
+# 📝 Preset Manifest
 
 The preset manifest is essential for bridge. to register your preset. Below are detailed descriptions all of the fields available in a preset manifest.
 

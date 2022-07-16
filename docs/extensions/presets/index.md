@@ -5,7 +5,7 @@ sidebar: 'presets'
 nav_order: -1
 ---
 
-# :bricks: Presets
+# 🧱 Presets
 
 This page walks you through bridge.'s preset system and details how to create your own preset.
 

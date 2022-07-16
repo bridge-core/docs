@@ -4,7 +4,7 @@ description: Learn how you can write custom commands that can be used across you
 sidebar: 'advanced'
 ---
 
-# :printer: Custom Commands
+# 🖨 Custom Commands
 
 This page serves as an introduction to bridge.'s custom commands which you can use wherever Minecraft accepts regular commands.
 

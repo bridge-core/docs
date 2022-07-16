@@ -4,7 +4,7 @@ description: 'Learn about how advanced presets can utilize preset scripts and ho
 sidebar: 'presets'
 ---
 
-# :receipt: Preset Scripts
+# 🧾 Preset Scripts
 
 This article will go over preset scripts; an advanced way of creating presets. 
 

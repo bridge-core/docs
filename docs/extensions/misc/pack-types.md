@@ -4,7 +4,7 @@ description: Find out how bridge. handles pack types
 sidebar: misc
 ---
 
-# :wrench: Pack Types
+# 🔧 Pack Types
 
 It is useful to be aware of how bridge. distinguishes different pack types in a project, when developing an extension.
 

@@ -4,7 +4,7 @@ description: Find out how to use material design icons in bridge.
 sidebar: misc
 ---
 
-# :framed_picture: Icons
+# 🖼️ Icons
 
 bridge. uses [material design icons](https://materialdesignicons.com/) in its UI components. Sometimes, extensions need to choose icons for various reasons, such as preset icons.
 

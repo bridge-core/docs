@@ -5,7 +5,7 @@ sidebar: 'guide'
 nav_order: 0
 ---
 
-# :footprints: Getting Started
+# 👣 Getting Started
 
 ## Setting up bridge.
 

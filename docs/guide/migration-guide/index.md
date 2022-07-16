@@ -6,7 +6,7 @@ author: 'joelant05'
 nav_order: 9
 ---
 
-# :hammer_and_wrench: Migrate from bridge. v1
+# 🛠 Migrate from bridge. v1
 
 ## What's different about bridge. v1 projects and bridge. v2 projects?
 

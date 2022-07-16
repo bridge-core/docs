@@ -5,7 +5,7 @@ sidebar: 'extensions'
 nav_order: -1
 ---
 
-# :jigsaw: Extension API
+# 🧩 Extension API
 
 This is the documentation for bridge.'s Extension API. We are working on expanding and improving this API to bring more capabilities for creators to work with.
 

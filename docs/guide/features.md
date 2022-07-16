@@ -6,7 +6,7 @@ nav_order: 2
 author: 'joelant05'
 ---
 
-# :rocket: Feature Overview
+# 🚀 Feature Overview
 
 ## Projects
 

@@ -4,7 +4,7 @@ description: Learn how you can write custom components for Minecraft entities, b
 sidebar: 'advanced'
 ---
 
-# :package: Custom Components
+# 📦 Custom Components
 
 This page serves as an introduction to bridge.'s custom components which are available for use within your entity, block and item files.
 This article will cover the following topics:

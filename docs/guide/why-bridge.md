@@ -4,7 +4,7 @@ sidebar: 'guide'
 nav_order: -1
 ---
 
-# :bulb: Why bridge.?
+# 💡 Why bridge.?
 
 ## Features
 
