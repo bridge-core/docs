@@ -1,5 +1,6 @@
 ---
 title: 🖼️ Icons
+description: Find out how to use material design icons in bridge.
 sidebar: misc
 ---
 

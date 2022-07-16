@@ -1,5 +1,6 @@
 ---
 title: 🔧 Pack Types
+description: Find out how bridge. handles pack types
 sidebar: misc
 ---
 
