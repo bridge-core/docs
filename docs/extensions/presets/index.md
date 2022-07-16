@@ -7,7 +7,7 @@ nav_order: -1
 
 # :bricks: Presets
 
-This page contains documentation for bridge.'s preset system and details how to create your own.
+This page walks you through bridge.'s preset system and details how to create your own preset.
 
 In this page you will learn the following:
 
@@ -90,7 +90,7 @@ This is quite a lot to understand so lets break this down a little.
 - [`createFiles`](/extensions/presets/manifest.html#createfiles) provides bridge. a list of files to copy from your preset's folder to the user's project when the preset is created.
 
 :::tip
-Don't forget to check out our more detailed [preset manifest documentation](/extensions/presets/manifest).
+Don't forget to check out our more detailed [preset manifest documentation](/extensions/presets/manifest/manifest).
 :::
 
 ### Add Your Files
@@ -110,4 +110,6 @@ In our example entity preset, the extension folder will look like this:
 
 ## Advanced Presets
 
-TODO: capabilities of preset scripts, link to preset script page
+This guide has just scraped the surface of what is possible with bridge.'s powerful preset system! If you want to dive deeper into presets, you should check out the various different input types available in the [`field`](/extensions/presets/manifest.html#field) property of the preset manifest.
+
+However, to create more advanced presets, you can check out [preset scripts](/extensions/presets/preset-scripts)! These allow you to more deeply customize how files are created in a project and are written in JavaScript, meaning you have access to programming constructs such as iterations and selections.

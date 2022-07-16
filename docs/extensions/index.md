@@ -52,7 +52,7 @@ From here, you can follow one of the guides below on how to create different typ
 
 There is a huge number of things you can create with bridge. extensions, but here is a rundown of the general capabilities.
 
--   :crayon: Editing how bridge. looks with themes.
+-   :art: Editing how bridge. looks with themes.
 -   :link: Snippets can be added quickly insert code into files.
 -   :bricks: Adding new presets which can be used to quickly create files from a simple form UI.
 -   :hammer_and_wrench: Creating new UI elements, such as custom sidebars, tabs, windows and more!
