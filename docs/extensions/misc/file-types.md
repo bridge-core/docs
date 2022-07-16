@@ -1,11 +1,22 @@
 ---
-description: ''
-sidebar: 'extensions'
+title: 📄 File Types
+description: 'Reference documentation of all available file types.'
+sidebar: 'misc'
 ---
 
-# Default File Types
+# 📄 File Types
 
-## BP
+When working with bridge., it can be useful to know how bridge. distinguishes between different file types.
+
+## Basics
+
+bridge. ships with a number of file definitions built-in. File definitions are the glue code that connects data for "Go to Definition", code completion, diagnostics, file type guessing and more. Additionally, every file definition assigns a file type identifier to each of Minecraft's file types.
+
+## Default File Types
+
+You can find all of bridge.'s default file type identifiers below.
+
+### BP
 
 | File Type             | Description              |
 | --------------------- | ------------------------ |
@@ -36,7 +47,7 @@ sidebar: 'extensions'
 | `mcstructure`         | BP/structures            |
 | `molang`              | BP/molang                |
 
-## Single Instance BP Files
+### Single Instance BP Files
 
 | File Type      | Description             |
 | -------------- | ----------------------- |
@@ -44,7 +55,7 @@ sidebar: 'extensions'
 | `functionTick` | BP/functions/tick.json  |
 | `manifest`     | BP/manifest.json        |
 
-## RP
+### RP
 
 | File Type                   | Description                                               |
 | --------------------------- | --------------------------------------------------------- |
@@ -60,7 +71,7 @@ sidebar: 'extensions'
 | `textureSet`                | RP/textures/blocks                                        |
 | `ui`                        | RP/ui                                                     |
 
-## Single Instance RP Files
+### Single Instance RP Files
 
 | File Type         | Description                        |
 | ----------------- | ---------------------------------- |
@@ -75,13 +86,13 @@ sidebar: 'extensions'
 | `clientSound`     | RP/sounds.json                     |
 | `clientManifest`  | RP/manifest.json                   |
 
-## SP
+### SP
 
 | File Type      | Description      |
 | -------------- | ---------------- |
 | `skinManifest` | SP/manifest.json |
 
-## WP
+### WP
 
 | File Type       | Description      |
 | --------------- | ---------------- |
