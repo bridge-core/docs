@@ -18,83 +18,95 @@ You can find all of bridge.'s default file type identifiers below.
 
 ### BP
 
-| File Type             | Description              |
+| File Type ID          | Path                     |
 | --------------------- | ------------------------ |
 | `animation`           | BP/animations            |
 | `animationController` | BP/animation_controllers |
 | `biome`               | BP/biomes                |
 | `block`               | BP/blocks                |
 | `dialogue`            | BP/dialogue              |
+| `dimension`           | BP/dimensions            |
 | `entity`              | BP/entities              |
 | `feature`             | BP/features              |
-| `fog`                 | BP/fogs                  |
 | `featureRule`         | BP/feature_rules         |
 | `function`            | BP/functions             |
+| `gameTest`            | BP/scripts               |
 | `item`                | BP/items                 |
+| `lootTable`           | BP/loot_tables           |
 | `langDef`             | BP/texts/languages.json  |
 | `lang`                | BP/texts                 |
-| `lootTable`           | BP/loot_tables           |
+| `mcstructure`         | BP/structures            |
 | `recipe`              | BP/recipes               |
-| `serverScript`        | BP/scripts/server        |
-| `clientScript`        | BP/scripts/client        |
-| `gameTest`            | BP/scripts               |
 | `spawnRule`           | BP/spawn_rules           |
 | `tradeTable`          | BP/trading               |
-| `itemComponent`       | BP/components/item       |
-| `blockComponent`      | BP/components/block      |
-| `entityComponent`     | BP/components/entity     |
-| `customCommand`       | BP/commands              |
-| `mcstructure`         | BP/structures            |
-| `molang`              | BP/molang                |
+| `volume`              | BP/volumes               |
 
 ### Single Instance BP Files
 
-| File Type      | Description             |
+| File Type ID   | Path                    |
 | -------------- | ----------------------- |
 | `langDef`      | BP/texts/languages.json |
-| `functionTick` | BP/functions/tick.json  |
 | `manifest`     | BP/manifest.json        |
+| `functionTick` | BP/functions/tick.json  |
 
 ### RP
 
-| File Type                   | Description                                               |
-| --------------------------- | --------------------------------------------------------- |
-| `attachable`                | RP/attachables                                            |
-| `geometry`                  | RP/models/entity & RP/models/mobs.json & RP/models/blocks |
-| `clientAnimation`           | RP/animations                                             |
-| `clientAnimationController` | RP/animation_controllers                                  |
-| `clientEntity`              | RP/entity                                                 |
-| `clientItem`                | RP/items                                                  |
-| `clientLang`                | RP/texts                                                  |
-| `particle`                  | RP/particles                                              |
-| `renderController`          | RP/render_controllers                                     |
-| `textureSet`                | RP/textures/blocks                                        |
-| `ui`                        | RP/ui                                                     |
+| File Type ID                | Path                               |
+| --------------------------- | ---------------------------------- |
+| `attachable`                | RP/attachables                     |
+| `clientAnimation`           | RP/animations                      |
+| `clientAnimationController` | RP/animation_controllers           |
+| `clientEntity`              | RP/entity                          |
+| `clientItem`                | RP/items                           |
+| `clientLang`                | RP/texts                           |
+| `fog`                       | RP/fogs                            |
+| `geometry`                  | RP/models/entity, RP/models/blocks |
+| `material`                  | RP/materials                       |
+| `particle`                  | RP/particles                       |
+| `renderController`          | RP/render_controllers              |
+| `texture`                   | RP/textures                        |
+| `textureSet`                | RP/textures/blocks                 |
+| `ui`                        | RP/ui                              |
 
 ### Single Instance RP Files
 
-| File Type         | Description                        |
+| File Type ID      | Path                               |
 | ----------------- | ---------------------------------- |
-| `langDef`         | RP/texts/languages.json            |
-| `soundDefinition` | RP/sounds/sound_definitions.json   |
-| `musicDefinition` | RP/sounds/music_definitions.json   |
-| `itemTexture`     | RP/textures/item_texture.json      |
-| `terrainTexture`  | RP/textures/terrain_texture.json   |
-| `flipbookTexture` | RP/textures/flipbook_textures.json |
-| `clientBlock`     | RP/blocks.json                     |
 | `clientBiome`     | RP/biomes_client.json              |
-| `clientSound`     | RP/sounds.json                     |
+| `clientBlock`     | RP/blocks.json                     |
 | `clientManifest`  | RP/manifest.json                   |
+| `clientSound`     | RP/sounds.json                     |
+| `flipbookTexture` | RP/textures/flipbook_textures.json |
+| `geometry`        | RP/models/mobs.json                |
+| `itemTexture`     | RP/textures/item_texture.json      |
+| `langDef`         | RP/texts/languages.json            |
+| `musicDefinition` | RP/sounds/music_definitions.json   |
+| `soundDefinition` | RP/sounds/sound_definitions.json   |
+| `terrainTexture`  | RP/textures/terrain_texture.json   |
 
 ### SP
 
-| File Type      | Description      |
+| File Type ID   | Path             |
 | -------------- | ---------------- |
+| `lang`         | SP/texts         |
 | `skinManifest` | SP/manifest.json |
+| `skins`        | SP/skins.json    |
 
-### WP
+### WT
 
-| File Type       | Description      |
+| File Type ID    | Path             |
 | --------------- | ---------------- |
-| `worldManifest` | WT/manifest.json |
 | `volume`        | WT/volumes       |
+| `worldManifest` | WT/manifest.json |
+
+### Custom bridge. Files
+
+| File Type Id        | Path                                    |
+| ------------------- | --------------------------------------- |
+| `customComponent`   | BP/components                           |
+| `bridgeConfig`      | config.json                             |
+| `customCommand`     | BP/commands                             |
+| `molang`            | BP/molang, BP/scripts/molang, RP/molang |
+| `extensionManifest` |                                         |
+| `presetManifest`    |                                         |
+| `theme`             |                                         |
