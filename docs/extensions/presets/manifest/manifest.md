@@ -39,7 +39,7 @@ This should be a description of what this preset creates. In bridge.'s UI, this 
 -   Type: `string`
 -   Required: :white_check_mark:
 
-This accepts the [standard icon format](/extensions/misc/icons/icons) that bridge. uses across its UI. This icon will be displayed next to the [`name`](#name) of the preset in the **New File** window.
+This accepts the [standard icon format](/extensions/misc/icons/) that bridge. uses across its UI. This icon will be displayed next to the [`name`](#name) of the preset in the **New File** window.
 
 ```json
 {
@@ -170,20 +170,20 @@ Each type of input is defined in a similar way; the general form of an input is 
 
 #### type
 
-- Type: `string`
-- Default: `textInput`
+-   Type: `string`
+-   Default: `textInput`
 
 This field simply defines what type of input this field should be. The allowed values are: [`fileInput`](#file-input), [`numberInput`](#number-input), [`textInput`](#text-input), [`switch`](#switch-input), [`selectInput`](#select-input)
 
 #### optional
 
-- Type: `boolean`
+-   Type: `boolean`
 
 Specifies whether the field is optional or not. If it is optional, the preset can be created without this field being filled in.
 
 #### default
 
-- Type: `string`
+-   Type: `string`
 
 Defines what the default value of this input should be. If it isn't specified, the field will just be blank by default.
 
@@ -206,11 +206,7 @@ Defines which validation rules must be true on the input for it to be considered
 ```json
 {
 	"fields": [
-		[
-			"File Name",
-			"FILE_NAME",
-			{ "validate": ["required", "alphanumeric"] }
-		]
+		["File Name", "FILE_NAME", { "validate": ["required", "alphanumeric"] }]
 	]
 }
 ```
@@ -221,19 +217,19 @@ This input type allows the user to import any file from on their computer. This 
 
 #### accept
 
-- Type: `string`
+-   Type: `string`
 
 This defines the [file type acceptors](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept) that are allowed in this file input. Commonly used values are `application/json` and `image/png`.
 
 #### icon
 
-- Type: `string`
+-   Type: `string`
 
-This accepts the [standard icon format](/extensions/misc/icons/icons) that bridge. uses across its UI. This icon will be displayed on the left side of the input field.
+This accepts the [standard icon format](/extensions/misc/icons/) that bridge. uses across its UI. This icon will be displayed on the left side of the input field.
 
 #### multiple
 
-- Type: `boolean`
+-   Type: `boolean`
 
 This tells the file picker that is opened, whether to accept a list of multiple files in this single input.
 
@@ -262,19 +258,19 @@ This input type creates a slider, which the user can use to select a numerical v
 
 #### min
 
-- Type: `number`
+-   Type: `number`
 
 This option allows you to customize the lowest possible value (inclusive) that your number input slider can reach. This will also act as the default value if the [`default`](#default) option is not specified.
 
 #### max
 
-- Type: `number`
+-   Type: `number`
 
 This option allows you to customize the highest possible value (inclusive) that your number input slider can reach.
 
 #### step
 
-- Type: `number`
+-   Type: `number`
 
 The step of the number input slider sets by how much the value will change per section of the slider, allowing you to increase or decrease its accuracy. For example, a step of 5 would result in only multiples of 5 being selectable by the input.
 
@@ -300,13 +296,7 @@ This input type creates a toggleable switch and is assigned a boolean value whic
 
 ```json
 {
-	"fields": [
-		[
-			"Client Entity",
-			"CLIENT_ENTITY",
-			{ "type": "switch" }
-		]
-	]
+	"fields": [["Client Entity", "CLIENT_ENTITY", { "type": "switch" }]]
 }
 ```
 
@@ -316,13 +306,13 @@ This input type creates a dropdown menu of which the user can select from a list
 
 #### options
 
-- Type: `string[] | { text: string, value: string }[] | { fileType: string; cacheKey: string }`
+-   Type: `string[] | { text: string, value: string }[] | { fileType: string; cacheKey: string }`
 
 This allows you to establish which options should be available in the dropdown menu.
 
 The options can be defined three different ways:
 
-- It can be defined as a simple array of strings that will show up in the dropdown. The values assigned to the input variable will be the same as the option text displayed to the user.
+-   It can be defined as a simple array of strings that will show up in the dropdown. The values assigned to the input variable will be the same as the option text displayed to the user.
 
 ```json
 {
@@ -332,18 +322,14 @@ The options can be defined three different ways:
 			"TYPE",
 			{
 				"type": "selectInput",
-				"options": [
-					"Entity",
-					"Block",
-					"Item"
-				]
+				"options": ["Entity", "Block", "Item"]
 			}
 		]
 	]
 }
 ```
 
-- It can be defined as a list of objects with `text` and `value` properties. This is the preferred method for most use cases, as it allows you to set the text that the user will see (`text`) and the value that will be assigned to the input variable (`value`), independently.
+-   It can be defined as a list of objects with `text` and `value` properties. This is the preferred method for most use cases, as it allows you to set the text that the user will see (`text`) and the value that will be assigned to the input variable (`value`), independently.
 
 ![Screenshot showing what a select input field looks like while collapsed](./select-input-1.png)
 
@@ -368,7 +354,7 @@ The options can be defined three different ways:
 }
 ```
 
-- The final method is the most complex; it allows you to fetch a list of data from bridge.'s [lightning cache](TODO), which means that the input can support dynamically changing options as the user works on their project and more data is added to cache. It is defined as an object with `fileType` and `cacheKey` properties, where `fileType` is the [file type id](TODO) of the files that you want to get cache data from. `cacheKey` is the [cache id](TODO) from the file type's cache definition that you want to fetch the options from.
+-   The final method is the most complex; it allows you to fetch a list of data from bridge.'s [lightning cache](TODO), which means that the input can support dynamically changing options as the user works on their project and more data is added to cache. It is defined as an object with `fileType` and `cacheKey` properties, where `fileType` is the [file type id](TODO) of the files that you want to get cache data from. `cacheKey` is the [cache id](TODO) from the file type's cache definition that you want to fetch the options from.
 
 ```json
 {
@@ -395,26 +381,25 @@ The options can be defined three different ways:
 
 This property is essential for your preset to create files when it is used. The primary usage of this field is define, where to copy files from your preset, to the user's project and what to do to the files while copying or once copied. Each item should be an array of three values:
 
-- A string that references the file name to copy from your preset into the user's project.
-- A string that reference the target path inside of the user's project, to copy the file to.
-- An object that contains additional options to use when creating the file. Documentation of the available properties can be found below.
+-   A string that references the file name to copy from your preset into the user's project.
+-   A string that reference the target path inside of the user's project, to copy the file to.
+-   An object that contains additional options to use when creating the file. Documentation of the available properties can be found below.
 
 ### inject
 
-- Type: `string[]`
+-   Type: `string[]`
 
 The inject field is important, as it allows you to inject variables that have been assigned from various inputs, into the file you are copying over and its path. It accepts a list of variable names that have either been defined in [`additonalModels`](#additonalmodels), or in an [input field](#fields). By default, the variable `PROJECT_PREFIX` is exposed to presets automatically; its value will be the current project's project prefix, which is defined in the [project config](/guide/misc/project-config). Variables will be injected into both the file path and content at locations that you can define. In order to define where the data from these variables is injected, you must write **the variable name surrounded by double curly brackets**.
 
 ### openFile
 
-- Type: `boolean`
+-   Type: `boolean`
 
 This option simply causes the file to be opened when the preset is created. This is useful for opening the files of your preset that the user may want to modify after creating them and it will remove tab clutter by not opening too many files unnecessarily.
 
 ### packPath
 
-- Type: [`PackTypeId`](/extensions/misc/pack-types)
-
+-   Type: [`PackTypeId`](/extensions/misc/pack-types)
 
 This specifies which pack type this file should go in. In the background, bridge. will use this to prepend the path of the pack type to the path that you have set to ensure the file is created in the correct location.
 
@@ -438,10 +423,7 @@ It is also used to define which [preset scripts](/extensions/presets/preset-scri
 
 ```json
 {
-	"createFiles": [
-		"presetScript/entityImages.js",
-		"./customScript.js"
-	]
+	"createFiles": ["presetScript/entityImages.js", "./customScript.js"]
 }
 ```
 
@@ -452,9 +434,9 @@ It is also used to define which [preset scripts](/extensions/presets/preset-scri
 
 This option allows you to append content to plain text files or merge JSON with other JSON files when your preset is used. If the file doesn't exist already, it will be created. Similarly to [`createFiles`](#createfiles), this contains a list of arrays containing three values:
 
-- The name of the file in your preset that contains the data that you want to merge into an existing file.
-- The path of the file in the user's project to target and add the data to.
-- An object that contains additional options to use when expanding the file. These properties are identical in name and function to those in the [`createFiles`](#createfiles) property ([`inject`](#inject), [`openFile`](#openfile), [`packPath`](#packpath)).
+-   The name of the file in your preset that contains the data that you want to merge into an existing file.
+-   The path of the file in the user's project to target and add the data to.
+-   An object that contains additional options to use when expanding the file. These properties are identical in name and function to those in the [`createFiles`](#createfiles) property ([`inject`](#inject), [`openFile`](#openfile), [`packPath`](#packpath)).
 
 ```json
 {

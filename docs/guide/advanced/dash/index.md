@@ -181,6 +181,9 @@ The `name` property states the name of the build profile. It is used to display 
 -   Required: :white_check_mark:
 
 The `icon` property gives you the option to assign an unique icon to the build profile.
+:::tip
+You can read more about how icons work [here](/extensions/misc/icons/).
+:::
 
 ### description
 
