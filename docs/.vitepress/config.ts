@@ -120,6 +120,11 @@ export default defineConfig({
 				],
 			},
 		],
+		algolia: {
+			apiKey: 'deec154498ea803ab3d8740b6c740234',
+			indexName: 'bridge-core',
+			appId: 'YD57CGJO9K',
+		},
 		sidebar: {
 			'/guide/': generateSidebar('guide'),
 			'/extensions/': generateSidebar('extensions'),

@@ -23,14 +23,5 @@
 		"links": [
 			{ "icon": "github", "link": "https://github.com/enderzombi102" }
 		]
-	},
-	{
-		"avatar": "https://www.github.com/pascal541.png",
-		"name": "Pascal",
-		"title": "Contributor",
-		"links": [
-			{ "icon": "github", "link": "https://github.com/pascal541" },
-			{ "icon": "twitter", "link": "https://twitter.com/Pascal5419" }
-		]
 	}
 ]
