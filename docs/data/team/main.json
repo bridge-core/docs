@@ -37,5 +37,14 @@
 			{ "icon": "github", "link": "https://github.com/Chikorita-Lover" },
 			{ "icon": "twitter", "link": "https://twitter.com/ChikoritaL" }
 		]
+	},
+	{
+		"avatar": "https://www.github.com/pascal541.png",
+		"name": "Pascal",
+		"title": "Contributor",
+		"links": [
+			{ "icon": "github", "link": "https://github.com/pascal541" },
+			{ "icon": "twitter", "link": "https://twitter.com/Pascal5419" }
+		]
 	}
 ]
