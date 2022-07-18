@@ -376,7 +376,7 @@ The options can be defined three different ways:
 
 ## createFiles
 
--   Type: `(string | [string, string, CreateFileOptions])[]`
+-   Type: `(string | [string, string, IPresetFileOpts])[]`
 -   Required: :no_entry_sign:
 
 This property is essential for your preset to create files when it is used. The primary usage of this field is define, where to copy files from your preset, to the user's project and what to do to the files while copying or once copied. Each item should be an array of three values:
@@ -429,7 +429,7 @@ It is also used to define which [preset scripts](/extensions/presets/preset-scri
 
 ## expandFiles
 
--   Type: `[string, string, CreateFileOptions][]`
+-   Type: `[string, string, IPresetFileOpts][]`
 -   Required: :no_entry_sign:
 
 This option allows you to append content to plain text files or merge JSON with other JSON files when your preset is used. If the file doesn't exist already, it will be created. Similarly to [`createFiles`](#createfiles), this contains a list of arrays containing three values:

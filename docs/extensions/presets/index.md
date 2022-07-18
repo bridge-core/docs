@@ -90,7 +90,7 @@ This is quite a lot to understand so lets break this down a little.
 - [`createFiles`](/extensions/presets/manifest.html#createfiles) provides bridge. a list of files to copy from your preset's folder to the user's project when the preset is created.
 
 :::tip
-Don't forget to check out our more detailed [preset manifest documentation](/extensions/presets/manifest/manifest).
+Don't forget to check out our more detailed [preset manifest documentation](/extensions/presets/manifest/).
 :::
 
 ### Add Your Files
