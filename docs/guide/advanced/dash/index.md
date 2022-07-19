@@ -32,7 +32,7 @@ As bridge. comes with Dash built-in, you do not need to install or setup it your
 
 ### Standalone Build
 
-You can also run a standalone build of Dash. This build is orders of magnitudes faster than the built-in version Dash and it can be used independently of bridge.
+You can also run a standalone build of Dash. This build is orders of magnitudes faster than the built-in version of Dash and it can be used independently of bridge.
 We are going to refer to this variant of Dash as "standalone Dash".
 
 :::warning
@@ -61,7 +61,7 @@ Watch for changes to your project and recompile. Outputs to com.mojang if Minecr
 
 | Option            | Default           | Description                                                                                             |
 | ----------------- | ----------------- | ------------------------------------------------------------------------------------------------------- |
-| `--out [path]`    | com.mojang folder | Configure the output directory. Use `--out preview` to output to Minecraft Preview directory            |
+| `--out [path]`    | com.mojang folder | Configure the output directory. Use `--out preview` to output to Minecraft Preview                      |
 | `--reload [port]` | 8080              | Open a web socket server that will reload scripts and functions when you connect to it within Minecraft |
 
 #### Build Command
@@ -112,7 +112,11 @@ Production builds can be configured with plugins to produce an optimized output.
 
 ### Default Profile
 
-The default build profile of Dash is located within your [project config](/guide/misc/project-config). You want to look for the `compiler` field within this file. Within this field, you can configure the plugins dash runs.
+The default build profile of Dash is located within your [project config](/guide/misc/project-config). You want to look for the `compiler` field within this file. You can configure the plugins dash runs using it.
+
+:::tip
+Set the "compiler" field to `false` to disable Dash.
+:::
 
 ```json
 {
