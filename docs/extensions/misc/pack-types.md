@@ -12,18 +12,24 @@ It is useful to be aware of how bridge. distinguishes different pack types in a 
 
 Each bridge. project can contain up to four different pack types.
 
-- Behavior Pack
-- Resource Pack
-- Skin Pack
-- World Template
+-   Behavior Pack
+-   Resource Pack
+-   Skin Pack
+-   World Template
 
 ## Useful Information
 
+The following pack types are available within bridge. by default.
+
 | Pack Type      | ID              | Default Path |
-|----------------|-----------------|--------------|
+| -------------- | --------------- | ------------ |
 | Behavior Pack  | `behaviorPack`  | BP/          |
 | Resource Pack  | `resourcePack`  | RP/          |
 | Skin Pack      | `skinPack`      | SP/          |
 | World Template | `worldTemplate` | WT/          |
 
-Across bridge. extensions, you may need to reference a pack type id which can be found in the table above. This is so that bridge can resolve paths to a user's pack if it isn't in the default path.
+You may need to reference a valid pack type id from the table above within some of bridge.'s APIs.
+
+:::warning
+Users can change the default path of a pack within the [project config](/guide/misc/project-config.md).
+:::

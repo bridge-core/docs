@@ -18,7 +18,7 @@ You will learn about the following topics inside of this article:
 Generator scripts are JavaScript or TypeScript files placed anywhere within your project to generate JSON, mcfunction or other files.
 
 :::warning
-Make sure that the "generatorScripts" plugin is listed within your [compiler config](../dash/index.html#build-profiles) in order for generator scripts to work.
+Make sure that the "generatorScripts" plugin is listed within your [compiler config](/guide/advanced/dash/index.html#build-profiles) in order for generator scripts to work.
 :::
 
 A generator script should "export default" the content of the file to generate. The generated file extension is automatically inferred from the file location.
