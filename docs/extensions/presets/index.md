@@ -84,10 +84,10 @@ In this file we will write the following:
 
 This is quite a lot to understand so lets break this down a little.
 
-- [`name`](/extensions/presets/manifest.html#name), [`description`](/extensions/presets/manifest.html#description), [`icon`](/extensions/presets/manifest.html#icon) and [`category`](/extensions/presets/manifest.html#category) are strings that tell bridge. how to display the preset in the **New File** window.
-- [`requires`](/extensions/presets/manifest.html#requires) gives bridge a set of conditions that need to be true in the current project for the preset to be enabled.
-- [`fields`](/extensions/presets/manifest.html#fields) defines a list of inputs to show in the **New File** window when creating the preset.
-- [`createFiles`](/extensions/presets/manifest.html#createfiles) provides bridge. a list of files to copy from your preset's folder to the user's project when the preset is created.
+- [`name`](/extensions/presets/manifest/index.html#name), [`description`](/extensions/presets/manifest/index.html#description), [`icon`](/extensions/presets/manifest/index.html#icon) and [`category`](/extensions/presets/manifest/index.html#category) are strings that tell bridge. how to display the preset in the **New File** window.
+- [`requires`](/extensions/presets/manifest/index.html#requires) gives bridge a set of conditions that need to be true in the current project for the preset to be enabled.
+- [`fields`](/extensions/presets/manifest/index.html#fields) defines a list of inputs to show in the **New File** window when creating the preset.
+- [`createFiles`](/extensions/presets/manifest/index.html#createfiles) provides bridge. a list of files to copy from your preset's folder to the user's project when the preset is created.
 
 :::tip
 Don't forget to check out our more detailed [preset manifest documentation](/extensions/presets/manifest/).
@@ -110,6 +110,6 @@ In our example entity preset, the extension folder will look like this:
 
 ## Advanced Presets
 
-This guide has just scraped the surface of what is possible with bridge.'s powerful preset system! If you want to dive deeper into presets, you should check out the various different input types available in the [`field`](/extensions/presets/manifest.html#field) property of the preset manifest.
+This guide has just scraped the surface of what is possible with bridge.'s powerful preset system! If you want to dive deeper into presets, you should check out the various different input types available in the [`field`](/extensions/presets/manifest/index.html#field) property of the preset manifest.
 
 However, to create more advanced presets, you can check out [preset scripts](/extensions/presets/preset-scripts)! These allow you to more deeply customize how files are created in a project and are written in JavaScript, meaning you have access to programming constructs such as iterations and selections.
