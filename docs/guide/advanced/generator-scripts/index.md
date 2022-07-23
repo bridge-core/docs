@@ -125,6 +125,8 @@ export default collection
 class FileCollection {
 	/**
 	 * Add a file to the collection
+	 * @param path Path of the file relative to the generator script
+	 * @param content Content of the file to generate
 	 */
 	add(path: string, content: any): void
 }
