@@ -15,16 +15,122 @@ You will learn about the following topics inside of this article:
 
 ## Basics
 
-TODO: Describe what a generator script is.
+Generator scripts are JavaScript or TypeScript files placed anywhere within your project to generate JSON, mcfunction or other files.
 
-## Writing your first generator script
+:::warning
+Make sure that the "generatorScripts" plugin is listed within your [compiler config](../dash/index.html#build-profiles) in order for generator scripts to work.
+:::
 
-TODO: Example of using a generator script to generate a JSON file
+A generator script should "export default" the content of the file to generate. The generated file extension is automatically inferred from the file location.
 
-### Other files
+```typescript
+// Generate an item file
+export default {
+    'format_version': '1.16.100',
+	'minecraft:item': {...},
+}
+```
 
-TODO: Explain how you can script other file types such as mcfunction files
+```typescript
+// Generate a mcfunction file
+export default `
+/say Hello World!
+`
+```
+
+## File Templates
+
+Embedding the full file within a generator script might not be desirable for multiple reasons:
+
+1. It might be hard for people to make edits if they are not familiar with programming
+2. You do not get auto-completions, syntax highlighting and diagnostics within generator scripts
+
+That is why you can use a template to generate your files. You can use any file within your content as a template.
+
+### Usage
+
+To start using a template, import the `useTemplate` function from the `@bridge/generate` module.
+
+```typescript
+import { useTemplate } from '@bridge/generate'
+```
+
+Then, use the `useTemplate` function to import a file.
+
+```typescript
+// mcfunction is of type string
+const mcfunctionFile = await useTemplate('../functions/template.mcfunction')
+
+// jsonFile is of type object
+const jsonFile = await useTemplate('./template/entity.json')
+```
+
+You can now use the `mcfunctionFile` or `jsonFile` variables which store the respective file content.
+
+### API
+
+```typescript
+interface IUseTemplateOptions {
+	/**
+	 * Whether to omit the template file from the build output
+	 * @default true
+	 */
+	omitTemplate?: boolean
+}
+
+/**
+ * Import a file template
+ * @param path Path to the template relative to the generator script
+ * @param options Configure how to use the template
+ */
+export function useTemplate(
+	path: string,
+	options?: IUseTemplateOptions
+): Promise<string | object>
+```
 
 ## File Collections
 
-TODO: Explain how you can use a generator script to generate multiple files at once.
+File collections are a convenient way to generate multiple files with a single generator script.
+
+### Usage
+
+To get started, import the `createCollection` function from the `@bridge/generate` module.
+
+```typescript
+import { createCollection } from '@bridge/generate'
+```
+
+Then, create a new collection with the `createCollection` function.
+
+```typescript
+const collection = createCollection()
+```
+
+You can now add files to the collection with the `add` function. The `add` method takes two arguments: The first one sets the file path of the file to generate and the second one sets the content of the file to generate.
+
+```typescript
+collection.add('./blaze.json', {...})
+```
+
+Finally, you can need to "export default" the collection to generate the files.
+
+```typescript
+export default collection
+```
+
+### API
+
+```typescript
+class FileCollection {
+	/**
+	 * Add a file to the collection
+	 */
+	add(path: string, content: any): void
+}
+
+/**
+ * Create a new file collection
+ */
+export function createCollection(): FileCollection
+```
