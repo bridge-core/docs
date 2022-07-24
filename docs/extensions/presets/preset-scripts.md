@@ -145,7 +145,7 @@ console.log(TEXT_FIELD_INPUT)
 
 ### File Input
 
-The [file field input](extensions/presets/manifest/index.html#file-input) is assigned a `File` object, which can be handled in a few different ways.
+The [file field input](/extensions/presets/manifest/index.html#file-input) is assigned a `File` object, which can be handled in a few different ways.
 
 ```js
 const {
