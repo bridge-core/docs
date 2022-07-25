@@ -83,10 +83,10 @@ interface IUseTemplateOptions {
  * @param path Path to the template relative to the generator script
  * @param options Configure how to use the template
  */
-export function useTemplate(
-	path: string,
-	options?: IUseTemplateOptions
-): Promise<string | object>
+export function useTemplate<T = any>(
+	templatePath: string,
+	options: IUseTemplateOptions
+): Promise<T>
 ```
 
 ## File Collections
@@ -129,6 +129,18 @@ class FileCollection {
 	 * @param content Content of the file to generate
 	 */
 	add(path: string, content: any): void
+
+	/**
+	 * Get a file from the collection
+	 * @param path Path of the file relative to the generator script
+	 */
+	get<T = any>(path: string): T
+
+	/**
+	 * Returns whether a file exists in the collection
+	 * @param path Path of the file relative to the generator script
+	 */
+	has(path: string): boolean
 }
 
 /**
