@@ -291,7 +291,7 @@ This plugin powers [custom commands](/guide/advanced/custom-commands). Its optio
 ```
 
 :::tip
-You can find all of bridge.'s [file types here](/extensions/other/default-file-types).
+You can find all of bridge.'s file types [here](/extensions/other/default-file-types).
 :::
 
 :::info
@@ -324,6 +324,10 @@ This plugin powers [custom Molang files](/guide/advanced/molang-files). You can 
 ]
 ```
 
+### generatorScripts
+
+This plugin needs to be active in order to use [generator scripts](/guide/advanced/generator-scripts/).
+
 ### formatVersionCorrection
 
 This plugin is used by bridge. to make format versions work within JSON files that Minecraft normally does not accept.
@@ -338,10 +342,19 @@ This plugin is rewriting the files of your add-ons to the com.mojang folder for 
 	{
 		// The output name of your add-on
 		// Default: "Bridge"
-		"packName": "MyProject"
+		"packName": "MyProject",
+		// Set the suffix of the output pack name per pack type
+		"packNameSuffix": {
+			"behaviorPack": "BP",
+			"resourcePack": "RP"
+		}
 	}
 ]
 ```
+
+:::tip
+Read more about bridge.'s built-in pack types [here](/extensions/misc/pack-types).
+:::
 
 ### rewriteForPackaging
 
@@ -349,15 +362,15 @@ This plugin is used to rewrite files within an add-on so that the project can la
 
 ```json
 [
-    "rewriteForPackaging",
-    {
-        // The output name of your add-on
-        // Default: "Bridge"
-        "packName": "MyProject"
-        // Which package to create; this option is required
-        // Can be "mcaddon", "mctemplate" or "mcworld"
-        "format": "mcaddon"
-    }
+	"rewriteForPackaging",
+	{
+		// The output name of your add-on
+		// Default: "Bridge"
+		"packName": "MyProject",
+		// Which package to create; this option is required
+		// Can be "mcaddon", "mctemplate" or "mcworld"
+		"format": "mcaddon"
+	}
 ]
 ```
 
