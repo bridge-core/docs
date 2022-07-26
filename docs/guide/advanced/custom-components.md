@@ -16,11 +16,19 @@ This article will cover the following topics:
 
 ## Basics
 
-TODO: Explain what a custom component is
+Custom components allow you to extract common logic from entity, block and item files and to generate JSON using JavaScript or TypeScript. They integrate seamlessly into bridge. by appearing alongside Minecraft's built-in components within auto-completions.
+
+### Component Locations
+
+Custom components are loaded from the `components/` folder within your behavior pack.
+
+-   Item components are expected to be within the `components/item/` folder
+-   Block components are expected to be within the `components/block/` folder
+-   Entity components are expected to be within the `components/entity/` folder
 
 ## Installation
 
-TODO: Explain how to install a custom component
+If you do not feel confident in writing your own custom components, you can install pre-written components from bridge.'s [extension store](/extensions/#installing-extensions). Simply select the "components" tab within the sidebar and choose the component you need.
 
 ## Usage
 

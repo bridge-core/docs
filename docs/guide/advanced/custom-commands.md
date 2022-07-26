@@ -21,11 +21,13 @@ Inside of this article, you will learn about the following topics:
 
 ## Basics
 
-TODO: Explain what a custom command is
+Custom commands allow users to generate commands programmatically with JavaScript or TypeScript. They integrate seamlessly into bridge. by appearing alongside Minecraft's built-in commands within auto-completions.
+
+bridge. loads custom commands from the `commands/` folder within your behavior pack.
 
 ## Installation
 
-TODO: Explain how to install custom commands
+You can install custom commands from bridge.'s [extension store](/extensions/#installing-extensions) if you do not feel confident in writing your own custom commands.
 
 ## Usage
 
