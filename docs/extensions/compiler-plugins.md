@@ -1,6 +1,6 @@
 ---
 description: ''
-sidebar: 'compiler'
+sidebar: 'extensions'
 ---
 
 # Compiler Plugins
