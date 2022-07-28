@@ -38,6 +38,10 @@ export default `
 `
 ```
 
+:::tip
+You can find TypeScript declaration files for the `@bridge/generate` module [here](https://github.com/bridge-core/editor-packages/blob/main/packages/minecraftBedrock/types/generatorScript/main.d.ts). Please note that bridge. automatically loads these type declarations for you so no manual setup is required in this case.
+:::
+
 ## File Templates
 
 Embedding the full file within a generator script might not be desirable for multiple reasons:
