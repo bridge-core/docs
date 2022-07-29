@@ -61,14 +61,14 @@ By default bridge. contains 6 different compiler plugins built-in:
     Registers entity identifiers to be fetched by the `getAlias()` function in compiler plugins.
 
 -   `customEntityComponents`, `customItemComponents`, `customBlockComponents`
-    Provides custom component functionality for entities, items and blocks. [Documentation](/extensions/custom-components).
+    Provides custom component functionality for entities, items and blocks. [Documentation](/guide/advanced/custom-components/).
 
     **Arguments:**
 
     -   `v1CompatMode: boolean` Enables v1 custom components. Recommended only for compatibility.
 
 -   `customCommands`
-    Provides custom command functionality for use in `.mcfunction` files and json files where commands are supported. [Documentation](/extensions/custom-commands)
+    Provides custom command functionality for use in `.mcfunction` files and json files where commands are supported. [Documentation](/guide/advanced/custom-commands/)
 
     **Arguments:**
 
