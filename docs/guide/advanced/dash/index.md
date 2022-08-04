@@ -16,7 +16,7 @@ You will learn about the following topics inside of this article:
 
 ## Basics
 
-[Dash](https://github.com/bridge-core/dash-compiler/) is the default compiler all bridge. projects use. It powers custom syntax such as [custom components](/guide/advanced/custom-components/), [custom commands](/guide/advanced/custom-commands/) and [molang files](/guide/advanced/molang-files). Additionally, Dash is also responsible for moving your compiled projects to the com.mojang folder.
+[Dash](https://github.com/bridge-core/dash-compiler/) is the default compiler all bridge. projects use. It powers custom syntax such as [custom components](/guide/advanced/custom-components/), [custom commands](/guide/advanced/custom-commands/) and [molang files](/guide/advanced/molang-files/). Additionally, Dash is also responsible for moving your compiled projects to the com.mojang folder.
 
 :::tip
 A compiler is a program that takes a source file, applies a set of transformations to it and writes the result to a destination file.
@@ -128,7 +128,7 @@ Set the "compiler" field to `false` to disable Dash.
 			"customItemComponents",
 			"customBlockComponents",
 			"customCommands",
-			"moLang",
+			"molang",
 			"formatVersionCorrection",
 			[
 				"simpleRewrite",
@@ -160,7 +160,7 @@ You can add arbitrary new build profiles by adding a new JSON file to the `.brid
 		"customItemComponents",
 		"customBlockComponents",
 		"customCommands",
-		"moLang",
+		"molang",
 		"formatVersionCorrection",
 		[
 			"simpleRewrite",
@@ -303,13 +303,13 @@ Glob patterns allow you to specify exactly where to look for commands within a J
 
 :::
 
-### moLang
+### molang
 
-This plugin powers [custom Molang files](/guide/advanced/molang-files). You can configure the plugin to add new Molang locations.
+This plugin powers [custom Molang files](/guide/advanced/molang-files/). You can configure the plugin to add new Molang locations. Additionally, this plugin also handles minifying Molang scripts within your JSON files.
 
 ```json
 [
-	"moLang",
+	"molang",
 	{
 		// Allows you to add new Molang locations
 		// Default: false
