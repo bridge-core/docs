@@ -1,3 +1,8 @@
+---
+title: Importing Projects
+sidebar: misc
+---
+
 # Importing Projects
 
 ## .mcaddon

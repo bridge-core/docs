@@ -146,7 +146,7 @@ Built-in custom syntax includes:
 
 -   [Custom components](/guide/advanced/custom-components/)
 -   [Custom commands](/guide/advanced/custom-commands/)
--   [Custom molang](/extensions/custom-molang)
+-   [Custom molang](/guide/advanced/molang-files/)
 
 With more available on the extension store!
 
