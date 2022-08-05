@@ -72,7 +72,7 @@ In our new snippet file, we will write the following:
 }
 ```
 
-Now let's go through the different fields that we have utilized here:
+Now let's go through the different fields that we have used here:
 
 - The [`name`](/extensions/snippets/documentation.html#name) and [`description`](/extensions/snippets/documentation.html#description) fields are used to tell bridge. how both the text and tree editor should display your snippet within auto-completions.
 - [`fileTypes`](/extensions/snippets/documentation.html#filetypes) and [`locations`](/extensions/snippets/documentation.html#locations) tell bridge. where your snippet is allowed to be inserted into a file.
