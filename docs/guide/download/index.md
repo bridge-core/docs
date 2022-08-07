@@ -38,9 +38,13 @@ No matter how you're installing bridge., you must first navigate to https://edit
 
 ### Chromium-based desktop browsers
 
-This is the best way to experience bridge.! To install bridge. on a Chromium-based desktop browser, such as Google Chrome and Microsoft Edge, go to [bridge.'s site](https://editor.bridge-core.app/) and go through the following steps, which are also displayed in an image below.
+This is the best way to experience bridge.! To install bridge. on a Chromium-based desktop browser, such as Google Chrome and Microsoft Edge, go to [bridge.'s site](https://editor.bridge-core.app/) and go through the following steps, which are also displayed in images below.
 
-1. Click the install icon in the right side of the URL address bar, or in the sidebar setup, if you haven't setup bridge. already.
+1. Click one of the following:
+    - The install icon in the right side of the URL address bar.
+    - If you haven't set up bridge. already, the install prompt in the sidebar.
+    - The install notification.
+
 2. Press **Install** on the prompt that shows.
 
 ![screenshot showing first step of installation](./desktop-installation-1.png)
