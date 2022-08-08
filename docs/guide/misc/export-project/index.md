@@ -5,7 +5,10 @@ sidebar: Misc
 
 # 📦 Exporting Projects
 
-When you are ready to share your creation with others, you can use bridge. natively supported export formats.
+When you are ready to share your creation with others, you can use bridge. natively supported export formats. In this article you will find out:
+
+:ballot_box_with_check: How to export a project from bridge.<br/>
+:ballot_box_with_check: Details on how projects are exported.<br/>
 
 ## Export Your Project
 
