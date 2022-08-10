@@ -1,101 +1,79 @@
 ---
-title: '🚀 Features'
-description: "An overview of bridge.'s most notable features."
+title: 🚀 Features
+description: An overview of bridge.'s most notable features.
 sidebar: 'guide'
 nav_order: 2
-author: 'joelant05'
 ---
 
-# 🚀 Feature Overview
+# 🚀 Features
 
-## Projects
+On this page we will go through some of the main features that bridge. has to offer.
 
--   Create behavior packs, resource packs, skin packs and world templates quickly. bridge. creates all of the files necessary for these packs to show up in Minecraft.
--   Drag your com.mojang folder over bridge. v2 to enable com.mojang folder syncing so that your "dev" compiler output writes straight into the com.mojang folder for quick updates to your packs. **Keep in mind, any edits should be made in your project folder. Any edits made directly in the com.mojang folder will be overwritten!**
--   Our new project directory structure allows you to have all of your packs neatly together in one project folder for better GitHub integration and to allow for external compilation processes.
+## Quick Project Setup
 
-## Tree Editor
+:factory: With bridge., setting up a Minecraft Bedrock project is as easy as filling a few inputs!
 
--   The tree editor is ideal for beginners as you cannot make JSON syntax errors.
--   Rich auto-completions to guide you through every file type.
--   Insert snippets into your file by selecting them from the provided auto-completions where applicable.
--   Colorful syntax highlighting and optional bracket pair colorization.
--   Cut, Copy, Paste, Undo, Redo and all other features you would expect.
+- Create **behavior packs, resource packs, skin packs and world templates** quickly.
+- bridge. will create all files necessary for your packs to show in Minecraft, and additonal files including a [project config](/guide/misc/project-config), to allow for compatibility with other tools.
+- If you [link bridge. to your com.mojang folder](/guide/misc/com-mojang-syncing/), your projects will automatically sync to Minecraft.
 
-## Text Editor
+:lock: bridge.'s project structure stores your projects outside of the com.mojang folder by default, where they are safer, easier to access and easier to collaborate with others on.
 
--   Advanced file validation to warn you if you are writing with the incorrect syntax.
--   Find and replace to search the current file.
--   Rich auto-completions to guide you through every file type.
--   Insert snippets into your file by selecting them from the provided auto-completions where applicable.
--   Colorful syntax highlighting and optional bracket pair colorization.
--   Cut, Copy, Paste, Undo, Redo and all other basic editing features you would expect.
--   Go To Definition to quickly jump between connected files.
--   Uses Monaco under the hood to provide the same incredible editing experience as VS Code.
+- If you need to uninstall Minecraft, your projects will be safe and **will not** be deleted.
+- Our project structure can **easily be used with GitHub** to collaborate with other creators and version control your projects.
+- This project strucutre is also used by other tools, so your project will remain compatible with tools following this [standard](https://github.com/Bedrock-OSS/project-config-standard).
 
-## Auto-completions
+## File Previews
 
--   Develop within the constraints of your project: auto-completions and file validation changes with your format versions and experimental gameplay options set in your project config.
--   Rich, hand-crafted auto-completions with integrated documentation.
--   Support for all file types that Minecraft supports including entity, function and blocks.
--   Dynamic auto-completions for identifiers, events, component groups and more, across all files.
+:play_or_pause_button: bridge. allows you to preview a variety of different files without having to load up Minecraft!
 
-## Global Find and Replace
+- View any model in your project; textures and animations will automatically be found by bridge., for you to view.
+- Quickly see collision boxes of blocks and entities, and view entity seat positions to find the perfect positions. 
+- Conveniently view particle effects.
+- File previews will rapidly update when you make changes in a related file.
 
--   Search for text across all files in your project and replace it.
--   Filter your search results by including/excluding specific file paths or with glob patterns.
--   Search for text across all files with Regular Expressions.
+## Advanced File Creation
 
-## Extensions
+:bricks: With [bridge. presets](/extensions/presets/), you can create complete features, such as entities, items and blocks, by filling a small form. Any feature of an Add-On can also be created as an individual file, with a scaffold of the file already there for you!
 
--   The extension store allows anyone to download extensions from a wide variety of developers each adding something different to bridge.
--   Extensions can add new tab types, themes, presets, custom components and more!
--   Develop your own custom addon syntax with compiler plugins to make repetitive task so much easier.
--   Learn more about extensions [here](/extensions/).
+- bridge. supports every file that Minecraft does so by using bridge. you will be able to utilize every Add-On feature.
+- The files that you can create a determined by the experimental toggles and target version that you have configured in your [project config](/guide/misc/project-config). This ensures you don't use features that you shouldn't be using.
 
-Some fantasic new extensions available on the extension store include:
+## Powerful Compiler
 
--   **TextureList** - Automatically generates the texture_list.json file for production builds.
--   **Compact Prettier** - Changes the default "format on save" formatter to produce a more compact output.
--   **TextureSetJsonGenerator** - Adds a new comprehensive UI to create texture set RTX files.
--   **WorldHub** - Allows you to move worlds from your com.mojang folder to your project folder and back.
--   **ItemEquippedSensor** - Adds a custom item component to make it easy to run events and commands when an item is equipped to a specified item slot.
--   And much, much more!
+:zap:
 
-## Settings
+TODO
 
--   Configure which editor type you use.
--   Modify the appearance of bridge. with themes! We include a small variety of dark and light themes by default with many more to download from the extension store.
--   Configure the sidebarb width and the size of the icons to fit your preferences on screen space.
--   bridge. is supported in various languages with complete support in English and Japanese, as well as partial support for other languages, thanks to some of our amazing contributors!
+## Customizable Experience
 
-## Pack Explorer
+:gear:
 
--   See your pack files in a compact, color coded file explorer in the sidebar.
--   Switch between each pack type that your project has in one click.
--   Context menu actions when right-clicking files and folders such as "Create Folder", "Create File" and "Find in Folder".
--   The "More" button at the top of the pack explorer allows you to access various export options for your pack, open the project config and more.
+TODO
 
-## File Creation
+## Extension Support
 
--   Quickly create all files necessary to get a feature working in game.
--   Perfect for quickly setting up a new entity, block or item.
--   Simply input the file name and/or other details that the preset asks for, such as the template to use or a texture and model to use on an entity.
--   Search bar to quickly search for which preset you want to create.
+:jigsaw:
 
-## Compiler
+TODO
 
--   Compilation is triggered upon saving a file or forcing a production compilation in the sidebar.
--   The compiler can be extended with compiler plugins to add new addon syntax to your project.
+## Auto-completions and validation
 
-The compiler has two modes: "dev" and "build".
+:bulb:
 
--   The "dev" output is in the "builds/dev" folder of your project or the appropriate development folders in your com.mojang folder if linked. It re-compiles upon saving a file or selecting the "Restart Dev Server" option in the "More" menu on the pack explorer sidebar area.
--   The "build" output is in the "builds/dist" folder and is only triggered when your select the compile option in the sidebar.
--   The output between these types may vary, if a specific compiler plugin produces a different output for each.
+TODO
 
-## Live Previews
+## Flexible Tab System 
 
--   Preview files while you edit them with instant reloading to reflect the changes you make in the file.
--   Preview entity, block, particle files and more.
--   Entity previews can help you find the perfect seat positions and collison hit boxes without needing to launch Minecraft.
+:bookmark_tabs:
+
+TODO
+
+## Global Find and Replace System
+
+:mag_right:
+
+TODO
+
+
+TODO - check all the links work...
