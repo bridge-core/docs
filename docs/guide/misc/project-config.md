@@ -16,7 +16,7 @@ This field should specify the type of project and can be either `minecraftBedroc
 
 ```json
 {
-    "type": "minecraftBedrock"
+	"type": "minecraftBedrock"
 }
 ```
 
@@ -29,7 +29,7 @@ The name property defines the name of the project. It should be a name that enco
 
 ```json
 {
-    "name": "My Project"
+	"name": "My Project"
 }
 ```
 
@@ -42,7 +42,7 @@ This property should be a short description of what your project is. It can be l
 
 ```json
 {
-    "description": "My project adds..."
+	"description": "My project adds..."
 }
 ```
 
@@ -55,7 +55,7 @@ This should state the authors of the project. It should be an array of strings w
 
 ```json
 {
-    "authors": ["Joelant05"]
+	"authors": ["Joelant05"]
 }
 ```
 
@@ -68,7 +68,7 @@ The target version of your project should simply be the [Minecraft version](http
 
 ```json
 {
-    "targetVersion": "1.19.10"
+	"targetVersion": "1.19.10"
 }
 ```
 
@@ -81,12 +81,12 @@ Here you can set which experimental gameplay toggles that your project is using.
 
 ```json
 {
-    "experimentalGameplay": {
-        "holidayCreatorFeatures": true,
-        "upcomingCreatorFeatures": false,
-        "enableGameTestFramework": true,
-        "educationEdition": false
-    }
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": true,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": true,
+		"educationEdition": false
+	}
 }
 ```
 
@@ -99,7 +99,7 @@ The namespace of your project should be a short, alphanumeric, lowercase string 
 
 ```json
 {
-    "namespace": "bridge"
+	"namespace": "bridge"
 }
 ```
 
@@ -112,10 +112,10 @@ This property is crucial in telling tools, including bridge., where to find the 
 
 ```json
 {
-    "packs": {
-        "behaviorPack": "./BP",
-        "resourcePack": "./RP"
-    }
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	}
 }
 ```
 
@@ -128,7 +128,7 @@ The worlds property allows you to define a list of glob patterns that point to f
 
 ```json
 {
-    "worlds": ["./worlds/1", "./worlds/other/*"]
+	"worlds": ["./worlds/1", "./worlds/other/*"]
 }
 ```
 
@@ -145,16 +145,16 @@ This field is not yet utilized by bridge. and in order to see the progress of th
 
 ```json
 {
-    "packDefinitions": {
-        "socreboardObjectives": {
-            "type": "dummy",
-            "include": ["red_team_score", "blue_team_score"]
-        },
-        "tags": {
-            "include": ["my_entity_tag", "other_tag"],
-            "exclude": ["bad_tag"]
-        }
-    }
+	"packDefinitions": {
+		"socreboardObjectives": {
+			"type": "dummy",
+			"include": ["red_team_score", "blue_team_score"]
+		},
+		"tags": {
+			"include": ["my_entity_tag", "other_tag"],
+			"exclude": ["bad_tag"]
+		}
+	}
 }
 ```
 
@@ -167,7 +167,7 @@ This property is simply used to define whether this project is designed for use 
 
 ```json
 {
-    "bdsProject": true
+	"bdsProject": true
 }
 ```
 
@@ -179,4 +179,4 @@ bridge. utilizes the unique `compiler` and `bridge` properties.
 
 The `compiler` property is used to configure the default [Dash compiler](/guide/advanced/dash/index) build profile. Documentation for this field can be found [here](/guide/advanced/dash/index.html#default-profile).
 
-The `bridge` property can be used to sepcify additional configuration to bridge. It accepts a `v1CompatMode` field which should be a boolean stating whether bridge. should run in v1 compatibility mode for a project that has been converted from bridge. v1.
+The `bridge` property can be used to specify additional configuration to bridge. It accepts a `v1CompatMode` field which should be a boolean stating whether bridge. should run in v1 compatibility mode for a project that has been converted from bridge. v1.
