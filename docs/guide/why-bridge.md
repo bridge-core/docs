@@ -53,8 +53,8 @@ TODO: Describe most notable features here
 
 ### Notes
 
-1. An instance of [VS Code](vscode.dev) running [Blockception's extension for Minecraft Bedrock Development](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension).
+1. An instance of [VS Code](https://vscode.dev) running [Blockception's extension for Minecraft Bedrock Development](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension)
 2. Requires extra configuration
 3. An additional tool is necessary to use these files
-4. These tools do not support syntax highlighting, auto-completions and file validations within any opened Minecraft file
+4. These tools do not support syntax highlighting, auto-completions and file validations without additional setup steps
 5. Requires the Snowstorm extension for VS Code
