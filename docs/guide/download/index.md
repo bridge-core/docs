@@ -58,8 +58,14 @@ In order to install bridge. on Google Chrome (Android), you will need to open th
 2. Select the **Install App** option in the menu that appears.
 3. Press **Install** on the prompt that shows.
 
-![screenshots showing step by step installation](./android-installation.png)
+![screenshots showing step by step installation on android](./android-installation.png)
 
 ### Safari (iOS)
 
-TODO: Describe installation
+In order to install bridge. on Safari (IOS), you will need to go to first open the browser and navigate to [bridge.'s site](https://editor.bridge-core.app/). Then go through the following steps, which are also displayed in an image below.
+
+1. Press the share button at the bottom of the browser.
+2. On the menu that appears, select **Add to Home Screen**.
+3. Then press **Add** in the top right of the confirmation menu that will appear.
+
+![screenshots showing step by step installation on ios](./ios-installation.png)
