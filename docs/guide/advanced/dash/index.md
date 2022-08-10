@@ -96,7 +96,7 @@ By default, Dash will watch any changes you make within bridge. and recompile af
 
 ### Production Builds
 
-Whenever you [export your project](/guide/misc/export-project), bridge. uses Dash to create a production build of your project. You can also manually request a production build that outputs to the "builds/dist" folder by using the compiler window. Simply select the "Default Config" within the "Build Profiles" tab.
+Whenever you [export your project](/guide/misc/export-project/), bridge. uses Dash to create a production build of your project. You can also manually request a production build that outputs to the "builds/dist" folder by using the compiler window. Simply select the "Default Config" within the "Build Profiles" tab.
 
 ![bridge.'s build profile selection](./build-profiles.png)
 
@@ -291,7 +291,7 @@ This plugin powers [custom commands](/guide/advanced/custom-commands/). Its opti
 ```
 
 :::tip
-You can find all of bridge.'s file types [here](/extensions/other/default-file-types).
+You can find all of bridge.'s file types [here](/extensions/misc/file-types).
 :::
 
 :::info
