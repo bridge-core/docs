@@ -46,7 +46,7 @@ The standalone build of Dash is also open-source and can be found on GitHub: [br
 There are multiple ways to install the standalone version of Dash. For the most convenient experience, make sure that you have [Deno](https://deno.land/) installed.
 
 1. Open a terminal and navigate to your project's root directory
-2. Run `deno task setup`. This command installs Dash as a terminal command
+2. Run `deno task install_dash`. This command installs Dash as a terminal command
 3. You can now use the standard `dash_compiler` commands or run the shorthand `deno task watch` and `deno task build`
 
 #### Watch Command
