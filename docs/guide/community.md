@@ -34,3 +34,11 @@ The bridge. team is grateful for any contributions you make to the various proje
 Please don't hesitate reaching out to us on any of the platforms listed [above](#💬-community) to discuss your ideas and/or suggestions for improving bridge. or if you simply need help making your first contribution.
 
 Contributing to bridge. can be as "easy" as helping us improve our [documentation](https://github.com/bridge-core/docs/) by editing Markdown files, editing our [editor data](https://github.com/bridge-core/editor-packages/) which mostly consists of JSON or [creating a new extension](/extensions/). You do not need to work on the [core editor](https://github.com/bridge-core/editor/) and its related libraries to make valuable contributions to our projects.
+
+## Other Resources
+
+-   Check out the [unofficial Minecraft Bedrock documentation](https://bedrock.dev)
+-   Learn more about creating addons in the [unofficial Bedrock Wiki](https://wiki.bedrock.dev)
+-   Visit the [official Minecraft Bedrock creator documentation](https://docs.microsoft.com/en-us/minecraft/creator)
+
+More useful links can be found [here](https://wiki.bedrock.dev/knowledge/useful-links.html).
