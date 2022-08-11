@@ -7,103 +7,24 @@ sidebar: 'extensions'
 
 bridge.'s compiler architecture allows anyone to create powerful plugins that can modify the compiler output in almost any way.
 
-## Compiler Config
+:::tip
+You can read more about bridge.'s compiler architecture and Dash, bridge.'s compiler, [here](/guide/advanced/dash/).
+:::
 
-The compiler config tells the compiler which plugins to use in compilation. It should go in the `<PROJECT NAME>/.bridge/compiler` directory and be given any name. The `dev` compiler mode uses the `default.json` compiler config and the `dist` compiler mode allows you to choose from the available modes.
-
-By default the `default.json` config should look like this:
-
-```json
-{
-	"icon": "mdi-cogs",
-	"name": "[Default Script]",
-	"description": "[Transforms the \"bridge.\" folder structure to \"com.mojang\". \"bridge.\" runs it automatically in dev mode in the background to enable fast, incremental builds for testing.]",
-	"plugins": [
-		"typeScript",
-		"entityIdentifierAlias",
-		"customEntityComponents",
-		"customItemComponents",
-		"customBlockComponents",
-		"customCommands",
-		"moLang",
-		[
-			"simpleRewrite",
-			{
-				"packName": "BridgeTest"
-			}
-		]
-	]
-}
-```
-
--   `icon`
-    Specifies the [icon](https://materialdesignicons.com/) to show on the compiler config in bridge.'s UI.
-
--   `name`
-    The name of the compiler config to show in bridge.'s UI.
-
--   `description`
-    A description of the compiler config to show in bridge.'s UI.
-
-**Note: The `name` and `description` have square brackets around them so that bridge. doesn't attempt to translate these strings.**
-
--   `plugins`
-    An array of values that specify the ids of the compiler plugins to use. The values can either be a string, to simply add the plugin to the compiler, or it can be an array with the first value of the array as the compiler plugin's id and in the second value of the array there should be options for the compiler plugin in an object. For example, see that the `"simpleRewrite"` plugin above contains an argument `"packName"` which is passed to, and used in the plugin.
-
-## Built-In Compiler Plugins
-
-By default bridge. contains 6 different compiler plugins built-in:
-
--   `typeScript`
-    Compiles any TypeScript files in your project into JavaScript. This allows you to use TypeScript for Minecraft's GameTests, Scripting API and bridge.'s custom components and commands.
-
--   `entityIdentifierAlias`
-    Registers entity identifiers to be fetched by the `getAlias()` function in compiler plugins.
-
--   `customEntityComponents`, `customItemComponents`, `customBlockComponents`
-    Provides custom component functionality for entities, items and blocks. [Documentation](/guide/advanced/custom-components/).
-
-    **Arguments:**
-
-    -   `v1CompatMode: boolean` Enables v1 custom components. Recommended only for compatibility.
-
--   `customCommands`
-    Provides custom command functionality for use in `.mcfunction` files and json files where commands are supported. [Documentation](/guide/advanced/custom-commands/)
-
-    **Arguments:**
-
-    -   `v1CompatMode: boolean` Enables v1 custom commands. Recommended only for compatibility.
-
--   `moLang`
-    Provides custom MoLang functionality. This allows you to create `.molang` files and register functions to be used across your project where MoLang is valid.
-
--   `simpleRewrite`
-    Restructures the compiler output and rewrites your project structure into a structure that Minecraft will understand.
-
-    **Arguments:**
-
-    -   `packName: string` The name of the pack. Default: 'Bridge'
-
-    -   `rewriteToComMojang: boolean` Whether the project is being written to the com.mojang folder. Default: true
-
-    -   `buildName: string` The name of the build. Default (dependent on compiler mode): 'dev' | 'dist'
-
-## Creating a Compiler Plugin
-
-### Registering a Compiler Plugin
+## Registering a Compiler Plugin
 
 A compiler plugin should be added by putting it in the `<EXTENSION NAME>/compiler` folder of an extension. The plugin can then be registered via the extension manifest.
 
 In the extension manifest you need a [`"compiler"`](/extensions/extension-manifest.html#compiler) property.
 
-### Compiler Plugin File Structure
+## Compiler Plugin File Structure
 
 A compiler plugin should have `module.exports` set as a function which returns the compiler hooks which you are using, with logic within them.
 
 Example:
 
 ```js
-module.exports = () => {
+export default () => {
 	const blockPath = 'BP/blocks'
 
 	return {
@@ -152,7 +73,7 @@ This function receives context parameters to be used in the plugin. These are:
     -   `[key: string]: any`
         Allows you to access any arguments passed to the plugin in the compiler config.
 
-### Compiler Hooks
+## Compiler Hooks
 
 ```ts
 	/**
