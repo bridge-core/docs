@@ -7,8 +7,8 @@ sidebar: 'misc'
 
 While using bridge. v2, you may encounter multiple different project types. The following article acts as an introduction to them so you can learn...
 
-:ballot_box_with_check: how you can work on an Add-On project.<br/>
-:ballot_box_with_check: which project type fits your style of working best.<br/>
+:ballot_box_with_check: How you can work on an Add-On project.<br/>
+:ballot_box_with_check: Which project type fits your style of working best.<br/>
 
 :::warning
 If you are using bridge. v2 on a mobile device or unsupported browser, you cannot make use of the different project types outlined below.
