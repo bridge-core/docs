@@ -19,7 +19,7 @@ hero:
           text: Why bridge.?
           link: /guide/why-bridge
         - theme: alt
-          text: Read Guide
+          text: Get Started
           link: /guide/
 
 features:
