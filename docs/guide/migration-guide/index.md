@@ -8,6 +8,12 @@ nav_order: 9
 
 # 🛠 Migrate from bridge. v1
 
+Before switching from bridge. v1 to bridge. v2, you may want to transfer your old projects over.
+
+:::tip
+Starting with bridge. v2.3.0, you no longer need to migrate your projects as bridge. can [load projects from the com.mojang folder](/guide/misc/project-types/#com-mojang-project) directly.
+:::
+
 ## What's different about bridge. v1 projects and bridge. v2 projects?
 
 bridge. v1 stored its projects in the `development_behavior_packs` and `development_resource_packs` folders within the `com.mojang` directory. However, bridge. v2 approaches this differently by storing your projects in a nicer to work with format and elsewhere on the system, in `Documents` for example, and you are given the option to link your `com.mojang` folder to bridge. v2.

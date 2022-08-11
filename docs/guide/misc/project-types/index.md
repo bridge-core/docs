@@ -37,7 +37,7 @@ You cannot use git or other version control systems on a local project.
 
 ## `com.mojang` Project
 
-bridge. v2 additionally loads all behavior packs (and connected resource packs) from the `com.mojang`'s "development_behavior_packs" and "development_resource_packs" folders.
+bridge. v2 additionally loads all behavior packs (and connected resource packs) from the `com.mojang`'s "development_behavior_packs" and "development_resource_packs" folders. In order for this to work, you must set the [`com.mojang` folder as an output folder](/guide/misc/com-mojang-syncing/#setup).
 
 :::warning
 `com.mojang` projects cannot make use of [advanced file creation](/guide/features/#advanced-file-creation) yet.
