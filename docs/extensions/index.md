@@ -23,7 +23,7 @@ bridge. extensions allow creators to customize bridge.! Extensions can modify a 
 
 In order to get started with bridge. extensions, you should be aware of how they are installed; an extension can be installed **globally** or **locally** and you will be given the option to choose which installation method to use.
 
-A **global** extension is installed to a global extensions folder inside of bridge.'s [local storage](TODO). If you install extensions this way, you can access the extensions features in every project that you create.
+A **global** extension is installed to a global extensions folder inside of bridge.'s local browser storage. If you install extensions this way, you can access the extensions features in every project that you create.
 
 A **local** extension is installed in the `.bridge/extensions` folder inside of the project that you have selected when installing the extension. The extension will only be available to use in project that you have installed it to.
 
@@ -45,8 +45,11 @@ To get started with creating an extension, you need to create a folder for it in
 
 From here, you can follow one of the guides below on how to create different types of extensions.
 
--   TODO: Link guide pages below
 -   [Presets](/extensions/presets/index)
+-   [Snippets](/extensions/snippets/index)
+-   [Themes](/extensions/json/themes)
+-   [Compiler Plugins](/extensions/compiler-plugins)
+-   [Scripts](/extensions/scripts/index)
 
 ## Capabilities
 
