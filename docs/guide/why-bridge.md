@@ -9,7 +9,7 @@ nav_order: -1
 ## Features
 
 bridge. comes with many powerful features that _make you more productive_ while developing an add-on.
-You can find some of our most notable features below. For a full list visit our [features page](/guide/features).
+You can find some of our most notable features below. For a full list visit our [features page](/guide/features/).
 
 TODO: Describe most notable features here
 
