@@ -354,7 +354,7 @@ The options can be defined three different ways:
 }
 ```
 
--   The final method is the most complex; it allows you to fetch a list of data from bridge.'s [lightning cache](TODO), which means that the input can support dynamically changing options as the user works on their project and more data is added to cache. It is defined as an object with `fileType` and `cacheKey` properties, where `fileType` is the [file type id](TODO) of the files that you want to get cache data from. `cacheKey` is the [cache id](TODO) from the file type's cache definition that you want to fetch the options from.
+-   The final method is the most complex; it allows you to fetch a list of data from bridge.'s [lightning cache](https://github.com/bridge-core/editor-packages/tree/main/packages/minecraftBedrock/lightningCache), which means that the input can support dynamically changing options as the user works on their project and more data is added to cache. It is defined as an object with `fileType` and `cacheKey` properties, where `fileType` is the [file type id](/extensions/misc/file-types) of the files that you want to get cache data from. `cacheKey` is the cache id from the file type's cache definition that you want to fetch the options from.
 
 ```json
 {
