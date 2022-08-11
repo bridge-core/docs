@@ -14,7 +14,7 @@ On this page we will go through some of the main features that bridge. has to of
 :factory: With bridge., setting up a Minecraft Bedrock project is as easy as filling a few inputs!
 
 -   Create **behavior packs, resource packs, skin packs and world templates** quickly.
--   bridge. will create all files necessary for your packs to show in Minecraft, and additonal files including a [project config](/guide/misc/project-config), to allow for compatibility with other tools.
+-   bridge. will create all files necessary for your packs to show in Minecraft, and additional files including a [project config](/guide/misc/project-config), to allow for compatibility with other tools.
 -   If you [link bridge. to your com.mojang folder](/guide/misc/com-mojang-syncing/), your projects will automatically sync to Minecraft.
 
 ![screenshot showing the project creation window](./project-creation.png)
