@@ -47,6 +47,10 @@ bridge. v2 additionally loads all behavior packs (and connected resource packs) 
 
 ![Screenshot of bridge.'s project chooser showing the com.mojang project badge.](./com-mojang-badge.png)
 
+:::tip
+There is a setting to enable/disable automatic loading of projects from your `com.mojang` folder. Make sure that you have enabled this setting in order for your `com.mojang` projects to appear within the project chooser.
+:::
+
 ## Open Folder or File
 
 You can also drag any file or folder onto bridge. to start editing it. This is ideal for making quick edits to a project without having to manually import it. Thanks to bridge.'s excellent file type guessing, you will get the full auto-completion, syntax highlighting, and file validation experience you come to expect from regular bridge. projects.

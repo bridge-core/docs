@@ -30,7 +30,7 @@ Once you have opened this menu, it is as simple as selecting the format that you
 When exporting your project into a format that should be imported to Minecraft, [Dash](/guide/advanced/dash/index) will compile a production build and it will be written to the exported package.
 
 :::tip
-You configure bridge. to automatically increment the pack versions inside of each manifest in your project when exporting them. You can do this by navigating to bridge.'s settings, then going to the **Projects** tab and toggling the **Increment Version** option.
+You can configure bridge. to automatically increment the pack versions inside of each manifest in your project when exporting them. You can do this by navigating to bridge.'s settings, then going to the **Projects** tab and toggling the **Increment Version** option.
 :::
 
 bridge. extensions can also add new project export options by utilizing the [`@bridge/project` module](/extensions/scripts/project).
