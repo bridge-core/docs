@@ -16,8 +16,7 @@ If you are using bridge. v2 on a mobile device or unsupported browser, you canno
 
 ## bridge. Folder
 
-This is the recommended way to work on an Add-On project. bridge. will place the project within your bridge. folder and [sync your packs](/guide/misc/com-mojang-syncing/) to your `com.mojang`'s "development_behavior_packs" and "development_resource_packs" folders.
-whenever you make changes.
+This is the recommended way to work on an Add-On project. bridge. will place the project within your bridge. folder and [sync your packs](/guide/misc/com-mojang-syncing/) to your `com.mojang`'s "development_behavior_packs" and "development_resource_packs" folders whenever you make changes.
 
 ## Local Project
 
