@@ -7,7 +7,7 @@ nav_order: 0
 
 # ⬇️ Download
 
-This article aims to explain to you how you can download and install bridge. v2 to your computer.
+This article aims to explain to you how you can download and install bridge. v2 to your device.
 After reading it, you should know...
 
 :ballot_box_with_check: Which devices support bridge. v2.<br/>
