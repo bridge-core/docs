@@ -84,7 +84,19 @@ The project structure that bridge. generally follows is the following:
 In the [project config](/guide/misc/project-config.html#packs) you can modify the paths of the behavior pack, resource pack, skin pack and world template, with the `packs` property.
 :::
 
+## Creating Files
+
+TODO
+
+## Editing Files
+
+TODO
+
 ## Need Help?
 
 If you have more questions about bridge., or creating Add-Ons, feel free to ask in the [official bridge. Discord server](https://discord.gg/jj2PmqU). Also, check out our [community page](/guide/community) for more useful links.
 
+
+:::tip
+Now that you've covered the basics, why don't you check out bridge.'s powerful [extension API](/extensions/index)!
+:::
