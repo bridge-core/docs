@@ -11,7 +11,7 @@ Whether you are a newcomer to bridge., or to Add-Ons as a whole, this guide will
 
 In this guide, you will learn:
 
-:ballot_box_with_check: How to set up a bridge.<br/>
+:ballot_box_with_check: How to set up bridge.<br/>
 :ballot_box_with_check: How to set up a project.<br/>
 :ballot_box_with_check: How to get started with creating an Add-On with bridge.<br/>
 
