@@ -49,43 +49,46 @@ In this menu, you should input the details of the project that you are creating.
 
 ### 🔧 Pack Types
 
-TODO
+The packs that you add to your project will define the capabilities of your project. An Add-On generally consists of a behavior and resource packs, while full maps, or marketplace products may require behavior packs, resource packs, skin packs and world templates all together. Generally, behavior packs are server sided and resource packs are client side.
 
 ### 🧪 Experimental Gameplay
 
-TODO
+Experimental gameplay features are specific subsets of features that are locked behind a world toggle in game. bridge. mimics these toggles in the [project config](/guide/misc/project-config), in order to prevent you from using features that your project shouldn't be. For example, most marketplace products don't allow any experimental features, so having these disable in bridge. will stop you from using them in the project.
 
 ### 📃 Individual Files
 
-TODO
+Upon creating your project, bridge. will always generate a `manifest.json` and `pack_icon.png` file in each pack. However, here you can configure additional files to be added to your project auomatically, that are single instance files (only one is needed in a project), for example, the `sounds.json` and `terrain_textures.json` files..
 
 ### 🖊️ Name
 
-TODO
+The name of your project, should be a short title to describe the project. It is used in bridge.'s UI and Minecraft, to identify your pack.
 
 ### ✏️ Description
 
-TODO
+The description should be a more detailed explanation of the project. This input can be left blank and changed in the project config at a later time.
 
 ### 🖼️ Icon
 
-TODO
+Optionally, you can add an icon to represent your project. This will be automatically set to bridge.'s logo if you don't set one yourself.
 
 ### 👷 Author
 
-TODO
+This field is important for specifiying who is making the project. This will be added to the manifest's metadata and shown inside of bridge.
 
 ### 🆔 Namespace
 
-TODO
+The namespace is important, as it keeps the identifiers in your project unique. It should be short, in `snake_case` and be unique to your project. It also can not be one of the reserved `minecraft` or `minecon` namespaces. The namespace is the bit at the start of an identifier, for example the `minecraft:` bit in `minecraft:apple`.
 
 ### 🎯 Project Target Version
 
-TODO
+It is important that you set the project target version to whatever Minecraft version that you are developing for; this will stop you from using features that may not be in your version yet (introduced in a preview version), or stop you from using old features and syntax. You can update this in your project config, if for example, a major Minecraft update releases during development, or a new preview releases.
 
 ### ⚙️ Additional Toggles
 
-TODO
+There are a couple of miscellaneous toggles that you can enable or disable in your project.
+
+- Whether to add the pack name and description directly to the manifest. If you do this, the pack name and description will not be translatable to other languages through lang files.
+- Whether the pack is designed for Bedrock Dedicated Servers. This is used do decide whether the `mojang-net` and `mojang-minecraft-server-admin` modules should be available in GameTest scripts.
 
 :::warning
 Do not forget to scroll down in the project creation window, as you may miss some inputs!
@@ -113,7 +116,7 @@ In the [project config](/guide/misc/project-config.html#packs) you can modify th
 
 bridge. supports creating **all** files that Minecraft supports. You can create a file in your behavior Pack, resource pack, skin pack or world template by either clicking the new file button, pressing `ctrl + n`, or right clicking a folder and creating a file in the context menu.
 
-![Screenshot of create file button](TODO)
+![Screenshot of create file button](./getting-started/new-file-button.png)
 
 Doing this will open the new file window. Here you will see a sidebar in the window which lets you select from all of the possible files you can create.
 
@@ -126,10 +129,10 @@ bridge.'s preset window, by default, contains multiple categories:
 -   Block - Templates for different types of blocks.
 -   Entity - Templates for different types of entites.
 -   Item - Templates for different types of items.
--   Simple Files - Allows you to create individual files.
--   Skins - Allows you to add skins to the skin pack.
+-   Simple Files - Allows you to create templates of individual files.
+-   Skins - Allows you to add skins to a skin pack.
 
-![Screenshot of preset window](TODO)
+![Screenshot of preset window](./getting-started/preset-window.png)
 
 Once you have selected a preset to create, you will see that you need to input an identifier/file name and possibly other inputs depending on the type of file you are trying to create.
 
@@ -147,13 +150,13 @@ When you open a JSON file with bridge., it will open in either a code view edito
 
 The text view editor is a more traditional way of editing, giving you access to typing whatever you want in the file. It is a similar editing experience to VSCode but with all of the other amazing tools and features that bridge. has to offer.
 
-![Screenshot of text editor](TODO)
+![Screenshot of text editor](./getting-started/text-editor.png)
 
 #### Tree Editor
 
-Similar to the editor featured in bridge. v1, the tree editor is recommended for users that have little knowledge of JSON because you can't make syntax errors.
+Similar to the editor featured in bridge. v1, the tree editor is recommended for users that have little knowledge of JSON because you can't make syntax errors. The tree editor has an option for **bridge. predictions**. This is a feature that is enabled by default that makes the editing experience even simpler by reducing the number of inputs to 2 from 3 and using our editor data to guess whether the value you are adding should be an object or value. This can always be disabled in bridge.'s settings.
 
-![Screenshot of tree editor](TODO)
+![Screenshot of tree editor](./getting-started/tree-editor.png)
 
 ### Other file types
 
@@ -161,9 +164,13 @@ bridge. also supports opening and editing other file types, including:
 
 ### .mcfunction
 
-![Screenshot of a .mcfunction being edited](TODO)
+Function files have dynamic auto-completions, as well as support for command selector arguments and the latest commands!
+
+![Screenshot of a .mcfunction being edited](./getting-started/function-editing.png)
 
 ### .ts
+
+TypeScript and JavaScript files are both supported by bridge. with types for GameTest scripts and custom bridge. scripts, all for the best experience possible.
 
 ![Screenshot showing a GameTest script being edited in TypeScript](TODO)
 
@@ -177,7 +184,7 @@ bridge. includes "Go To Definition" data to allow you quickly jump between files
 
 For example:
 
-![Screenshot of go to definition in use](./getting-started-13.png)
+![Screenshot of go to definition in use]()
 
 Here, the entity behavior file with a matching identifier to the opened spawn rule has been found.
 
