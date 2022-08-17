@@ -172,7 +172,7 @@ Function files have dynamic auto-completions, as well as support for command sel
 
 TypeScript and JavaScript files are both supported by bridge. with types for GameTest scripts and custom bridge. scripts, all for the best experience possible.
 
-![Screenshot showing a GameTest script being edited in TypeScript](TODO)
+![Screenshot showing a GameTest script being edited in TypeScript](./getting-started/script-editing.png)
 
 ## Unique editing features
 
@@ -184,9 +184,9 @@ bridge. includes "Go To Definition" data to allow you quickly jump between files
 
 For example:
 
-![Screenshot of go to definition in use]()
+![Screenshot of go to definition in use](./getting-started/go-to-definition.png)
 
-Here, the entity behavior file with a matching identifier to the opened spawn rule has been found.
+Here, after clicking the "Go To Definition" option, it opens the geometry file with the matching identifier.
 
 ### Custom Syntax
 
@@ -206,7 +206,7 @@ bridge. features an extension API which allows you to customize UI add new tab t
 
 You can either [create your own extensions](/extensions/index) or download extensions made by other creators from the extension store. This can be found by clicking the **Extensions** button on the sidebar (a jigsaw icon). From here you can download from a collection of extensions to modify and enhance your experience with bridge.
 
-![Screenshot of the extension store](TODO)
+![Screenshot of the extension store](./getting-started/extension-store.png)
 
 ## Need Help?
 
