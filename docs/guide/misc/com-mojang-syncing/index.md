@@ -36,11 +36,13 @@ Simply press the "Output Folder" option to set this as Dash's compilation output
 
 ## Fetch for Changes
 
-TODO
+Sometimes you will need to edit files in your project from outside of bridge. In order for these external changes to be picked up by bridge. and compiled to your `com.mojang` folder, you will need to refresh the project to fetch the changes. The option to do this is found in the pacik explorer context menu, as shown below.
+
+![Screenshot of the "Refresh Project" option in the pack explorer context menu](./refresh-project.png)
 
 ## Restart Watch Mode
 
-If for any reason bridge. hasn't compiled your entire pack correctly, there's an option to force a full dev mode compilation called "Restart Watch Mode".
+If for any reason bridge. hasn't compiled your entire pack correctly and your changes aren't showing up correctly in game, there's an option to force a full dev mode compilation called "Restart Watch Mode".
 
 This can be found in the compiler window or quickly in the pack explorer context menu, as shown in the screenshot below.
 
