@@ -30,7 +30,7 @@ You can quickly access this by pressing `Windows Key + R` and pasting the follow
 
 Once you have located this folder, all you need to do is drag it from the file explorer onto bridge. Then you should see the following choice prompt.
 
-![Screenshot of import folder window](TODO)
+![Screenshot of import folder window](./import-folder.png)
 
 Simply press the "Output Folder" option to set this as Dash's compilation output directory. You packs will now automatically update in Minecraft's development folders when you make a change in bridge.
 
