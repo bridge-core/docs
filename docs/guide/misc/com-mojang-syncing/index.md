@@ -28,7 +28,7 @@ The `com.mojang` folder, on windows, desktop (currently only platform that suppo
 You can quickly access this by pressing `Windows Key + R` and pasting the following `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
 :::
 
-Once you have located this folder, all you need to do is drag it from the file explorer onto bridge. Then you should see the following choice prompt.
+Once you have located this folder, all you need to do is drag it from the file explorer onto bridge. at any time. Then you should see the following choice prompt:
 
 ![Screenshot of import folder window](./import-folder.png)
 
@@ -36,4 +36,12 @@ Simply press the "Output Folder" option to set this as Dash's compilation output
 
 ## Fetch for Changes
 
+TODO
+
 ## Restart Watch Mode
+
+If for any reason bridge. hasn't compiled your entire pack correctly, there's an option to force a full dev mode compilation called "Restart Watch Mode".
+
+This can be found in the compiler window or quickly in the pack explorer context menu, as shown in the screenshot below.
+
+![Screenshot of the "Restart Watch Mode" option in the pack explorer context menu](./restart-watch-mode.png)
