@@ -20,6 +20,7 @@ export default defineConfig({
 	title: 'bridge.',
 	description: 'The IDE for Minecraft Add-Ons',
 	lastUpdated: true,
+	ignoreDeadLinks: true,
 
 	head: [
 		[
