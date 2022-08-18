@@ -29,10 +29,10 @@ bridge. loads custom commands from the `commands/` folder within your behavior p
 
 You can install custom commands from bridge.'s [extension store](/extensions/#installing-extensions) if you do not feel confident in writing your own custom commands.
 
-## Usage
+<!-- ## Usage
 
 TODO: Explain how to use a custom command
 
 ## Writing Custom commands
 
-TODO: Explain how to write custom commands
+TODO: Explain how to write custom commands -->

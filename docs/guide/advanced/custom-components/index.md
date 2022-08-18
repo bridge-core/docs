@@ -30,10 +30,10 @@ Custom components are loaded from the `components/` folder within your behavior 
 
 If you do not feel confident in writing your own custom components, you can install pre-written components from bridge.'s [extension store](/extensions/#installing-extensions). Simply select the "components" tab within the sidebar and choose the component you need.
 
-## Usage
+<!-- ## Usage
 
 TODO: Explain how to use a custom component
 
 ## Writing Custom Components
 
-TODO: Explain how to write custom components
+TODO: Explain how to write custom components -->
