@@ -21,7 +21,7 @@ A `.brproject` file is bridge's internal format for sharing a full project. They
 
 ## `com.mojang`
 
-bridge. will [automatically load projects from the `com.mojang` folder](/guide/misc/project-types/index.html#com-mojang-project) and show them in the project chooser. It isn't recommended to import your projects this way, but if you want to edit your files directly in the `com.mojang` folder, you can.
+bridge. will automatically load projects from the `com.mojang` folder and show them in the project chooser. It isn't recommended to import your projects this way, but if you want to edit your files directly in the `com.mojang` folder, you can. [You can learn more about this feature here](/guide/misc/project-types/index.html#com-mojang-project).
 
 ## Manually transferring projects
 
