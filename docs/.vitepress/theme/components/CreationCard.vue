@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { withBase } from 'vitepress'
-import VPButton from 'vitepress/client/theme-default/components/VPButton.vue'
+import VPButton from './VPButton.vue'
 import authors from '../../../data/authors.json'
 
 export interface ICreation {
