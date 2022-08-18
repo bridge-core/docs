@@ -43,7 +43,7 @@ In order to get started with creating a snippet, you need to set up a valid [ext
 
 Inside of this `snippets` folder we will create a new file for each snippet. Our example snippet here will be called `exampleSnippet.json` for simplicity.
 
-```{3}
+```text{3}
 .
 ├─ 📁 snippets
 │  └─ 📝 exampleSnippet.json
@@ -64,9 +64,7 @@ In our new snippet file, we will write the following:
 	],
 	"data": {
 		"minecraft:damage_sensor": {
-			"triggers": [
-				{ "deals_damage": false }
-			]
+			"triggers": [{ "deals_damage": false }]
 		}
 	}
 }
@@ -74,9 +72,9 @@ In our new snippet file, we will write the following:
 
 Now let's go through the different fields that we have used here:
 
-- The [`name`](/extensions/snippets/documentation.html#name) and [`description`](/extensions/snippets/documentation.html#description) fields are used to tell bridge. how both the text and tree editor should display your snippet within auto-completions.
-- [`fileTypes`](/extensions/snippets/documentation.html#filetypes) and [`locations`](/extensions/snippets/documentation.html#locations) tell bridge. where your snippet is allowed to be inserted into a file.
-- [`data`](/extensions/snippets/documentation.html#data) defines what data to insert into the file when the snippet is used.
+-   The [`name`](/extensions/snippets/documentation.html#name) and [`description`](/extensions/snippets/documentation.html#description) fields are used to tell bridge. how both the text and tree editor should display your snippet within auto-completions.
+-   [`fileTypes`](/extensions/snippets/documentation.html#filetypes) and [`locations`](/extensions/snippets/documentation.html#locations) tell bridge. where your snippet is allowed to be inserted into a file.
+-   [`data`](/extensions/snippets/documentation.html#data) defines what data to insert into the file when the snippet is used.
 
 :::tip
 Make sure to read through our detailed [snippet documentation](/extensions/snippets/documentation)!

@@ -32,7 +32,7 @@ Once you have a valid extension set up, you can begin by creating a `presets` fo
 
 Inside of this `presets` folder create a folder for your first preset. Here, our example preset will be a simple entity preset. Therfore, we will create a folder called `simpleEntity` in the `presets` folder.
 
-```{3}
+```txt{3}
 .
 ├─ 📁 presets
 │  └─ 📁 simpleEntity
@@ -42,7 +42,7 @@ Inside of this `presets` folder create a folder for your first preset. Here, our
 
 Every preset needs a `manifest.json` file in order to tell bridge. what inputs to take from the user and then how to create these files from the user input. The manifest should be created in the root of your preset's folder.
 
-```{4}
+```txt{4}
 .
 ├─ 📁 presets
 │  ├─ 📁 simpleEntity
@@ -53,41 +53,45 @@ In this file we will write the following:
 
 ```json
 {
-    "name": "Simple Entity",
-    "description": "Creates a new simple entity.",
+	"name": "Simple Entity",
+	"description": "Creates a new simple entity.",
 	"icon": "mdi-minecraft",
-    "category": "fileType.entity",
-    "requires": {
-        "packTypes": ["behaviorPack", "resourcePack"]
-    },
-    "fields": [
-        [
+	"category": "fileType.entity",
+	"requires": {
+		"packTypes": ["behaviorPack", "resourcePack"]
+	},
+	"fields": [
+		[
 			"Identifier",
 			"IDENTIFIER",
 			{ "validate": ["required", "alphanumeric", "lowercase"] }
 		]
-    ],
-    "createFiles": [
-        [
+	],
+	"createFiles": [
+		[
 			"entity.json",
 			"entities/{{IDENTIFIER}}.json",
-			{ "inject": ["IDENTIFIER", "PROJECT_PREFIX"], "openFile": true, "packPath": "behaviorPack" }
+			{
+				"inject": ["IDENTIFIER", "PROJECT_PREFIX"],
+				"openFile": true,
+				"packPath": "behaviorPack"
+			}
 		],
 		[
 			"clientEntity.json",
 			"entity/{{IDENTIFIER}}.json",
 			{ "inject": ["IDENTIFIER"], "packPath": "resourcePack" }
 		]
-    ]
+	]
 }
 ```
 
 This is quite a lot to understand so lets break this down a little.
 
-- [`name`](/extensions/presets/manifest/index.html#name), [`description`](/extensions/presets/manifest/index.html#description), [`icon`](/extensions/presets/manifest/index.html#icon) and [`category`](/extensions/presets/manifest/index.html#category) are strings that tell bridge. how to display the preset in the **New File** window.
-- [`requires`](/extensions/presets/manifest/index.html#requires) gives bridge a set of conditions that need to be true in the current project for the preset to be enabled.
-- [`fields`](/extensions/presets/manifest/index.html#fields) defines a list of inputs to show in the **New File** window when creating the preset.
-- [`createFiles`](/extensions/presets/manifest/index.html#createfiles) provides bridge. a list of files to copy from your preset's folder to the user's project when the preset is created.
+-   [`name`](/extensions/presets/manifest/index.html#name), [`description`](/extensions/presets/manifest/index.html#description), [`icon`](/extensions/presets/manifest/index.html#icon) and [`category`](/extensions/presets/manifest/index.html#category) are strings that tell bridge. how to display the preset in the **New File** window.
+-   [`requires`](/extensions/presets/manifest/index.html#requires) gives bridge a set of conditions that need to be true in the current project for the preset to be enabled.
+-   [`fields`](/extensions/presets/manifest/index.html#fields) defines a list of inputs to show in the **New File** window when creating the preset.
+-   [`createFiles`](/extensions/presets/manifest/index.html#createfiles) provides bridge. a list of files to copy from your preset's folder to the user's project when the preset is created.
 
 :::tip
 Don't forget to check out our more detailed [preset manifest documentation](/extensions/presets/manifest/).
