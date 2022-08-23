@@ -328,6 +328,29 @@ This plugin powers [custom Molang files](/guide/advanced/molang-files/). You can
 
 This plugin needs to be active in order to use [generator scripts](/guide/advanced/generator-scripts/).
 
+```json
+[
+	"molang",
+	{
+		/**
+		 * Allows you to exclude certain JavaScript and TypeScript files
+		 * from being detected as generator scripts
+		 *
+		 * Excluded by default:
+		 * - "gameTest"
+		 * - "customCommand"
+		 * - "customComponent"
+		 * - "molangAstScript"
+		 */
+		"ignoredFileTypes": ["myCustomScriptType"]
+	}
+]
+```
+
+:::tip
+You can find a list of all of bridge.'s default file types [here](/extensions/misc/file-types).
+:::
+
 ### formatVersionCorrection
 
 This plugin is used by bridge. to make format versions work within JSON files that Minecraft normally does not accept.
