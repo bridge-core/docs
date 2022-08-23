@@ -18,28 +18,27 @@ You can find all of bridge.'s default file type identifiers below.
 
 ### BP
 
-| File Type ID          | Path                     |
-| --------------------- | ------------------------ |
-| `animation`           | BP/animations            |
-| `animationController` | BP/animation_controllers |
-| `biome`               | BP/biomes                |
-| `block`               | BP/blocks                |
-| `dialogue`            | BP/dialogue              |
-| `dimension`           | BP/dimensions            |
-| `entity`              | BP/entities              |
-| `feature`             | BP/features              |
-| `featureRule`         | BP/feature_rules         |
-| `function`            | BP/functions             |
-| `gameTest`            | BP/scripts               |
-| `item`                | BP/items                 |
-| `lootTable`           | BP/loot_tables           |
-| `langDef`             | BP/texts/languages.json  |
-| `lang`                | BP/texts                 |
-| `mcstructure`         | BP/structures            |
-| `recipe`              | BP/recipes               |
-| `spawnRule`           | BP/spawn_rules           |
-| `tradeTable`          | BP/trading               |
-| `volume`              | BP/volumes               |
+| File Type ID          | Path                      |
+| --------------------- | ------------------------- |
+| `animation`           | BP/animations/            |
+| `animationController` | BP/animation_controllers/ |
+| `biome`               | BP/biomes/                |
+| `block`               | BP/blocks/                |
+| `dialogue`            | BP/dialogue/              |
+| `dimension`           | BP/dimensions/            |
+| `entity`              | BP/entities/              |
+| `feature`             | BP/features/              |
+| `featureRule`         | BP/feature_rules/         |
+| `function`            | BP/functions/             |
+| `gameTest`            | BP/scripts/               |
+| `item`                | BP/items/                 |
+| `lootTable`           | BP/loot_tables/           |
+| `lang`                | BP/texts/                 |
+| `mcstructure`         | BP/structures/            |
+| `recipe`              | BP/recipes/               |
+| `spawnRule`           | BP/spawn_rules/           |
+| `tradeTable`          | BP/trading/               |
+| `volume`              | BP/volumes/               |
 
 ### Single Instance BP Files
 
@@ -51,22 +50,22 @@ You can find all of bridge.'s default file type identifiers below.
 
 ### RP
 
-| File Type ID                | Path                               |
-| --------------------------- | ---------------------------------- |
-| `attachable`                | RP/attachables                     |
-| `clientAnimation`           | RP/animations                      |
-| `clientAnimationController` | RP/animation_controllers           |
-| `clientEntity`              | RP/entity                          |
-| `clientItem`                | RP/items                           |
-| `clientLang`                | RP/texts                           |
-| `fog`                       | RP/fogs                            |
-| `geometry`                  | RP/models/entity, RP/models/blocks |
-| `material`                  | RP/materials                       |
-| `particle`                  | RP/particles                       |
-| `renderController`          | RP/render_controllers              |
-| `texture`                   | RP/textures                        |
-| `textureSet`                | RP/textures/blocks                 |
-| `ui`                        | RP/ui                              |
+| File Type ID                | Path                                 |
+| --------------------------- | ------------------------------------ |
+| `attachable`                | RP/attachables/                      |
+| `clientAnimation`           | RP/animations/                       |
+| `clientAnimationController` | RP/animation_controllers/            |
+| `clientEntity`              | RP/entity/                           |
+| `clientItem`                | RP/items/                            |
+| `clientLang`                | RP/texts/                            |
+| `fog`                       | RP/fogs/                             |
+| `geometry`                  | RP/models/entity/, RP/models/blocks/ |
+| `material`                  | RP/materials/                        |
+| `particle`                  | RP/particles/                        |
+| `renderController`          | RP/render_controllers/               |
+| `texture`                   | RP/textures/                         |
+| `textureSet`                | RP/textures/blocks/                  |
+| `ui`                        | RP/ui/                               |
 
 ### Single Instance RP Files
 
@@ -88,7 +87,7 @@ You can find all of bridge.'s default file type identifiers below.
 
 | File Type ID   | Path             |
 | -------------- | ---------------- |
-| `lang`         | SP/texts         |
+| `lang`         | SP/texts/        |
 | `skinManifest` | SP/manifest.json |
 | `skins`        | SP/skins.json    |
 
@@ -96,17 +95,18 @@ You can find all of bridge.'s default file type identifiers below.
 
 | File Type ID    | Path             |
 | --------------- | ---------------- |
-| `volume`        | WT/volumes       |
+| `volume`        | WT/volumes/      |
 | `worldManifest` | WT/manifest.json |
 
 ### Custom bridge. Files
 
-| File Type Id        | Path                                    |
-| ------------------- | --------------------------------------- |
-| `customComponent`   | BP/components                           |
-| `bridgeConfig`      | config.json                             |
-| `customCommand`     | BP/commands                             |
-| `molang`            | BP/molang, BP/scripts/molang, RP/molang |
-| `extensionManifest` |                                         |
-| `presetManifest`    |                                         |
-| `theme`             |                                         |
+| File Type Id        | Path                   |
+| ------------------- | ---------------------- |
+| `customComponent`   | BP/components/         |
+| `bridgeConfig`      | config.json            |
+| `customCommand`     | BP/commands/           |
+| `molang`            | BP/molang/, RP/molang/ |
+| `extensionManifest` |                        |
+| `presetManifest`    |                        |
+| `theme`             |                        |
+| `molangAstScript`   | BP/scripts/molang/     |
