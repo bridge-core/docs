@@ -29,7 +29,7 @@ console.log(`Current Bridge Version: ${APP_VERSION}`);
 ---
 
 ### isNightlyBuild
-The `isNightlyBuild` variable gets the version of bridge wether it is nightly build or not.
+The `isNightlyBuild` variable gets the version of bridge whether it is nightly build or not.
 
 - Signature: `isNightlyBuild`
 - Returns: `boolean`

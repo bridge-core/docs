@@ -18,7 +18,7 @@ import { ... } from "@bridge/com-mojang";
 ## 💼 Variables
 
 ### setup
-States wether [com.mojang](/guide/misc/com-mojang-syncing/index.html) has been setup by the user.
+States whether [com.mojang](/guide/misc/com-mojang-syncing/index.html) has been setup by the user.
 
 - Signature: `setup`
 - Returns: __`Signal`__<`void>`
