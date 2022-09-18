@@ -1,6 +1,6 @@
 ---
 title: "🏞️ @bridge/env"
-description: Utility module that provides access to environmental project data.
+description: Learn more about @bridge/env, a utility module that provides access to environmental project data.
 sidebar: scripts
 ---
 

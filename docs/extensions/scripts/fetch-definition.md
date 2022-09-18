@@ -1,6 +1,6 @@
 ---
 title: "🔗 @bridge/fetch-definition"
-description: Grants access to the lightning cache database.
+description: Learn more about the @bridge/fetch-definition module which grants access to the lightning cache database.
 sidebar: scripts
 ---
 

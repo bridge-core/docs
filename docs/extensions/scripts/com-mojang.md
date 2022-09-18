@@ -1,6 +1,6 @@
 ---
 title: "📂 @bridge/com-mojang"
-description: Module that allows access to the com.mojang folder
+description: Learn about the @bridge/com-mojang that allows you to access the com.mojang file system.
 sidebar: scripts
 ---
 
