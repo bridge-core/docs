@@ -18,10 +18,10 @@ import { ... } from '@bridge/env'
 ## 💼 Variables
 
 ### APP_VERSION
-The `APP_VERSION` variable gets the current version for bridge for example `"2.3.3"`.
 
-- Signature: `APP_VERSION`
-- Returns: `string`
+The `APP_VERSION` holds the string value of the current bridge. version.
+
+- Type: `string`
 
 ```js
 console.log(`Current bridge Version: ${APP_VERSION}`)
@@ -30,16 +30,14 @@ console.log(`Current bridge Version: ${APP_VERSION}`)
 ---
 
 ### isNightlyBuild
-The `isNightlyBuild` variable gets the version of bridge whether it is nightly build or not.
 
-- Signature: `isNightlyBuild`
-- Returns: `boolean`
+The `isNightlyBuild` represents a boolean value to whether the user is on bridge. nightly or not.
+
+- Type: `boolean`
 
 ```js
 if (isNightlyBuild) {
-    console.log('You are running bridge. nightly')
-} else {
-    console.log('You are running the release build of bridge.')
+    // Do something unique to nightly build, e.g. use a different color scheme
 }
 ```
 
@@ -47,35 +45,37 @@ if (isNightlyBuild) {
 
 ### getCurrentBP
 
-The `getCurrentBP` returns the folder path of the behaviour pack in the current [project](/guide/misc/project-types/index.html).
+This function returns the resolved path of the behavior pack in the user's current project.
 
 - Signature: `getCurrentBP()`
 - Returns: `string`
 
 ```js
 const bpPath = getCurrentBP()
-console.log(`Current Behaviour Pack Path: ${bpPath}`)
+// Can be used to read a file in the behavior pack
+const file = await readFile(`${bpPath}/test.json`)
 ```
 
 ---
 
 ### getCurrentRP
 
-The `getCurrentRP` returns the folder path of the resource pack in the current [project](/guide/misc/project-types/index.html).
+This function returns the resolved path of the resource pack in the user's current project.
 
 - Signature: `getCurrentRP()`
 - Returns: `string`
 
 ```js
 const rpPath = getCurrentRP()
-console.log(`Current Resource Pack Path: ${rpPath}`)
+// Can be used to read a file in the resource pack
+const file = await readFile(`${rpPath}/test.json`)
 ```
 
 ---
 
 ### getCurrentProject
 
-The `getCurrentProject` returns the folder path to the current [project](/guide/misc/project-types/index.html).
+The `getCurrentProject` function returns the path to the user's currently selected project folder.
 
 - Signature: `getCurrentProject()`
 - Returns: `string`
@@ -89,7 +89,7 @@ console.log(`Current Project: ${projectName}`)
 
 ### getProjectPrefix
 
-The `getCurrentPrefix` returns the set prefix of the current [project](/guide/misc/project-types/index.html).
+This returns the project prefix (or namespace), from the [project config](/guide/misc/project-config.html#namespace), in the user's selected project.
 
 - Signature: `getCurrentPrefix()`
 - Returns: `string | undefined`
@@ -121,10 +121,10 @@ const isValid = compareVersions(projectTargetVersion, '1.18.0', '>=')
 
 ### getProjectAuthors
 
-The `getProjectAuthors` function returns the [authors](/guide/misc/project-config.html#authors) of the current project.
+The `getProjectAuthors` function returns the [authors](/guide/misc/project-config.html#authors) of the current project. The return type can vary depending on the users config setup, so it could either be an array of string representing the names of the authors, or an array of objects with `name` and `logo` properties where `name` is the name of the author and `logo` is the path to an image that represents the author.
 
 - Signature: `getProjectAuthors()`
-- Returns: `(string | { name: string; logo?: string })[]`
+- Returns: `(string | { name: string; logo?: string })[] | undefined`
 
 ```js
 let firstAuthor = 'Unknown'
@@ -139,11 +139,14 @@ if (authors[0]) {
 
 ### resolvePackPath
 
-TODO
+This function is essential for correctly accessing the paths of files in the user's project. It returns a resolved path based on the [pack type id](/extensions/misc/pack-types) and path passed in. This will take into account the [pack paths](/guide/misc/project-config.html#packs) of the folder in the project config.
 
-- Signature: `resolvePackPath(packId?, filePath?)`
+- Signature: `resolvePackPath(packId?: TPackTypeId, filePath?: string)`
 - Returns: `string`
 
 ```js
-resolvePackPath()
+const entityFolder = resolvePackPath('resourcePack', 'entity')
+const cowFile = resolvePackPath('behaviorPack', 'entities/cow.json')
+
+const file = await readFile(cowFile)
 ```
