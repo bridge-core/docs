@@ -2,11 +2,6 @@
 title: "🔗 @bridge/fetch-definition"
 description: Grants access to the lightning cache database.
 sidebar: scripts
-
-actions:
-        - theme: brand
-          text: Open Editor
-          link: https://editor.bridge-core.app/
 ---
 
 # 🔗 @bridge/fetch-definition
