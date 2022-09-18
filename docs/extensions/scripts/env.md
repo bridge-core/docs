@@ -14,7 +14,7 @@ import { ... } from "@bridge/env";
 
 [[toc]]
 
-## 💼Variables
+## 💼 Variables
 
 ### APP_VERSION
 The `APP_VERSION` variable gets the current version for bridge for example `"2.3.3"`.
@@ -45,7 +45,7 @@ else
 }
 ```
 
-## ⚡Functions
+## ⚡ Functions
 
 ### getCurrentBP
 The `getCurrentBP` returns the folder path of the behaviour pack in the current [project](/guide/misc/project-types/index.html).

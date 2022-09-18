@@ -15,7 +15,7 @@ import { ... } from "@bridge/com-mojang";
 
 [[toc]]
 
-## 💼Variables
+## 💼 Variables
 
 ### setup
 States wether [com.mojang](/guide/misc/com-mojang-syncing/index.html) has been setup by the user.
@@ -30,7 +30,7 @@ if(setup.hasFired)
 }
 ```
 
-## ⚡Functions
+## ⚡ Functions
 
 ### requestFileSystem
 The `requestFileSystem` Returns the [com.mojang](/guide/misc/com-mojang-syncing/index.html) FileSystem instance.
