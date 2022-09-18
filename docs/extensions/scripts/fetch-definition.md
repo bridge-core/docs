@@ -21,7 +21,7 @@ import { ... } from '@bridge/fetch-definition'
 The `fetchDefinition` searches through the definitions `fetchDefs` in [`fileType`](/extensions/misc/file-types.html) files for `fetchSearch`.
 
 - Signature: `fetchDefinition`(`fileType`, `fetchDefs`, `fetchSearch`, `fetchAll?`)
-- Returns: `Promise`<`string[]`>
+- Returns: `Promise<string[]>`
 
 ```js
 const walkAnimations = await fetchDefinition(

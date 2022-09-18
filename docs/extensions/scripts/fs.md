@@ -42,7 +42,7 @@ TODO
 The `getDirectoryHandle` method returns a `FileSystemDirectoryHandle` for a subdirectory with the specified name within the directory handle on which the method is called.
 
 - Signature: `getDirectoryHandle(path,__namedParameters)`
-- Returns: `Promise`<`FileSystemDirectoryHandle`>
+- Returns: `Promise<FileSystemDirectoryHandle>`
 
 ```js
 getDirectoryHandle(); //I do not know what this does.

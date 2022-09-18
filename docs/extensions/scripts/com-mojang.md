@@ -21,7 +21,7 @@ import { ... } from "@bridge/com-mojang"
 States whether [com.mojang](/guide/misc/com-mojang-syncing/index.html) has been setup by the user.
 
 - Signature: `setup`
-- Returns: __`Signal`__<`void>`
+- Returns: `Signal<void>`
 
 ```js
 if (setup.hasFired) {
@@ -35,7 +35,7 @@ if (setup.hasFired) {
 The `requestFileSystem` Returns the [com.mojang](/guide/misc/com-mojang-syncing/index.html) FileSystem instance.
 
 - Signature: `requestFileSystem()`
-- Returns: `Promise`<`any`>
+- Returns: `Promise<any>`
 
 ```js
 const comMojangFs = await requestFileSystem()
