@@ -6,11 +6,11 @@ sidebar: scripts
 
 # 🔗 @bridge/fetch-definition
 
-Grants access to the lightning cache database.
+This module grants access to bridge.'s lightning cache database.
 [View Source Code](https://github.com/bridge-core/editor/blob/main/src/components/Extensions/Scripts/Modules/fetchDefinition.ts)
 
 ```js
-import { ... } from "@bridge/fetch-definition";
+import { ... } from '@bridge/fetch-definition'
 ```
 
 [[toc]]
@@ -24,17 +24,14 @@ The `fetchDefinition` searches through the definitions `fetchDefs` in [`fileType
 - Returns: `Promise`<`string[]`>
 
 ```js
-const { fetchDefinition } = await require('@bridge/fetch-definition');
-
 const walkAnimations = await fetchDefinition(
 	'animation',
 	['ids'],
 	'animation.walk',
 	false
-);
+)
 
-// With fetchAll=false you still get a string[] even though it only has one entry
-// => Consistency
+// With fetchAll = false you still get an array, but it will simply only contain one string
 const walkAnimation = walkAnimations[0];
 ```
 

@@ -8,8 +8,9 @@ sidebar: scripts
 
 Utility module that provides access to environmental project data.
 [View Source Code](https://github.com/bridge-core/editor/blob/main/src/components/Extensions/Scripts/Modules/env.ts)
+
 ```js
-import { ... } from "@bridge/env";
+import { ... } from '@bridge/env'
 ```
 
 [[toc]]
@@ -23,7 +24,7 @@ The `APP_VERSION` variable gets the current version for bridge for example `"2.3
 - Returns: `string`
 
 ```js
-console.log(`Current Bridge Version: ${APP_VERSION}`);
+console.log(`Current bridge Version: ${APP_VERSION}`)
 ```
 
 ---
@@ -35,100 +36,116 @@ The `isNightlyBuild` variable gets the version of bridge whether it is nightly b
 - Returns: `boolean`
 
 ```js
-if(isNightlyBuild)
-{
-    console.log("Bridge version is nightly build.");
-}
-else
-{
-    console.log("Bridge version is main build");
+if (isNightlyBuild) {
+    console.log('You are running bridge. nightly')
+} else {
+    console.log('You are running the release build of bridge.')
 }
 ```
 
 ## ⚡ Functions
 
 ### getCurrentBP
+
 The `getCurrentBP` returns the folder path of the behaviour pack in the current [project](/guide/misc/project-types/index.html).
 
 - Signature: `getCurrentBP()`
 - Returns: `string`
 
 ```js
-var BP = getCurrentBP();
-console.log(`Current Behaviour Pack Path: ${BP}`);
+const bpPath = getCurrentBP()
+console.log(`Current Behaviour Pack Path: ${bpPath}`)
 ```
 
 ---
+
 ### getCurrentRP
+
 The `getCurrentRP` returns the folder path of the resource pack in the current [project](/guide/misc/project-types/index.html).
 
 - Signature: `getCurrentRP()`
 - Returns: `string`
 
 ```js
-var RP = getCurrentRP();
-console.log(`Current Resource Pack Path: ${RP}`);
+const rpPath = getCurrentRP()
+console.log(`Current Resource Pack Path: ${rpPath}`)
 ```
 
 ---
+
 ### getCurrentProject
+
 The `getCurrentProject` returns the folder path to the current [project](/guide/misc/project-types/index.html).
 
 - Signature: `getCurrentProject()`
 - Returns: `string`
 
 ```js
-var Pack = getCurrentProject();
-console.log(`Current Project Pack Path: ${Pack}`);
+const projectName = getCurrentProject()
+console.log(`Current Project: ${projectName}`)
 ```
 
 ---
+
 ### getProjectPrefix
+
 The `getCurrentPrefix` returns the set prefix of the current [project](/guide/misc/project-types/index.html).
 
 - Signature: `getCurrentPrefix()`
 - Returns: `string | undefined`
 
 ```js
-var Prefix = getCurrentPrefix();
-console.log(`Current Project Prefix: ${Prefix}`);
+let itemName = 'minecraft:apple'
+const projectPrefix = getProjectPrefix()
+
+if (projectPrefix) itemName.replace('minecraft', projectPrefix)
 ```
 
 ---
+
 ### getProjectTargetVersion
-The `getProjectTargetVersion` returns the set [target version](/guide/misc/project-config.html#targetversion) of the current [project](/guide/misc/project-types/index.html) for example `"1.19.20"`.
+
+The `getProjectTargetVersion` returns the set [target version](/guide/misc/project-config.html#targetversion) of the current project, for example `"1.19.20"`.
 
 - Signature: `getProjectTargetVersion()`
 - Returns: `string | undefined`
 
 ```js
-var Version = getProjectTargetVersion();
-console.log(`Current Project Target Version: ${Version}`);
+const projectTargetVersion = getProjectTargetVersion()
+
+// From 'compareVersions' from @bridge/compare-versions module
+const isValid = compareVersions(projectTargetVersion, '1.18.0', '>=')
 ```
 
 ---
-### getProjectAuthor
-The `getProjectAuthor` returns the [authors](/guide/misc/project-config.html#authors) of the current [project](/guide/misc/project-types/index.html).
 
-- Signature: `getProjectAuthor()`
+### getProjectAuthors
+
+The `getProjectAuthors` function returns the [authors](/guide/misc/project-config.html#authors) of the current project.
+
+- Signature: `getProjectAuthors()`
 - Returns: `(string | { name: string; logo?: string })[]`
 
 ```js
-var Authors = getProjectAuthor();
-Authors.forEach(author => {
-    console.log(`Project Author: ${author}`);
-});
+let firstAuthor = 'Unknown'
+
+const authors = getProjectAuthors()
+if (authors[0]) {
+    firstAuthor = authors[0].author ?? authors[0]
+}
 ```
 
 ---
+
 ### resolvePackPath
-The `resolvePackPath` Is What I do not know
+
+TODO
 
 - Signature: `resolvePackPath(packId?, filePath?)`
-- Returns: `Something goes here`
+- Returns: `string`
 
 ```js
-resolvePackPath(); //IDK WHAT THIS DOES
+resolvePackPath()
 ```
 
 - Parameters
@@ -138,17 +155,4 @@ resolvePackPath(); //IDK WHAT THIS DOES
 |packId?  |string|
 |filePath?|string|
 
----
-### getContext
-getContext is deprecated
 
-- Signature: `getContext()`
-- Returns: `void`
-
-```js
-getContext();
-```
-
-::: danger Deprecated
-This function is deprecated
-:::

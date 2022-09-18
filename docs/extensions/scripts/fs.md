@@ -6,10 +6,10 @@ sidebar: scripts
 
 # 📄 @bridge/fs
 
-Utility module that provides access to environmental project data.
+This module allows extensions to interact with the file system, contained inside of the user's bridge. folder.
 [View Source Code](https://github.com/bridge-core/editor/blob/main/src/components/FileSystem/FileSystem.ts)
 ```js
-import { ... } from "@bridge/fs";
+import { ... } from '@bridge/fs'
 ```
 
 [[toc]]
@@ -17,13 +17,14 @@ import { ... } from "@bridge/fs";
 ## ⚡ Functions
 
 ### setup
-The `setup` function does idk.
+
+TODO
 
 - Signature: `setup(baseDirectory)`
 - Returns: `void`
 
 ```js
-setup(FileSystemDirectoryHandle);
+setup(FileSystemDirectoryHandle)
 ```
 
 - Parameters
@@ -35,6 +36,9 @@ setup(FileSystemDirectoryHandle);
 ---
 
 ### getDirectoryHandle
+
+TODO
+
 The `getDirectoryHandle` method returns a `FileSystemDirectoryHandle` for a subdirectory with the specified name within the directory handle on which the method is called.
 
 - Signature: `getDirectoryHandle(path,__namedParameters)`

@@ -6,11 +6,11 @@ sidebar: scripts
 
 # 📂 @bridge/com-mojang
 
-Module that allows access to the com.mojang folder.
+This module allows access to the com.mojang file system.
 [View Source Code](https://github.com/bridge-core/editor/blob/main/src/components/Extensions/Scripts/Modules/comMojang.ts)
 
 ```js
-import { ... } from "@bridge/com-mojang";
+import { ... } from "@bridge/com-mojang"
 ```
 
 [[toc]]
@@ -24,9 +24,8 @@ States whether [com.mojang](/guide/misc/com-mojang-syncing/index.html) has been 
 - Returns: __`Signal`__<`void>`
 
 ```js
-if(setup.hasFired)
-{
-    console.log("com.mojang linking has been setup");
+if (setup.hasFired) {
+    console.log("com.mojang linking has been setup")
 }
 ```
 
@@ -39,7 +38,9 @@ The `requestFileSystem` Returns the [com.mojang](/guide/misc/com-mojang-syncing/
 - Returns: `Promise`<`any`>
 
 ```js
-await requestFileSystem().then(element => {
-    element.ThisIsBroken.IHaveNoIdeaWhatIAmDoing;
-});
+const comMojangFs = await requestFileSystem()
+
+if (await comMojangFs.directoryExists('test')) {
+    console.log('The folder "test" exists in the com.mojang folder.')
+}
 ```
