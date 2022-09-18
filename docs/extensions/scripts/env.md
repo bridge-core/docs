@@ -111,7 +111,7 @@ console.log(`Current Project Target Version: ${Version}`);
 The `getProjectAuthor` returns the [authors](/guide/misc/project-config.html#authors) of the current [project](/guide/misc/project-types/index.html).
 
 - Signature: `getProjectAuthor()`
-- Returns: `string[] | undefined`
+- Returns: `(string | { name: string; logo?: string })[]`
 
 ```js
 var Authors = getProjectAuthor();
