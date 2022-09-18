@@ -7,7 +7,7 @@ sidebar: scripts
 # 🎨 @bridge/theme
 
 This allows your extension to interact with bridge.'s theme system.
-[View Source Code](https://github.com/bridge-core/editor/blob/dev/src/components/Extensions/Scripts/Modules/theme.ts).
+[View Source Code](https://github.com/bridge-core/editor/blob/main/src/components/Extensions/Scripts/Modules/theme.ts).
 
 ```js
 import { ... } from '@bridge/theme'
