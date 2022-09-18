@@ -18,17 +18,17 @@ import { ... } from '@bridge/fetch-definition'
 ## ⚡ Functions
 
 ### fetchDefinition
-The `fetchDefinition` searches through the definitions `fetchDefs` in [`fileType`](/extensions/misc/file-types.html) files for `fetchSearch`.
+The `fetchDefinition` function is used to search the lightning cache database, which bridge. uses to dynamically store data from a user's project.
 
-- Signature: `fetchDefinition`(`fileType`, `fetchDefs`, `fetchSearch`, `fetchAll?`)
+- Signature: `fetchDefinition(fileType: string, fetchDefs: string[], fetchSearch: string, fetchAll = false)`
 - Returns: `Promise<string[]>`
 
 ```js
 const walkAnimations = await fetchDefinition(
-	'animation',
-	['ids'],
-	'animation.walk',
-	false
+	'animation', // The file type to get the cache data from
+	['ids'], // The cache keys to be fetched
+	'animation.walk', // A string to filter the results by
+	false // Whether to get all defintions or just the first
 )
 
 // With fetchAll = false you still get an array, but it will simply only contain one string
