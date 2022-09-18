@@ -34,12 +34,3 @@ const walkAnimations = await fetchDefinition(
 // With fetchAll = false you still get an array, but it will simply only contain one string
 const walkAnimation = walkAnimations[0];
 ```
-
-- Parameters
-
-|Name       |Type    |
-|-----------|--------|
-|fileType   |string  |
-|fetchDefs  |string[]|
-|fetchSearch|string  |
-|fetchAll?  |boolean |

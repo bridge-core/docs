@@ -147,12 +147,3 @@ TODO
 ```js
 resolvePackPath()
 ```
-
-- Parameters
-
-|Name     |Type  |
-|---------|------|
-|packId?  |string|
-|filePath?|string|
-
-

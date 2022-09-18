@@ -27,12 +27,6 @@ TODO
 setup(FileSystemDirectoryHandle)
 ```
 
-- Parameters
-
-|Name         |Type              |
-|-------------|------------------|
-|baseDirectory|AnyDirectoryHandle|
-
 ---
 
 ### getDirectoryHandle
@@ -47,12 +41,3 @@ The `getDirectoryHandle` method returns a `FileSystemDirectoryHandle` for a subd
 ```js
 getDirectoryHandle(); //I do not know what this does.
 ```
-
-- Parameters
-
-|Name             |Type                      |
-|-----------------|--------------------------|
-|path             |string                    |
-|__namedParameters|Partial\<IGetHandleConfig `<-LINK THIS`>|
-
----
