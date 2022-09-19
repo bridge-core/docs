@@ -1,5 +1,5 @@
 ---
-title: "📄 @bridge/fs"
+title: 📄 @bridge/fs
 description: Learn about the @bridge/fs module that allows extensions to interact with the user's file system.
 sidebar: scripts
 ---

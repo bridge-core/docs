@@ -1,5 +1,5 @@
 ---
-title: "🏗️ @bridge/json5"
+title: 🏗️ @bridge/json5
 description: Learn about the @bridge/json5 module that gives access to json parsing wth json5.
 sidebar: scripts
 ---
