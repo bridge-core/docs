@@ -39,7 +39,7 @@ The `stringy` function converts a JavaScript object to a JSON string.
 
 ```js
 const jsonObj = {
-    Example: ExampleValue;
+    Example: ExampleValue
 };
 
 const ConvertedJson = stringify(jsonObj);
