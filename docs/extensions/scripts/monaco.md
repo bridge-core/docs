@@ -1,5 +1,5 @@
 ---
-title: "🔩 @bridge/monaco"
+title: 🔩 @bridge/monaco
 description: Learn about the @bridge/monaco module that allows you to modify monaco's behaviors.
 sidebar: scripts
 ---
