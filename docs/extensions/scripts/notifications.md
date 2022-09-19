@@ -21,7 +21,7 @@ import { ... } from '@bridge/notifications'
 
 The `create` function allows you to create notifications in bridge's notification system.
 
-- Signature: `create(config)`
+- Signature: `create(config: INotificationConfig)`
 - Returns: `any`
 
 ```js
@@ -47,7 +47,7 @@ create(
 
 The `create` function allows you to create a new error notification.
 
-- Signature: `createError(error)`
+- Signature: `createError(error: Error)`
 - Returns: `IDisposable`
 
 ```js
@@ -61,3 +61,28 @@ catch (error) {
     createError(error)
 }
 ```
+
+## 📟 Interfaces
+
+### INotificationConfig
+
+- Variables
+
+    - `id?: string`
+    - `icon?: string`
+    - `message?: string`
+    - `color?: string`
+    - `textColor?: string`
+    - `disposeOnMiddleClick?: boolean`
+    - `isVisible?: boolean`
+
+- Functions
+    - `onClick?: () => void`
+    - `onMiddleClick?: () => void`
+
+## 🧪 Types
+
+### ExampleType
+
+- Example Sub-Title
+    - Example

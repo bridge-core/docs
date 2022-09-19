@@ -18,6 +18,7 @@ import { ... } from '@bridge/fetch-definition'
 ## ⚡ Functions
 
 ### fetchDefinition
+
 The `fetchDefinition` function is used to search the lightning cache database, which bridge. uses to dynamically store data from a user's project.
 
 - Signature: `fetchDefinition(fileType: string, fetchDefs: string[], fetchSearch: string, fetchAll = false)`
