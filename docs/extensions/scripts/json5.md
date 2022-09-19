@@ -23,10 +23,10 @@ The `parse` function parses a string that is in JSON format to a JavaScript obje
 - Returns: `any`
 
 ```js
-const jsonStr = '{"Example":"Example Value"}';
+const jsonStr = '{"Example":"Example Value"}'
 
-const parsedJSON = parse(jsonStr);
-console.log(parseJSON.Example);
+const parsedJSON = parse(jsonStr)
+console.log(parseJSON.Example)
 ```
 
 ---
@@ -40,10 +40,10 @@ The `stringy` function converts a JavaScript object to a JSON string.
 ```js
 const jsonObj = {
     Example: ExampleValue
-};
+}
 
-const ConvertedJson = stringify(jsonObj);
-console.log(ConvertedJson);
+const ConvertedJson = stringify(jsonObj)
+console.log(ConvertedJson)
 ```
 
 ---

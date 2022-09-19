@@ -39,7 +39,7 @@ The `getDirectoryHandle` method returns a `FileSystemDirectoryHandle` for a subd
 - Returns: `Promise<FileSystemDirectoryHandle>`
 
 ```js
-getDirectoryHandle(); //I do not know what this does.
+getDirectoryHandle() //I do not know what this does.
 ```
 
 ### getFileHandle
@@ -63,7 +63,7 @@ TODO
 - Returns: `TODO`
 
 ```js
-pathTo(AnyHandle); //TODO
+pathTo(AnyHandle) //TODO
 ```
 
 ---
@@ -76,22 +76,22 @@ The `mkdir` function creates a new directory with the path that is specified.
 - Returns: `Promise<void>`
 
 ```js
-const currentProject = getCurrentProject(); //From @bridge/env
+const currentProject = getCurrentProject() //From @bridge/env
 
 //This checks if we have a project selected or not
 if(currentProject == "~local/projects/bridge-temp-project") {
     console.log("You do not have a project selected! Please select a project.")
 }
 else {
-    const rpPath = getCurrentRP(); //From @bridge/env
+    const rpPath = getCurrentRP() //From @bridge/env
 
     //Checks if the resource pack exists.
     if(await directoryExists(rpPath)) {
-        const dir = await mkdir(`${rpPath}/entities`); //Creates the directory inside of the resource pack.
-        console.log("Created directory");
+        const dir = await mkdir(`${rpPath}/entities`) //Creates the directory inside of the resource pack.
+        console.log("Created directory")
     }
     else {
-        console.log("Resource pack does not exist!");
+        console.log("Resource pack does not exist!")
     }
 }
 ```
@@ -99,7 +99,7 @@ else {
 ::: tip
 If you specify a path that does not exist with mkdir(). This will create the whole directory for example 
 ```js
-mkdir(`${rpPath}/entities/example`);
+mkdir(`${rpPath}/entities/example`)
 ```
 Will create the whole directory even if `entities` folder does not exist. This is the same for `rpPath` variable.
 :::
@@ -114,12 +114,12 @@ The `readdir` function reads all of the content within the given directory unles
 - Returns: `Promise<string[]>`
 
 ```js
-const rpPath = getCurrentRP(); //From @bridge/env
+const rpPath = getCurrentRP() //From @bridge/env
 
-const contents = await readdir(rpPath);
+const contents = await readdir(rpPath)
 contents.forEach(element => {
-    console.log(`Element: ${rpPath}/${element}`);
-});
+    console.log(`Element: ${rpPath}/${element}`)
+})
 ```
 
 ---
@@ -132,12 +132,12 @@ The `readFilesFromDir` function reads all of the content within the given direct
 - Returns: `Promise<{ kind: string ; name: string ; path: string }[]>`
 
 ```js
-const rpPath = getCurrentRP(); //From @bridge/env
+const rpPath = getCurrentRP() //From @bridge/env
 
-const contents = await readFilesFromDir(rpPath);
+const contents = await readFilesFromDir(rpPath)
 contents.forEach(element => {
-    console.log(`File Info:\nName: ${element.name}\nKind: ${element.kind}\nPath: ${element.path}`);
-});
+    console.log(`File Info:\nName: ${element.name}\nKind: ${element.kind}\nPath: ${element.path}`)
+})
 
 /*
 File Info:
@@ -157,10 +157,10 @@ The `readFile` function reads a file with the specified path and returns it.
 - Returns: `File`
 
 ```js
-const rpPath = getCurrentRP(); //From @bridge/env
+const rpPath = getCurrentRP() //From @bridge/env
 
-const file = await readFile(`rpPath/manifest.json`);
-console.log(await file.text());
+const file = await readFile(`rpPath/manifest.json`)
+console.log(await file.text())
 ```
 
 ---
@@ -209,10 +209,10 @@ The `readJSON` function reads a JSON file at a given path and returns the object
 - Returns: `Promise<Object>`
 
 ```js
-const rpPath = getCurrentRP(); //From @bridge/env
+const rpPath = getCurrentRP() //From @bridge/env
 
-const file = readJSON(`${rpPath}/manifest.json`);
-console.log(file.header.uuid);
+const file = readJSON(`${rpPath}/manifest.json`)
+console.log(file.header.uuid)
 ```
 
 ---
@@ -240,7 +240,7 @@ const objectData = {
     exampleKey: "example"
 }
 
-const file = writeJSON("example/example.json", objectData, true);
+const file = writeJSON("example/example.json", objectData, true)
 ```
 
 ---
@@ -333,13 +333,13 @@ This function checks if the file in the path specified exists.
 - Returns: `Promise<boolean>`
 
 ```js
-const exists = await fileExists("example/example.json");
+const exists = await fileExists("example/example.json")
 
 if(exists) {
-    console.log("File exists!");
+    console.log("File exists!")
 }
 else {
-    console.log("File doesn't exist!");
+    console.log("File doesn't exist!")
 }
 ```
 
@@ -352,13 +352,13 @@ This function checks if the specified directory exists.
 - Returns: `Promise<boolean>`
 
 ```js
-const exists = await fileExists("projects/example");
+const exists = await fileExists("projects/example")
 
 if(exists) {
-    console.log("Project exists!");
+    console.log("Project exists!")
 }
 else {
-    console.log("Project does not exist!");
+    console.log("Project does not exist!")
 }
 ```
 
