@@ -19,10 +19,10 @@ import { ... } from '@bridge/notifications'
 
 ### create
 
-The `create` function allows you to create notifications in bridge's notification system.
+The `create` function allows you to create notifications in bridge's notification system. This will show up in the sidebar.
 
-- Signature: `create(config: INotificationConfig)`
-- Returns: `any`
+- Signature: <code>create(config: <a href="#inotificationconfig">INotificationConfig</a>)</code>
+- Returns: `Notification`
 
 ```js
 create(
@@ -31,7 +31,6 @@ create(
     color: 'blue'
     textColor: 'white',
     disposeOnMiddleClick: true,
-    
     () => {
         // Do something...
         },
@@ -45,17 +44,17 @@ create(
 
 ### createError
 
-The `create` function allows you to create a new error notification.
+The `create` function allows you to create a new error notification. This will show up in the sidebar.
 
 - Signature: `createError(error: Error)`
 - Returns: `IDisposable`
 
 ```js
-createError(new Error(`Oops, something went wrong :(`))
+createError(new Error('Oops, something went wrong :('))
 
 try {
     const t = 0
-    t = 2 //Throws error
+    t = 2 // Throws error, can't reassign constant
 } 
 catch (error) {
     createError(error)
@@ -66,24 +65,17 @@ catch (error) {
 
 ### INotificationConfig
 
-- Variables
+```ts
+export interface INotificationConfig {
+	id?: string
+	icon?: string
+	message?: string
+	color?: string
+	textColor?: string
+	disposeOnMiddleClick?: boolean
+	isVisible?: boolean
 
-    - `id?: string`
-    - `icon?: string`
-    - `message?: string`
-    - `color?: string`
-    - `textColor?: string`
-    - `disposeOnMiddleClick?: boolean`
-    - `isVisible?: boolean`
-
-- Functions
-
-    - `onClick?: () => void`
-    - `onMiddleClick?: () => void`
-
-## 🧪 Types
-
-### ExampleType
-
-- Example Sub-Title
-    - Example
+	onClick?: () => void
+	onMiddleClick?: () => void
+}
+```
