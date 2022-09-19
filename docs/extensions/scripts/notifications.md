@@ -77,6 +77,7 @@ catch (error) {
     - `isVisible?: boolean`
 
 - Functions
+
     - `onClick?: () => void`
     - `onMiddleClick?: () => void`
 
