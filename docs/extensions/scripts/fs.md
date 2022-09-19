@@ -21,11 +21,11 @@ import { ... } from '@bridge/fs'
 
 TODO
 
-- Signature: `setup(baseDirectory)`
+- Signature: `setup(baseDirectory: AnyDirectoryHandle)`
 - Returns: `void`
 
 ```js
-setup(FileSystemDirectoryHandle)
+setup(FileSystemDirectoryHandle) // TODO
 ```
 
 ---
@@ -34,21 +34,21 @@ setup(FileSystemDirectoryHandle)
 
 TODO
 
-The `getDirectoryHandle` method returns a `FileSystemDirectoryHandle` for a subdirectory with the specified name within the directory handle on which the method is called.
+The `getDirectoryHandle` method returns a directory handle for a subdirectory with the specified path within the directory handle on which the method is called (or base handle of the file system).
 
-- Signature: `getDirectoryHandle(path,__namedParameters)`
-- Returns: `Promise<FileSystemDirectoryHandle>`
+- Signature: `getDirectoryHandle(path: string, config: Partial<IGetHandleConfig>)`
+- Returns: `Promise<AnyDirectoryHandle>`
 
 ```js
-getDirectoryHandle() //I do not know what this does.
+getDirectoryHandle() // TODO
 ```
 
 ### getFileHandle
 
 TODO
 
-- Signature: `getFileHandle(path, create)`
-- Returns: `Promise<FileSystemFileHandle>`
+- Signature: `getFileHandle(path: string, create?: boolean)`
+- Returns: `Promise<VirtualFileHandle | FileSystemFileHandle>`
 
 ```js
 getFileHandle("path", true|false) //TODO
@@ -60,8 +60,8 @@ getFileHandle("path", true|false) //TODO
 
 TODO
 
-- Signature: `pathTo(handle)`
-- Returns: `TODO`
+- Signature: `pathTo(handle: AnyHandle)`
+- Returns: `Promise<string | undefined>`
 
 ```js
 pathTo(AnyHandle) //TODO
@@ -71,34 +71,32 @@ pathTo(AnyHandle) //TODO
 
 ### mkdir
 
-The `mkdir` function creates a new directory with the path that is specified.
+The `mkdir` function creates a new directory at the path that is specified.
 
-- Signature: `mkdir(path, Partial<IMkdirConfig> <-TODO)`
+- Signature: `mkdir(path: string, config?: Partial<IMkdirConfig>)`
 - Returns: `Promise<void>`
 
 ```js
-const currentProject = getCurrentProject() //From @bridge/env
+const currentProject = getCurrentProject() // From @bridge/env
 
-//This checks if we have a project selected or not
-if(currentProject == "~local/projects/bridge-temp-project") {
-    console.log("You do not have a project selected! Please select a project.")
-}
-else {
-    const rpPath = getCurrentRP() //From @bridge/env
+// This checks if we have a project selected or not. If a project isn't selected it will be a temporary project.
+if (currentProject == '~local/projects/bridge-temp-project') {
+    console.log('You do not have a project selected! Please select a project.')
+} else {
+    const rpPath = getCurrentRP() // From @bridge/env
 
-    //Checks if the resource pack exists.
-    if(await directoryExists(rpPath)) {
-        const dir = await mkdir(`${rpPath}/entities`) //Creates the directory inside of the resource pack.
-        console.log("Created directory")
-    }
-    else {
-        console.log("Resource pack does not exist!")
+    // Checks if the resource pack exists.
+    if (await directoryExists(rpPath)) {
+        const dir = await mkdir(`${rpPath}/entities`) // Creates the directory inside of the resource pack.
+        console.log('Created directory')
+    } else {
+        console.log('Resource pack does not exist!')
     }
 }
 ```
 
 ::: tip
-If you specify a path that does not exist with mkdir(). This will create the whole directory for example 
+If you specify a path that does not exist with `mkdir`. This will create the directory anyway. For example
 ```js
 mkdir(`${rpPath}/entities/example`)
 ```
@@ -111,11 +109,11 @@ Will create the whole directory even if `entities` folder does not exist. This i
 
 The `readdir` function reads all of the content within the given directory unless otherwise specified in the `config` parameter.
 
-- Signature: `readdir(path, config <-TODO. I have no idea how this works. Include in example?)`
-- Returns: `Promise<string[]>`
+- Signature: `readdir(path: string, config: { withFileTypes?: boolean })`
+- Returns: `Promise<string[]> | Promise<AnyHandle[]>`
 
 ```js
-const rpPath = getCurrentRP() //From @bridge/env
+const rpPath = getCurrentRP() // From @bridge/env
 
 const contents = await readdir(rpPath)
 contents.forEach(element => {
@@ -127,13 +125,13 @@ contents.forEach(element => {
 
 ### readFilesFromDir
 
-The `readFilesFromDir` function reads all of the content within the given directory including the directories within the directory and returns the files.
+The `readFilesFromDir` function reads all of the contents within the given directory including nested directories and returns the files inside.
 
-- Signature: `readFilesFromDir(path, dirHandle <-TODO)`
-- Returns: `Promise<{ kind: string ; name: string ; path: string }[]>`
+- Signature: `readFilesFromDir(path: string, dirHandle: AnyDirectoryHandle | Promise<AnyDirectoryHandle>)`
+- Returns: `Promise<{ kind: string; name: string; path: string }[]>`
 
 ```js
-const rpPath = getCurrentRP() //From @bridge/env
+const rpPath = getCurrentRP() // From @bridge/env
 
 const contents = await readFilesFromDir(rpPath)
 contents.forEach(element => {
@@ -152,15 +150,15 @@ Path: projects/Example/RP/attachables/example.json
 
 ### readFile
 
-The `readFile` function reads a file with the specified path and returns it.
+The `readFile` function reads a file at the specified path and returns it.
 
-- Signature: `readFile(path)`
-- Returns: `File`
+- Signature: `readFile(path: string)`
+- Returns: `Promise<File>`
 
 ```js
-const rpPath = getCurrentRP() //From @bridge/env
+const rpPath = getCurrentRP() // From @bridge/env
 
-const file = await readFile(`rpPath/manifest.json`)
+const file = await readFile(`${rpPath}/manifest.json`)
 console.log(await file.text())
 ```
 
@@ -170,7 +168,7 @@ console.log(await file.text())
 
 TODO
 
-- Signature: `unlink(path)`
+- Signature: `unlink(path: string)`
 - Returns: `Promise<void>`
 
 ```js
@@ -183,7 +181,7 @@ TODO
 
 The `writeFile` function writes to a file at the specified path.
 
-- Signature: `writeFile(path, data)`
+- Signature: `writeFile(path: string, data: FileSystemWriteChunkType)`
 - Returns: `Promise<FileSystemFileHandle>`
 
 ```js
@@ -194,10 +192,10 @@ The `writeFile` function writes to a file at the specified path.
 
 ### write
 
-The `write` function writes to a file from the FileSystemDirectoryHandle.
+The `write` function writes data to a file by its file handle.
 
-- Signature: `write(fileHandle, data)`
-- Returns: `Promise<FileSystemFileHandle>`
+- Signature: `write(fileHandle: AnyFileHandle, data: FileSystemWriteChunkType)`
+- Returns: `Promise<void>`
 
 ```js
 //TODO
@@ -207,13 +205,13 @@ The `write` function writes to a file from the FileSystemDirectoryHandle.
 
 ### readJSON
 
-The `readJSON` function reads a JSON file at a given path and returns the object data.
+The `readJSON` function reads a JSON file at a given path and returns the object data from the file. This uses [json5](https://www.npmjs.com/package/json5) to parse the file data.
 
 - Signature: `readJSON(path)`
-- Returns: `Promise<Object>`
+- Returns: `Promise<any>`
 
 ```js
-const rpPath = getCurrentRP() //From @bridge/env
+const rpPath = getCurrentRP() // From @bridge/env
 
 const file = readJSON(`${rpPath}/manifest.json`)
 console.log(file.header.uuid)
@@ -223,10 +221,10 @@ console.log(file.header.uuid)
 
 ### readJsonHandle
 
-The `readJsonHandle` function reads a JSON file from the file system.
+The `readJsonHandle` function reads a JSON file by its file handle. This uses [json5](https://www.npmjs.com/package/json5) to parse the file data.
 
-- Signature: `readJSON(fileHandle)`
-- Returns: `Promise<Object>`
+- Signature: `readJsonHandle(fileHandle: AnyFileHandle)`
+- Returns: `Promise<any>`
 
 ```js
 //TODO
@@ -238,24 +236,24 @@ The `readJsonHandle` function reads a JSON file from the file system.
 
 The `writeJSON` function writes a JavaScript object as JSON to a file.
 
-- Signature: `writeJSON(path, data, beautify)`
-- Returns: `Promise<FileSystemFileHandle>`
+- Signature: `writeJSON(path: string, data: any, beautify: boolean)`
+- Returns: `Promise<FileSystemFileHandle | VirtualFileHandle>`
 
 ```js
 const objectData = {
-    exampleKey: "example"
+    exampleKey: 'example'
 }
 
-const file = writeJSON("example/example.json", objectData, true)
+const file = await writeJSON('example/example.json', objectData, true)
 ```
 
 ---
 
 ### move
 
-The `move` function moves a file or folder to a new directory.
+The `move` function moves a file or folder to a new location in the file system.
 
-- Signature: `move(path, newPath)`
+- Signature: `move(path: string, newPath: string)`
 - Returns: `Promise<void>`
 
 ```js
@@ -268,8 +266,8 @@ The `move` function moves a file or folder to a new directory.
 
 The `copyFile` function copies the contents of a file to another existing file with the specified paths.
 
-- Signature: `copyFile(originPath, destPath)`
-- Returns: `Promise<FileSystemFileHandle>`
+- Signature: `copyFile(originPath: string, destPath: string)`
+- Returns: `Promise<AnyFileHandle>`
 
 ```js
 //TODO
@@ -282,7 +280,7 @@ The `copyFile` function copies the contents of a file to another existing file w
 The `copyFileHandle` function copies the contents of a file to another existing file from the file system.
 
 - Signature: `copyFileHandle(originHandle, destHandle)`
-- Returns: `Promise<FileSystemFileHandle>`
+- Returns: `Promise<AnyFileHandle>`
 
 ```js
 //TODO
@@ -292,11 +290,9 @@ The `copyFileHandle` function copies the contents of a file to another existing 
 
 ### copyFolder
 
-TODO
+The `copyFolder` function copies the contents of a folder to another existing folder by their file paths.
 
-The `copyFolder` function copies the contents of a file to another existing folder with the specified paths.
-
-- Signature: `copyFolder(originPath, destPath)`
+- Signature: `copyFolder(originPath: string, destPath: string)`
 - Returns: `Promise<void>`
 
 ```js
@@ -307,11 +303,9 @@ The `copyFolder` function copies the contents of a file to another existing fold
 
 ### copyFolderByHandle
 
-TODO
+The `copyFolderByHandle` function copies the contents of a folder to another existing folder by their file handles.
 
-The `copyFolderByHandle` function copies the contents of a folder to another existing file from the file system.
-
-- Signature: `copyFolderByHandle(originHandle, destHandle)`
+- Signature: `copyFolderByHandle(originHandle: AnyDirectoryHandle, destHandle: AnyDirectoryHandle)`
 - Returns: `Promise<void>`
 
 ```js
@@ -322,11 +316,9 @@ The `copyFolderByHandle` function copies the contents of a folder to another exi
 
 ### loadFileHandleAsDataUrl
 
-TODO
+Read a file by its file handle as a URL.
 
-Read a file by its FileHandle as a URL
-
-- Signature: `loadFileHandleAsDataUrl(fileHandle)`
+- Signature: `loadFileHandleAsDataUrl(fileHandle: AnyFileHandle)`
 - Returns: `Promise<string>`
 
 ```js
@@ -339,16 +331,15 @@ Read a file by its FileHandle as a URL
 
 This function checks if the file in the path specified exists.
 
-- Signature: `fileExists(path)`
+- Signature: `fileExists(path: string)`
 - Returns: `Promise<boolean>`
 
 ```js
-const exists = await fileExists("example/example.json")
+const exists = await fileExists('example/example.json')
 
-if(exists) {
-    console.log("File exists!")
-}
-else {
+if (exists) {
+    console.log('File exists!')
+} else {
     console.log("File doesn't exist!")
 }
 ```
@@ -359,17 +350,16 @@ else {
 
 This function checks if the specified directory exists.
 
-- Signature: `directoryExists(path)`
+- Signature: `directoryExists(path: string)`
 - Returns: `Promise<boolean>`
 
 ```js
-const exists = await fileExists("projects/example")
+const exists = await fileExists('projects/example')
 
-if(exists) {
-    console.log("Project exists!")
-}
-else {
-    console.log("Project does not exist!")
+if (exists) {
+    console.log('Project exists!')
+} else {
+    console.log('Project does not exist!')
 }
 ```
 
@@ -379,8 +369,8 @@ else {
 
 TODO
 
-- Signature: `direactoryHandlesFromGlob(glob, startPath)`
-- Returns: `TODO`
+- Signature: `directoryHandlesFromGlob(glob: string, startPath?: string)`
+- Returns: `Promise<AnyDirectoryHandle[]>`
 
 ```js
 //TODO

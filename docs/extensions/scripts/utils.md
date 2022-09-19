@@ -6,7 +6,7 @@ sidebar: scripts
 
 # 🔧 @bridge/utils
 
-this module provides common functions to developers.
+This module provides common utility functions to extension developers.
 [View Source Code](https://github.com/bridge-core/editor/blob/main/src/components/Extensions/Scripts/Modules/utils.ts)
 
 ```js
