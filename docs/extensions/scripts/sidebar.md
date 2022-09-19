@@ -8,6 +8,7 @@ sidebar: scripts
 
 Module that allows extensions to create sidebar tabs.
 [View Source Code](https://github.com/bridge-core/editor/blob/main/src/components/Extensions/Scripts/Modules/sidebar.ts)
+
 ```js
 import { ... } from '@bridge/sidebar'
 ```
@@ -17,6 +18,7 @@ import { ... } from '@bridge/sidebar'
 ## ⚡ Functions
 
 ### create
+
 This function creates a new sidebar element and adds it to the current workspace.
 
 - Signature: `create(config)`

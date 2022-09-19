@@ -8,6 +8,7 @@ sidebar: scripts
 
 This module allows extensions to interact with the file system, contained inside of the user's bridge. folder.
 [View Source Code](https://github.com/bridge-core/editor/blob/main/src/components/FileSystem/FileSystem.ts)
+
 ```js
 import { ... } from '@bridge/fs'
 ```
@@ -179,6 +180,7 @@ TODO
 ---
 
 ### writeFile
+
 The `writeFile` function writes to a file at the specified path.
 
 - Signature: `writeFile(path, data)`
@@ -191,6 +193,7 @@ The `writeFile` function writes to a file at the specified path.
 ---
 
 ### write
+
 The `write` function writes to a file from the FileSystemDirectoryHandle.
 
 - Signature: `write(fileHandle, data)`
@@ -203,6 +206,7 @@ The `write` function writes to a file from the FileSystemDirectoryHandle.
 ---
 
 ### readJSON
+
 The `readJSON` function reads a JSON file at a given path and returns the object data.
 
 - Signature: `readJSON(path)`
@@ -218,6 +222,7 @@ console.log(file.header.uuid)
 ---
 
 ### readJsonHandle
+
 The `readJsonHandle` function reads a JSON file from the file system.
 
 - Signature: `readJSON(fileHandle)`
@@ -230,6 +235,7 @@ The `readJsonHandle` function reads a JSON file from the file system.
 ---
 
 ### writeJSON
+
 The `writeJSON` function writes a JavaScript object as JSON to a file.
 
 - Signature: `writeJSON(path, data, beautify)`
@@ -246,6 +252,7 @@ const file = writeJSON("example/example.json", objectData, true)
 ---
 
 ### move
+
 The `move` function moves a file or folder to a new directory.
 
 - Signature: `move(path, newPath)`
@@ -258,6 +265,7 @@ The `move` function moves a file or folder to a new directory.
 ---
 
 ### copyFile
+
 The `copyFile` function copies the contents of a file to another existing file with the specified paths.
 
 - Signature: `copyFile(originPath, destPath)`
@@ -270,6 +278,7 @@ The `copyFile` function copies the contents of a file to another existing file w
 ---
 
 ### copyFileHandle
+
 The `copyFileHandle` function copies the contents of a file to another existing file from the file system.
 
 - Signature: `copyFileHandle(originHandle, destHandle)`
@@ -327,6 +336,7 @@ Read a file by its FileHandle as a URL
 ---
 
 ### fileExists
+
 This function checks if the file in the path specified exists.
 
 - Signature: `fileExists(path)`
@@ -346,6 +356,7 @@ else {
 ---
 
 ### directoryExists
+
 This function checks if the specified directory exists.
 
 - Signature: `directoryExists(path)`

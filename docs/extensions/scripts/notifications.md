@@ -8,6 +8,7 @@ sidebar: scripts
 
 Module that allows extensions to create notifications.
 [View Source Code](https://github.com/bridge-core/editor/blob/main/src/components/Extensions/Scripts/Modules/notifications.ts)
+
 ```js
 import { ... } from '@bridge/notifications'
 ```
@@ -17,6 +18,7 @@ import { ... } from '@bridge/notifications'
 ## ⚡ Functions
 
 ### create
+
 The `create` function allows you to create notifications in bridge's notification system.
 
 - Signature: `create(config)`
@@ -42,6 +44,7 @@ create(
 ---
 
 ### createError
+
 The `create` function allows you to create a new error notification.
 
 - Signature: `createError(error)`

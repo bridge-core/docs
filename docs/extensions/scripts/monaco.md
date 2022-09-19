@@ -8,6 +8,7 @@ sidebar: scripts
 
 Module that allows you to modify monaco's behaviors.
 [View Source Code](https://github.com/bridge-core/editor/blob/main/src/components/Extensions/Scripts/Modules/monaco.ts)
+
 ```js
 import { ... } from '@bridge/monaco'
 ```
@@ -17,6 +18,7 @@ import { ... } from '@bridge/monaco'
 ## ⚡ Functions
 
 ### registerDocumentFormattingEditProvider
+
 This function registers a [file formatter](https://microsoft.github.io/monaco-editor/api/modules/monaco.languages.html#registerdocumentformattingeditprovider) into the monaco system inside of bridge.
 
 - Signature: `registerDocumentFormattingEditProvider(languageId, provider)`
