@@ -35,7 +35,7 @@ console.log(parseJSON.Example);
 The `stringy` function converts a JavaScript object to a JSON string.
 
 - Signature: `stringify(obj, replacer?, space?)`
-- Returns: `any`
+- Returns: `string`
 
 ```js
 const jsonObj = {
