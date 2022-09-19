@@ -45,5 +45,3 @@ const jsonObj = {
 const ConvertedJson = stringify(jsonObj)
 console.log(ConvertedJson)
 ```
-
----
