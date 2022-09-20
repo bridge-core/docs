@@ -111,6 +111,20 @@ onFileChanged(file => {
 //TODO MORE?
 ```
 
+---
+
+### openFile
+
+This `openFile` function opens a new file from the file handle in a new tab.
+
+- Signature: <code>openFile(fileHandle: AnyFileHandle, opts: <a href="#iopentaboptions">IOpenTabOptions</a>)</code>
+- Returns: `Promise<TODO>`
+
+```js
+await openFile();
+//TODO MORE?
+```
+
 ## 📟 Interfaces
 
 ### TPackTypeId
@@ -130,5 +144,17 @@ export interface IExporter {
 	name: string
 	isDisabled?: () => Promise<boolean> | boolean
 	export: () => Promise<void>
+}
+```
+
+---
+
+### IOpenTabOptions
+
+```ts
+export interface IOpenTabOptions {
+	selectTab?: boolean
+	isTemporary?: boolean
+	readOnlyMode?: TReadOnlyMode
 }
 ```
