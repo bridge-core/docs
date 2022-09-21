@@ -21,7 +21,7 @@ import { ... } from '@bridge/sidebar'
 
 This function creates a new sidebar element and adds it to the current workspace.
 
-- Signature: `create(config)`
+- Signature: `create(config: SidebarElement)`
 - Returns: `SidebarElement`
 
 ```js
