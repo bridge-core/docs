@@ -43,6 +43,8 @@ The `getDirectoryHandle` method returns a directory handle for a subdirectory wi
 getDirectoryHandle() // TODO
 ```
 
+---
+
 ### getFileHandle
 
 TODO
@@ -374,4 +376,54 @@ TODO
 
 ```js
 //TODO
+```
+
+## 📟 Interfaces
+
+### IGetHandleConfig
+
+```ts
+export interface IGetHandleConfig {
+	create: boolean
+	createOnce: boolean
+}
+```
+
+---
+
+### IMkdirConfig
+
+```ts
+export interface IMkdirConfig {
+	recursive: boolean
+}
+```
+
+## 🧪 Types
+
+### AnyDirectoryHandle
+
+```ts
+export type AnyDirectoryHandle =
+	| FileSystemDirectoryHandle
+	| VirtualDirectoryHandle
+```
+
+---
+
+### AnyHandle
+
+```ts
+export type AnyHandle =
+	| FileSystemFileHandle
+	| FileSystemDirectoryHandle
+	| VirtualHandle
+```
+
+---
+
+### AnyFileHandle
+
+```ts
+export type AnyFileHandle = FileSystemFileHandle | VirtualFileHandle
 ```
