@@ -1,6 +1,7 @@
 ---
 title: 'Sci-Fi Weapons'
 image: './main.jpg'
+featured: true
 excerpt: 'See which crafting recipe you need, collect all the required items and craft new weapons in this sci-fi weapons expansion!'
 tags: [weapons, craftable, sci-fi]
 author: 'cubed-creations'

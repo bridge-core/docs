@@ -1,6 +1,7 @@
 ---
 title: 'Overpowered Wands'
 image: './main.jpg'
+featured: true
 excerpt: 'See which crafting recipe you need, collect all the required items and craft overpowered wands!'
 tags: [wands, craftable, magic]
 author: 'cubed-creations'
