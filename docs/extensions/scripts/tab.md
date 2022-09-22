@@ -131,3 +131,21 @@ The `getCurrentTabSystem` function returns the tabSystem.
 ```js
 console.log(getCurrentTabSystem())
 ```
+
+## 📟 Interfaces
+
+### ContentTab
+
+https://github.com/bridge-core/editor/blob/main/src/components/TabSystem/CommonTab.ts
+
+### FileTab
+
+https://github.com/bridge-core/editor/blob/main/src/components/TabSystem/FileTab.ts
+
+### ThreePreviewTab
+
+https://github.com/bridge-core/editor/blob/main/src/components/Editors/ThreePreview/ThreePreviewTab.ts
+
+### IframeTab
+
+https://github.com/bridge-core/editor/blob/main/src/components/Editors/IframeTab/IframeTab.ts
