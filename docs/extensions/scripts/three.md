@@ -1,6 +1,6 @@
 ---
 title: 3️⃣ @bridge/three
-description: Learn more about @bridge/three module that allows access to the threejs library.
+description: Learn more about @bridge/three module that exposes the threeJS library.
 sidebar: scripts
 ---
 
@@ -15,6 +15,6 @@ import { ... } from '@bridge/three'
 
 [[toc]]
 
-### Documentation
+### ThreeJS Documentation
 
 https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene
