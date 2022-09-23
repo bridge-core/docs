@@ -138,6 +138,26 @@ console.log(getCurrentTabSystem())
 
 https://github.com/bridge-core/editor/blob/main/src/components/TabSystem/CommonTab.ts
 
+```js
+class ExampleTab extends ContentTab
+{
+    component = exampleVuePage;
+    type = "exampleContentTab";
+    async isFor() {
+        return false
+    }
+    get icon() {
+        return 'mdi-tools'
+    }
+    get iconColor() {
+        return 'warning'
+    }
+    get name() {
+        return 'Example Content Tab'
+    }
+}
+```
+
 ### FileTab
 
 https://github.com/bridge-core/editor/blob/main/src/components/TabSystem/FileTab.ts
@@ -149,3 +169,22 @@ https://github.com/bridge-core/editor/blob/main/src/components/Editors/ThreePrev
 ### IframeTab
 
 https://github.com/bridge-core/editor/blob/main/src/components/Editors/IframeTab/IframeTab.ts
+
+```js
+class ExampleTab extends IframeTab
+{
+    type = "exampleTab";
+    static is() {
+        return false
+	}
+	get icon() {
+		return 'mdi-book-open-page-variant'
+	}
+	get iconColor() {
+		return 'primary'
+	}
+	get name() {
+		return "Example Tab";
+	}
+}
+```
