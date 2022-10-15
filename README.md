@@ -1,5 +1,9 @@
 # bridge-core/docs
 
+<a href="https://pr.new/github.com/bridge-core/docs" target="_blank">
+<img alt="Open in Codeflow" src="https://developer.stackblitz.com/img/open_in_codeflow_small.svg" >
+</a>
+
 The bridge-core/docs directory contains reference documentation for the add-on editor bridge. v2.
 
 ## Contributing
