@@ -1,16 +1,16 @@
 ---
 title: ❕ @bridge/notifications
-description: Learn about the @bridge/notifications module that allows extensions to create notifications.
+description: Learn about the @bridge/notification module that allows extensions to create notifications.
 sidebar: scripts
 ---
 
-# ❕ @bridge/notifications
+# ❕ @bridge/notification
 
 Module that allows extensions to create notifications.
 [View Source Code](https://github.com/bridge-core/editor/blob/main/src/components/Extensions/Scripts/Modules/notifications.ts)
 
 ```js
-import { ... } from '@bridge/notifications'
+import { ... } from '@bridge/notification'
 ```
 
 [[toc]]
