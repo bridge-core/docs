@@ -22,7 +22,7 @@ import { ... } from '@bridge/tab'
 The `register` function registers new FileTabs to be picked up by the isTabFor tab system method
 
 - Signature: `register(FileTabClass: typeof FileTab)`
-- Returns: IDisposable
+- Returns: `IDisposable`
 
 ```js
 //TODO
