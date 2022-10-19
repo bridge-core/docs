@@ -356,7 +356,7 @@ This function checks if the specified directory exists.
 - Returns: `Promise<boolean>`
 
 ```js
-const exists = await fileExists('projects/example')
+const exists = await directoryExists('projects/example')
 
 if (exists) {
     console.log('Project exists!')
