@@ -53,6 +53,8 @@ const author = computed(() => authors[props.creation.author])
 						class="author-logo"
 						:src="withBase(author.image)"
 						:alt="`Logo of ${author.title}`"
+						height="32"
+						width="32"
 					/>
 				</picture>
 
