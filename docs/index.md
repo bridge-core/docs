@@ -10,7 +10,7 @@ hero:
     tagline: Light-weight, powerful, easy to use!
     image:
         src: /favicon.svg
-        alt: Vitest
+        alt: bridge. logo
     actions:
         - theme: brand
           text: Open Editor
