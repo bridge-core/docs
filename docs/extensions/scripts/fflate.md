@@ -15,4 +15,6 @@ import { ... } from "@bridge/fflate"
 
 [[toc]]
 
-### 📄 [Library Documentation](https://github.com/101arrowz/fflate/blob/master/docs/README.md)
+### 📃fflate Documentation
+
+https://github.com/101arrowz/fflate/blob/master/docs/README.md
