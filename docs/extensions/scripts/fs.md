@@ -40,7 +40,17 @@ The `getDirectoryHandle` method returns a directory handle for a subdirectory wi
 - Returns: `Promise<AnyDirectoryHandle>`
 
 ```js
-getDirectoryHandle() // TODO
+const rpPath = getCurrentRP() // From @bridge/env
+
+//PLEASE CHECK THIS! I HAVE NO IDEA WHAT I AM DOING.
+const config = new IGetHandleConfig() {
+	create: false
+	createOnce: false
+}
+//Get the file and load it as a handle. Set to not create the directory and file.
+const file = await getDirectoryHandle(`${rpPath}/example`, config)
+
+console.log(file)
 ```
 
 ---
@@ -53,7 +63,12 @@ TODO
 - Returns: `Promise<VirtualFileHandle | FileSystemFileHandle>`
 
 ```js
-getFileHandle("path", true|false) //TODO
+const rpPath = getCurrentRP() // From @bridge/env
+
+//Get the file and load it as a handle. Set to not create the directory and file.
+const file = await getFileHandle(`${rpPath}/manifest.json`, false)
+
+console.log(file)
 ```
 
 ---
@@ -229,7 +244,15 @@ The `readJsonHandle` function reads a JSON file by its file handle. This uses [j
 - Returns: `Promise<any>`
 
 ```js
-//TODO
+const rpPath = getCurrentRP() // From @bridge/env
+
+//Get the file and load it as a handle
+const file = await getFileHandle(`${rpPath}/manifest.json`, false)
+
+//Read the json from the file
+const result = await readJsonHandle(file)
+
+console.log(result);
 ```
 
 ---
