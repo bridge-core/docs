@@ -259,7 +259,13 @@ The `move` function moves a file or folder to a new location in the file system.
 - Returns: `Promise<void>`
 
 ```js
-//TODO
+const rpPath = await getCurrentRP() // From @bridge/env
+
+//Move file
+await move(`${rpPath}/example.json`, `${rpPath}/example/example.json`);
+
+//Move folder
+await move(`${rpPath}/textures`, `${rpPath}/example/textures`);
 ```
 
 ---
@@ -324,7 +330,13 @@ Read a file by its file handle as a URL.
 - Returns: `Promise<string>`
 
 ```js
-//TODO
+const rpPath = await getCurrentRP() // From @bridge/env
+
+if (await directoryExists(rpPath)) {
+    const file = await getFileHandle(`${rpPath}/textures/example.png`, false)
+    console.log(await loadFileHandleAsDataUrl(file)) //data:image/png;base64,iVBORw0KGg...
+    }
+
 ```
 
 ---
