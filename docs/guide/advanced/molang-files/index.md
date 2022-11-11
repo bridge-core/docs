@@ -1,7 +1,7 @@
 ---
 title: '∿ Molang Files'
 description: Learn how you can utilize .molang files to extract common scripts into a single file.
-sidebar: 'advanced'
+sidebar: Advanced
 nav_order: 1
 ---
 

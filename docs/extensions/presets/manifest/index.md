@@ -1,7 +1,7 @@
 ---
 title: '📝 Preset Manifest'
 description: Learn about the manifest used inside of bridge.'s presets.
-sidebar: 'presets'
+sidebar: Presets
 ---
 
 # 📝 Preset Manifest

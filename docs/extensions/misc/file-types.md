@@ -1,7 +1,7 @@
 ---
 title: 📄 File Types
 description: 'Reference documentation of all available file types.'
-sidebar: 'misc'
+sidebar: Misc
 ---
 
 # 📄 File Types

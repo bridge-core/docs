@@ -96,7 +96,7 @@ export default defineConfig({
 			},
 
 			{
-				text: `v2.3.4`,
+				text: `v2.3.7`,
 				items: [
 					{
 						text: 'Release Notes ',

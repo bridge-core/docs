@@ -1,7 +1,7 @@
 ---
 title: '📦 Custom Components'
 description: Learn how you can write custom components for Minecraft entities, blocks and items!
-sidebar: 'advanced'
+sidebar: Advanced
 ---
 
 # 📦 Custom Components

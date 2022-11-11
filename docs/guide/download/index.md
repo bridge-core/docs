@@ -1,7 +1,7 @@
 ---
 title: ⬇️ Download
 description: Learn how to download and install bridge. v2
-sidebar: 'guide'
+sidebar: Guide
 nav_order: 0
 ---
 
@@ -41,6 +41,7 @@ No matter how you're installing bridge., you must first navigate to https://edit
 This is the best way to experience bridge.! To install bridge. on a Chromium-based desktop browser, such as Google Chrome and Microsoft Edge, go to [bridge.'s site](https://editor.bridge-core.app/) and go through the following steps, which are also displayed in images below.
 
 1. Click one of the following:
+
     - The install icon in the right side of the URL address bar.
     - If you haven't set up bridge. already, the install prompt in the sidebar.
     - The install notification.

@@ -1,7 +1,7 @@
 ---
 title: '❓ FAQ'
 description: 'Find answers for frequently asked questions on Add-Ons and bridge. in general.'
-sidebar: 'guide'
+sidebar: Guide
 nav_order: 10
 ---
 

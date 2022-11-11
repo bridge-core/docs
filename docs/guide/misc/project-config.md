@@ -1,6 +1,6 @@
 ---
 title: ⚙️ Project Config
-sidebar: misc
+sidebar: Misc
 ---
 
 # ⚙️ Project Config

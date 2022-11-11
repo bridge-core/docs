@@ -1,7 +1,7 @@
 ---
 title: '🖨 Custom Commands'
 description: Learn how you can write custom commands that can be used across your project!
-sidebar: 'advanced'
+sidebar: Advanced
 ---
 
 # 🖨 Custom Commands

@@ -1,6 +1,6 @@
 ---
 title: 🗂 Project Types
-sidebar: 'misc'
+sidebar: Misc
 ---
 
 # 🗂 Project Types

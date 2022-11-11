@@ -1,7 +1,7 @@
 ---
 title: '⚡️ Dash'
 description: Learn about bridge.'s compiler Dash and how to use it.
-sidebar: 'advanced'
+sidebar: Advanced
 ---
 
 # ⚡️ Dash

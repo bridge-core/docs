@@ -68,7 +68,7 @@ export function generateSidebar(directory: string) {
 		if (!(frontMatter.data.is_visible ?? true)) continue
 
 		if (frontMatter.data.sidebar) {
-			const categoryName = capitalize(frontMatter.data.sidebar)
+			const categoryName = frontMatter.data.sidebar
 			const existingCategory = sidebar.find(
 				(cat) => cat.text === categoryName
 			)

@@ -1,7 +1,7 @@
 ---
 title: 🤖 Generator Scripts
 description: Learn how to generate any file within your project with JavaScript or TypeScript
-sidebar: 'advanced'
+sidebar: Advanced
 ---
 
 # 🤖 Generator Scripts
@@ -23,7 +23,7 @@ Make sure that the "generatorScripts" plugin is listed within your [compiler con
 
 A generator script should "export default" the content of the file to generate. The generated file extension is automatically inferred from the file location.
 
-```typescript
+```ts
 // Generate an item file
 export default {
     'format_version': '1.16.100',
@@ -31,7 +31,7 @@ export default {
 }
 ```
 
-```typescript
+```ts
 // Generate a mcfunction file
 export default `
 /say Hello World!
@@ -55,13 +55,13 @@ That is why you can use a template to generate your files. You can use any file 
 
 To start using a template, import the `useTemplate` function from the `@bridge/generate` module.
 
-```typescript
+```ts
 import { useTemplate } from '@bridge/generate'
 ```
 
 Then, use the `useTemplate` function to import a file.
 
-```typescript
+```ts
 // mcfunction is of type string
 const mcfunctionFile = await useTemplate('../functions/template.mcfunction')
 
@@ -73,7 +73,7 @@ You can now use the `mcfunctionFile` or `jsonFile` variables which store the res
 
 ### API
 
-```typescript
+```ts
 interface IUseTemplateOptions {
 	/**
 	 * Whether to omit the template file from the build output
@@ -101,31 +101,31 @@ File collections are a convenient way to generate multiple files with a single g
 
 To get started, import the `createCollection` function from the `@bridge/generate` module.
 
-```typescript
+```ts
 import { createCollection } from '@bridge/generate'
 ```
 
 Then, create a new collection with the `createCollection` function.
 
-```typescript
+```ts
 const collection = createCollection()
 ```
 
 You can now add files to the collection with the `add` function. The `add` method takes two arguments: The first one sets the file path of the file to generate and the second one sets the content of the file to generate.
 
-```typescript
+```ts
 collection.add('./blaze.json', {...})
 ```
 
 Finally, you can need to "export default" the collection to generate the files.
 
-```typescript
+```ts
 export default collection
 ```
 
 ### API
 
-```typescript
+```ts
 class FileCollection {
 	/**
 	 * Add a file to the collection
