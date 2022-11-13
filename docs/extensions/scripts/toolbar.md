@@ -18,6 +18,7 @@ import { ... } from "@bridge/toolbar"
 ## ⚡ Functions
 
 ### addCategory
+TODO
 
 - Signature: `addCategory(category: ToolbarCategory)`
 - Returns: `Promise<void>`
