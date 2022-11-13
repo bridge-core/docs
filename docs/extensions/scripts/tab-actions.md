@@ -19,7 +19,7 @@ import { ... } from '@bridge/tab-actions'
 
 ### addTabActions
 
-the addTabActions function adds the default tab actions for the specific file tab.
+The addTabActions function adds the default tab actions for the specific file tab.
 
 - Signature: `addTabActions(tab: any)`
 - Returns: `Promise<void>`
@@ -32,7 +32,7 @@ TODO
 
 ### register
 
-the register function registers a new tab action.
+The register function registers a new tab action.
 
 - Signature: <code>register(definition: <a href="#itabactionconfig">ITabActionConfig</a>)</code>
 - Returns: `Promise<IDisposable>`
@@ -45,7 +45,7 @@ TODO
 
 ### registerPreview
 
-the register function registers a new tab preview.
+The register function registers a new tab preview.
 
 - Signature: <code>registerPreview(definition: <a href="#itabpreviewconfig">ITabPreviewConfig</a>)</code>
 - Returns: `Promise<IDisposable>`
