@@ -29,10 +29,70 @@ bridge. loads custom commands from the `commands/` folder within your behavior p
 
 You can install custom commands from bridge.'s [extension store](/extensions/#installing-extensions) if you do not feel confident in writing your own custom commands.
 
-<!-- ## Usage
+## Usage
 
-TODO: Explain how to use a custom command
+After installing or writing your first custom command, it will naturally appear within bridge.'s command auto-completions within mcfunction or JSON files. You can then use the command as you would use a regular Minecraft command.
 
-## Writing Custom commands
+![Screenshot of a custom command being used within bridge.](./command-usage.png)
 
-TODO: Explain how to write custom commands -->
+## Writing Custom Commands
+
+Start by creating a JavaScript or TypeScript file within the `commands/` folder of your behavior pack. You can only write a single command per file which should be exported as the default export.
+
+```ts
+export default defineCommand(() => {...})
+```
+
+:::tip
+The call to `defineCommand(...)` is optional. It enables TypeScript to validate the passed component instantiation function.
+:::
+
+### `name(commandName: string): void`
+
+Calling this function is required. It sets the name of the command which will be used within auto-completions.
+
+```ts
+export default defineCommand(({ name }) => {
+	name('my_command')
+})
+```
+
+### `schema(schemaDefinition: any): void`
+
+Use this function to declare a command schema to be used within bridge.'s auto-completions. Command schemas use a proprietary format which is described in detail [here](/extensions/json/command-schema).
+
+```ts
+export default defineCommand(({ schema }) => {
+	schema([
+		{
+			description: 'Say hello to a player!',
+			arguments: [
+				{
+					type: 'selector',
+				},
+			],
+		},
+	])
+})
+```
+
+### `template((commandArgs: any[]) => void): void`
+
+Use this function to return a list of commands to be executed whenever your custom command is used. The `commandArgs` parameter is an array of arguments passed to the command.
+
+```ts
+export default defineCommand(({ template }) => {
+	template(([selector]) => {
+		return [
+			`say Hello ${selector}!`,
+			`say I hope you are having a great day!`,
+		]
+	})
+})
+```
+
+:::tip
+The `template` callback function can either return a string or an array of strings. If you return an array of strings, bridge. will automatically join the strings with a newline character upon transforming your custom command.
+:::
+
+And that's it, you have just written your first basic custom command! :tada:
