@@ -60,6 +60,7 @@ Define custom types to be used within the schema.
 
 The example above would allow you to reference your custom type as `$coordinates` wherever you would normally use a regular type. Internally, bridge. then replaces `$coordinates` with the array of types you defined.
 
+<!-- TODO -->
 <!-- ## Defining a New Command
 
 ## Defining a New Selector Argument
