@@ -46,7 +46,10 @@ export default defineConfig({
 		},
 		socialLinks: [
 			{ icon: 'github', link: 'https://github.com/bridge-core' },
-			{ icon: 'twitter', link: 'https://twitter.com/bridgeIde' },
+			{
+				icon: 'twitter',
+				link: 'https://twitter.com/intent/follow?region=follow_link&screen_name=bridgeIde',
+			},
 			{ icon: 'discord', link: 'https://discord.gg/uj8K2S9' },
 		],
 		footer: {
