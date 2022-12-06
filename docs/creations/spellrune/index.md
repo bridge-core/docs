@@ -1,7 +1,6 @@
 ---
 title: 'Spellrune'
 image: './main.jpg'
-featured: true
 author: 'gamemode-one'
 excerpt: 'Premiering the brand new Scripting API for Bedrock! Combine runes to craft powerful elemental spells!'
 tags: [magic, spells, adventure]
