@@ -40,6 +40,7 @@ export default defineConfig({
 
 	themeConfig: {
 		logo: '/favicon.svg',
+		outline: 'deep',
 		editLink: {
 			text: 'Suggest changes to this page',
 			pattern: 'https://github.com/bridge-core/docs/edit/main/docs/:path',
