@@ -2,7 +2,7 @@
 import DownloadCard from './DownloadCard.vue'
 
 const releases = await fetch(
-	`https://api.github.com/repos/solvedDev/editor/releases`
+	`https://api.github.com/repos/bridge-core/editor/releases`
 )
 	.then((res) => res.json())
 	.catch((err) => {
