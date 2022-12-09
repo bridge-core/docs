@@ -7,11 +7,22 @@ nav_order: 0
 
 # ⬇️ Download
 
-This article aims to explain to you how you can download and install bridge. v2 to your device.
-After reading it, you should know...
+Choose how you want to use bridge. v2 below. Once you have installed our app, it will automatically receive updates as soon as they are released.
 
-:ballot_box_with_check: Which devices support bridge. v2.<br/>
-:ballot_box_with_check: How to install bridge. v2 as an app.<br/>
+::: raw
+
+<script setup>
+import Downloads from "../../.vitepress/theme/components/Downloads/Downloads.vue"
+</script>
+
+<!-- Add a bit of extra space before download buttons -->
+<div style="margin-top: 2em;"/>
+<Downloads  />
+:::
+
+:::tip
+Looking for next steps? Check out our [Getting Started](/guide/) guide.
+:::
 
 ## Device Support
 
@@ -32,7 +43,7 @@ Our nightly builds are beta versions that release every night including all chan
 Give it a try here: https://nightly.bridge-core.app/
 :::
 
-## Installation
+## Installation <Badge type="tip" text="Web App Only"/>
 
 No matter how you're installing bridge., you must first navigate to https://editor.bridge-core.app/.
 

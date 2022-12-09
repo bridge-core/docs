@@ -20,9 +20,13 @@ By default, bridge. stores your projects outside of the `com.mojang` folder whic
 Before you proceed, ensure you own and have installed Minecraft Bedrock on your Windows device.
 :::
 
-## Setup
+## Setup <Badge type="tip" text="Web App Only"/>
 
-The `com.mojang` folder, on windows, desktop (currently only platform that supports this feature) is located at `C:\Users\<USER>\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`. 
+:::info
+If you use bridge. v2's native app, bridge. will automatically detect your `com.mojang` folder so no additional setup is required. You can change the output folder in the compiler window.
+:::
+
+The `com.mojang` folder, on windows, desktop (currently only platform that supports this feature) is located at `C:\Users\<USER>\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`.
 
 :::tip
 You can quickly access this by pressing `Windows Key + R` and pasting the following `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`

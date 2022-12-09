@@ -100,8 +100,12 @@ export default defineConfig({
 			},
 
 			{
-				text: `v2.4.0`,
+				text: `v2.5.0`,
 				items: [
+					{
+						text: 'Download',
+						link: '/guide/download/',
+					},
 					{
 						text: 'Release Notes ',
 						link: 'https://github.com/bridge-core/editor/releases',

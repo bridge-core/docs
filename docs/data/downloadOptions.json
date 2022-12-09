@@ -1,0 +1,48 @@
+[
+	{
+		"title": "Windows",
+		"icon": "windows",
+		"description": "Install bridge. v2 for Windows 10 or Windows 11.",
+		"findAssetUrls": [
+			{
+				"ext": ".msi"
+			}
+		]
+	},
+	{
+		"title": "MacOS",
+		"icon": "apple",
+		"description": "Install bridge. v2 for Mac OS",
+		"findAssetUrls": [
+			{
+				"ext": ".dmg"
+			}
+		]
+	},
+	{
+		"title": "Linux",
+		"icon": "linux",
+		"description": "Install bridge. v2 for Linux",
+		"findAssetUrls": [
+			{
+				"ext": ".AppImage",
+				"name": "AppImage"
+			},
+			{
+				"ext": ".deb",
+				"name": "Debian Package"
+			}
+		]
+	},
+	{
+		"title": "Web App",
+		"icon": "web",
+		"description": "Use bridge. v2 in your web browser without installing anything.",
+		"buttons": [
+			{
+				"text": "Open",
+				"url": "https://editor.bridge-core.app/"
+			}
+		]
+	}
+]
