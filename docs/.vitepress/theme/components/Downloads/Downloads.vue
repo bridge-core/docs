@@ -4,9 +4,7 @@ import downloadOptions from '../../../../data/downloadOptions.json'
 </script>
 
 <template>
-	<ClientOnly>
-		<Suspense>
-			<DownloadRow :items="downloadOptions" />
-		</Suspense>
-	</ClientOnly>
+	<Suspense>
+		<DownloadRow :items="downloadOptions" />
+	</Suspense>
 </template>

@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import DownloadCard from './DownloadCard.vue'
 
+if (import.meta.env.SSR) {
+	const { default: fetch } = await import('node-fetch')
+	globalThis.fetch = fetch
+}
+
 const releases = await fetch(
 	`https://api.github.com/repos/bridge-core/editor/releases`
 )
