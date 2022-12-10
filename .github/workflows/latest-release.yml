@@ -1,0 +1,23 @@
+name: Flat
+
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch:
+    schedule:
+        - cron: '0 0 * * *'
+
+jobs:
+    scheduled:
+        runs-on: ubuntu-latest
+        steps:
+            # Check out the repository so it can read the files inside of it and do other operations
+            - name: Check out repo
+              uses: actions/checkout@v3
+            # The Flat Action step. We fetch the data in the http_url and save it as downloaded_filename
+            - name: Fetch data
+              uses: githubocto/flat@v3
+              with:
+                  http_url: https://api.github.com/repos/bridge-core/editor/releases
+                  downloaded_filename: ./docs/data/releases.json
