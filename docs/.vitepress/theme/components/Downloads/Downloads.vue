@@ -39,15 +39,17 @@ function getButtons(item: any) {
 </script>
 
 <template>
-	<div class="download-container">
-		<DownloadCard
-			v-for="item in downloadOptions"
-			:title="item.title"
-			:icon="item.icon"
-			:description="item.description"
-			:buttons="getButtons(item)"
-		/>
-	</div>
+	<ClientOnly>
+		<div class="download-container">
+			<DownloadCard
+				v-for="item in downloadOptions"
+				:title="item.title"
+				:icon="item.icon"
+				:description="item.description"
+				:buttons="getButtons(item)"
+			/>
+		</div>
+	</ClientOnly>
 </template>
 
 <style scope>
