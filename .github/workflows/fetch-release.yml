@@ -18,3 +18,4 @@ jobs:
               with:
                   http_url: https://api.github.com/repos/bridge-core/editor/releases
                   downloaded_filename: ./docs/data/releases.json
+                  authorization: 'Bearer ${{ secrets.GITHUB_TOKEN }}'
