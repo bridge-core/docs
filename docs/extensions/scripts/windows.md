@@ -38,7 +38,9 @@ The `createInputWindow` function creates a new window specifically for text inpu
 - Returns: `void`
 
 ```js
-TODO
+createInputWindow("Title", "TextInputTitle", "Default Value", () => {
+    console.log("Yeet")
+})
 ```
 
 ---
@@ -51,7 +53,10 @@ The `createDropdownWindow` function creates a new window for a dropdown input.
 - Returns: `void`
 
 ```js
-TODO
+const options = ["Option1", "Option2"]
+createDropdownWindow("Title", "PlaceHolder", options, "Option1", (result) => {
+    console.log(`You have chosen: ${result}`)
+})
 ```
 
 ---
