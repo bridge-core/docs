@@ -17,19 +17,6 @@ import { ... } from "@bridge/windows"
 
 ## ⚡ Functions
 
-### createWindow
-
-The `createWindow` function creates a new window that pop's up over everything else.
-
-- Signature: `createWindow(vueComponent: VueComponent, state: Record<string, unknown>)`
-- Returns: `TODO`
-
-```js
-TODO
-```
-
----
-
 ### createInformationWindow
 
 The `createInformationWindow` function creates a new information window that pop's up and tells the user some information.
