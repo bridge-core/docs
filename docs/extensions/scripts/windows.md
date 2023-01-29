@@ -3,7 +3,7 @@ title: 🏠 @bridge/windows
 description: Learn about the @bridge/windows which allows access to bridge's windows system.
 sidebar: scripts
 ---
-
+a
 # 🏠 @bridge/windows
 
 This module allows access to the windows system.
