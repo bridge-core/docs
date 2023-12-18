@@ -1,7 +1,7 @@
 ---
 title: '@bridge/utils'
 description: Learn more about the @bridge/utils module that provides common functions to developers.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 🔧 @bridge/utils

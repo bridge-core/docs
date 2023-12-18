@@ -1,7 +1,7 @@
 ---
 title: '@bridge/persistent-storage'
 description: Learn about the @bridge/persistent-storage module that allows your extension to store data between sessions.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 💾 @bridge/persistent-storage

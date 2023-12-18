@@ -1,7 +1,7 @@
 ---
 title: '@bridge/command-bar'
 description: Learn about the @bridge/command-bar... TODO
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 📡 @bridge/command-bar

@@ -1,7 +1,7 @@
 ---
 title: '@bridge/three'
 description: Learn more about @bridge/three module that exposes the threeJS library.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 3️⃣ @bridge/three

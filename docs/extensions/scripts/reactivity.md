@@ -1,7 +1,7 @@
 ---
 title: '@bridge/reactivity'
 description: Learn about the @bridge/reactivity... TODO
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 🧨 @bridge/reactivity

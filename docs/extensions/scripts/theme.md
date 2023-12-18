@@ -1,7 +1,7 @@
 ---
 title: '@bridge/theme'
 description: Learn about the @bridge/theme module that allows you to interact with bridge.'s theme system.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 🎨 @bridge/theme

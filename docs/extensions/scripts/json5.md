@@ -1,7 +1,7 @@
 ---
 title: '@bridge/json5'
 description: Learn about the @bridge/json5 module that gives access to json parsing with the json5 npm package.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 🏗️ @bridge/json5

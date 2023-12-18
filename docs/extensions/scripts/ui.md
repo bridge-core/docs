@@ -1,7 +1,7 @@
 ---
 title: '@bridge/ui'
 description: Learn more about the @bridge/ui module that provides programmatic access to Vue components defined inside of the plugin's ui/ folder.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 🎴 @bridge/ui

@@ -1,7 +1,7 @@
 ---
 title: '@bridge/tab-actions'
 description: Learn more about @bridge/tab-actions module that allows access to bridge.'s tab action system.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 🏃‍♂️ @bridge/tab-actions

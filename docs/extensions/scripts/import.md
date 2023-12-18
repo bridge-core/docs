@@ -1,7 +1,7 @@
 ---
 title: '@bridge/import'
 description: Learn more about @bridge/import module that allows access to bridge.'s import system.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 📥 @bridge/import

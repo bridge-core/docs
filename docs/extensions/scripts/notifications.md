@@ -1,7 +1,7 @@
 ---
 title: '@bridge/notifications'
 description: Learn about the @bridge/notification module that allows extensions to create notifications.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # ❕ @bridge/notification

@@ -18,6 +18,7 @@ In this page you will learn the following:
 :ballot_box_with_check: How to make your very own page and script.
 
 ## Basics
+
 Script modules is a collection of JavaScript files and Vue files that can be created within bridge's extension folder or outside of bridge that enable you to develop your own windows, scripts and request bridge to do certain things. Bridge's Script API uses the Vue V2 Engine. It is highly recommended to read the [documentation of the Vue V2 Engine](https://v2.vuejs.org/) to understand how to write and use Vue files.
 
 :::warning
@@ -27,7 +28,9 @@ To reload extensions go to `Tools > Reload Extensions` after importing your exte
 :::
 
 ## Creating A Simple Script and Window
+
 ### Setup
+
 Before you begin writing your script and Vue files, you must set up an [extension](/extensions/index.html#creating-extensions) to contain your files. Once you have a valid extension set up in the extension's folder, you can now create two folders named `ui` and `scripts` then create a file called `index.js` inside the `scripts` folder.
 
 The `ui` folder will contain your Vue files while the `scripts` folder will contain your JavaScript files. See example setup below.
@@ -46,6 +49,7 @@ This is also the same for `scripts` folder where you cannot have any file other 
 :::
 
 ### Writing The UI
+
 Now that we have made the files and folders required we will be adding a button to the sidebar that will open up a sidebar window. To do this we will be using the [@bridge/sidebar](/extensions/scripts/sidebar.html) and [@bridge/ui](/extensions/scripts/ui.html) module inside the `index.js` file.
 
 However before we do this we need to setup and import the vue file in the `ui` folder.
@@ -62,22 +66,22 @@ Now we need to begin setting up the vue file with the required template and scri
 
 ```vue
 <template>
-    <div style="padding:10px;">
-        <h1>You've clicked {{ Counter }} Times!</h1>
-        <v-btn block color="primary" @click="IncrementCounter">Click Me!</v-btn>
-    </div>
+	<div style="padding:10px;">
+		<h1>You've clicked {{ Counter }} Times!</h1>
+		<v-btn block color="primary" @click="IncrementCounter">Click Me!</v-btn>
+	</div>
 </template>
 
 <script>
 export default {
-    data: () => ({
-        Counter: 0
-    }),
-    methods: {
-        IncrementCounter() {
-            this.Counter = this.Counter + 1
-        }
-    }
+	data: () => ({
+		Counter: 0,
+	}),
+	methods: {
+		IncrementCounter() {
+			this.Counter = this.Counter + 1
+		},
+	},
 }
 </script>
 ```
@@ -94,7 +98,7 @@ Now that we have setup the vue file we need to start writing the `index.js` file
 import { create } from '@bridge/sidebar'
 import { Home } from '@bridge/ui'
 /*
-See how we are importing Home from @bridge/ui. This means we are importing the vue file Home.vue. 
+See how we are importing Home from @bridge/ui. This means we are importing the vue file Home.vue.
 If we were to name the vue file SideBar.vue then we would need to do
 
 import { SideBar } from '@bridge/ui'
@@ -104,10 +108,10 @@ Then we need to call the function and fill in the paramaters.
 
 ```js
 create({
-	   id: 'yourId',
-	   displayName: 'Click Me',
-	   icon: 'mdi-apple',
-	   component: Home
+	id: 'yourId',
+	displayName: 'Click Me',
+	icon: 'mdi-apple',
+	component: Home,
 })
 ```
 
@@ -124,42 +128,47 @@ Again this may seem a little confusing so lets break it down again.
 Phew. Now you have made it this far, save your files and then reload your extension by going to **Tools > Reload Extensions**. If everything went correctly you should now see an apple icon on the sidebar if you have used the mdi-apple icon.
 
 ## Full Setup Of Tutorial
+
 ### index.js
+
 ```js
-import { create } from '@bridge/sidebar';
-import { Home } from '@bridge/ui';
+import { create } from '@bridge/sidebar'
+import { Home } from '@bridge/ui'
 
 create({
-    id: 'yourId',
-    displayName: 'Click Me',
-    icon: 'mdi-apple',
-    component: Home
+	id: 'yourId',
+	displayName: 'Click Me',
+	icon: 'mdi-apple',
+	component: Home,
 })
 ```
+
 ### Home.vue
+
 ```vue
 <template>
-    <div style="padding:10px;">
-        <h1>You've clicked {{ Counter }} Times!</h1>
-        <v-btn block color="primary" @click="IncrementCounter">Click Me!</v-btn>
-    </div>
+	<div style="padding:10px;">
+		<h1>You've clicked {{ Counter }} Times!</h1>
+		<v-btn block color="primary" @click="IncrementCounter">Click Me!</v-btn>
+	</div>
 </template>
 
 <script>
 export default {
-    data: () => ({
-        Counter: 0
-    }),
-    methods: {
-        IncrementCounter() {
-            this.Counter = this.Counter + 1
-        }
-    }
+	data: () => ({
+		Counter: 0,
+	}),
+	methods: {
+		IncrementCounter() {
+			this.Counter = this.Counter + 1
+		},
+	},
 }
 </script>
 ```
 
 ### File & Folder Setup
+
 ```txt
 📁 extensions
 ├─ 📁 YourExtension
@@ -171,4 +180,5 @@ export default {
 ```
 
 ## Next Steps
+
 This guide only scratches the surface of what is possible with script modules. It is best to look at the [extensions repository on github](https://github.com/bridge-core/plugins) for examples and references when developing your extension or when you want to figure out something. It is best to start simple and get familiar with reading the documentation and understanding how certain things work.

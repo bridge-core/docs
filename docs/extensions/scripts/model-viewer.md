@@ -1,7 +1,7 @@
 ---
 title: '@bridge/model-viewer'
 description: Learn about the @bridge/model-viewer... TODO
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 🧱 @bridge/model-viewer

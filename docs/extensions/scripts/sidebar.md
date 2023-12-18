@@ -1,7 +1,7 @@
 ---
 title: '@bridge/sidebar'
 description: Learn about the @bridge/sidebar module that allows extensions to create sidebar tabs.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 🧭 @bridge/sidebar

@@ -1,7 +1,7 @@
 ---
 title: '@bridge/com-mojang'
 description: Learn about the @bridge/com-mojang that allows you to access the com.mojang file system.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 📂 @bridge/com-mojang

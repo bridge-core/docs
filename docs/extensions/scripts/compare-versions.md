@@ -1,7 +1,7 @@
 ---
 title: '@bridge/compare-versions'
 description: Learn about the @bridge/compare-versions... TODO
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 🧩 @bridge/compare-versions

@@ -1,7 +1,7 @@
 ---
 title: '@bridge/path'
 description: Learn about the @bridge/path module that gives access to the node 'path' module.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 📕 @bridge/path

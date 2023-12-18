@@ -1,7 +1,7 @@
 ---
 title: '@bridge/toolbar'
 description: Learn about the @bridge/toolbar which allows access to bridge's toolbar system.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 🧰 @bridge/toolbar

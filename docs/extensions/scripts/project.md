@@ -1,7 +1,7 @@
 ---
 title: '@bridge/project'
 description: Learn about the @bridge/project that allows access to specific functions related to the current project.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 🚧 @bridge/project

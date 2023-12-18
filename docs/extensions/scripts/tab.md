@@ -1,7 +1,7 @@
 ---
 title: '@bridge/tab'
 description: Learn more about @bridge/tab module that allows access to bridge.'s tab system.
-sidebar: scripts
+sidebar: Scripts
 ---
 
 # 📎 @bridge/tab
