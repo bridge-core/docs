@@ -1,5 +1,5 @@
 ---
-title: 🧭 @bridge/sidebar
+title: '@bridge/sidebar'
 description: Learn about the @bridge/sidebar module that allows extensions to create sidebar tabs.
 sidebar: scripts
 ---
@@ -21,14 +21,14 @@ import { ... } from '@bridge/sidebar'
 
 This function creates a new sidebar element and adds it to the current workspace.
 
-- Signature: `create(config: SidebarElement)`
-- Returns: `SidebarElement`
+-   Signature: `create(config: SidebarElement)`
+-   Returns: `SidebarElement`
 
 ```js
 create({
-	   id: 'myExtension',
-	   displayName: 'Click Me',
-	   icon: 'mdi-apple',
-	   component: MyComponent //MyComponent is from @bridge/ui.
+	id: 'myExtension',
+	displayName: 'Click Me',
+	icon: 'mdi-apple',
+	component: MyComponent, //MyComponent is from @bridge/ui.
 })
 ```

@@ -1,5 +1,5 @@
 ---
-title: 📡 @bridge/command-bar
+title: '@bridge/command-bar'
 description: Learn about the @bridge/command-bar... TODO
 sidebar: scripts
 ---
@@ -21,8 +21,8 @@ import { ... } from "@bridge/command-bar"
 
 TODO
 
-- Signature: `registerAction(actionConfig: IActionConfig)`
-- Returns: `IDisposable`
+-   Signature: `registerAction(actionConfig: IActionConfig)`
+-   Returns: `IDisposable`
 
 ```js
 TODO

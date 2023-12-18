@@ -1,5 +1,5 @@
 ---
-title: 🧨 @bridge/reactivity
+title: '@bridge/reactivity'
 description: Learn about the @bridge/reactivity... TODO
 sidebar: scripts
 ---
@@ -16,4 +16,5 @@ import { ... } from "@bridge/reactivity"
 [[toc]]
 
 ## ⚡ Functions
+
 TODO

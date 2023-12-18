@@ -1,5 +1,5 @@
 ---
-title: 📂 @bridge/com-mojang
+title: '@bridge/com-mojang'
 description: Learn about the @bridge/com-mojang that allows you to access the com.mojang file system.
 sidebar: scripts
 ---
@@ -21,7 +21,7 @@ import { ... } from "@bridge/com-mojang"
 
 A signal that states whether the [com.mojang](/guide/misc/com-mojang-syncing/index.html) folder has been setup by the user.
 
-- Type: `Signal<void>`
+-   Type: `Signal<void>`
 
 ```js
 // Wait for the com.mojang folder to be setup before interacting with it
@@ -30,7 +30,7 @@ await setup.fired
 
 // Check that the com.mojang folder has already been setup
 if (setup.hasFired) {
-    console.log("com.mojang linking has been setup")
+	console.log('com.mojang linking has been setup')
 }
 ```
 
@@ -38,16 +38,16 @@ if (setup.hasFired) {
 
 ### requestFileSystem
 
-The `requestFileSystem` function returns the [com.mojang](/guide/misc/com-mojang-syncing/index.html) file system instance. 
+The `requestFileSystem` function returns the [com.mojang](/guide/misc/com-mojang-syncing/index.html) file system instance.
 
-- Signature: `requestFileSystem()`
-- Returns: `Promise<FileSystem>`
+-   Signature: `requestFileSystem()`
+-   Returns: `Promise<FileSystem>`
 
 ```js
 const comMojangFs = await requestFileSystem()
 
 if (await comMojangFs.directoryExists('test')) {
-    console.log('The folder "test" exists in the com.mojang folder.')
+	console.log('The folder "test" exists in the com.mojang folder.')
 }
 ```
 

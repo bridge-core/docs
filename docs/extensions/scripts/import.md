@@ -1,5 +1,5 @@
 ---
-title: 📥 @bridge/import
+title: '@bridge/import'
 description: Learn more about @bridge/import module that allows access to bridge.'s import system.
 sidebar: scripts
 ---
@@ -21,8 +21,8 @@ import { ... } from '@bridge/import'
 
 TODO
 
-- Signature: <code>addFolderImporter(handle: <a href="#ifolderhandler">IFolderHandler</a>)</code>
-- Returns: `Promise<void> <-IDK if this is correct`
+-   Signature: <code>addFolderImporter(handle: <a href="#ifolderhandler">IFolderHandler</a>)</code>
+-   Returns: `Promise<void> <-IDK if this is correct`
 
 ```js
 //TODO
@@ -35,8 +35,8 @@ await addFolderImporter()
 
 TODO
 
-- Signature: <code>importHandle(handle: <a href="#anyhandle">AnyHandle</a>)</code>
-- Returns: `Promise<void>`
+-   Signature: <code>importHandle(handle: <a href="#anyhandle">AnyHandle</a>)</code>
+-   Returns: `Promise<void>`
 
 ```js
 //TODO
@@ -49,8 +49,8 @@ await importHandle()
 
 The `registerOpenWithHandler` function registers/adds a new handler in the Open With popup when you drag and drop a file onto bridge.
 
-- Signatue: <code>registerOpenWithHandler(handler: <a href="#ipluginopenwithaction">IPluginOpenWithAction</a>)</code>
-- Returns: `IDisposable`
+-   Signatue: <code>registerOpenWithHandler(handler: <a href="#ipluginopenwithaction">IPluginOpenWithAction</a>)</code>
+-   Returns: `IDisposable`
 
 ```js
 //TODO

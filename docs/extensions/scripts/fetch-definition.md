@@ -1,5 +1,5 @@
 ---
-title: 🔗 @bridge/fetch-definition
+title: '@bridge/fetch-definition'
 description: Learn more about the @bridge/fetch-definition module which grants access to the lightning cache database.
 sidebar: scripts
 ---
@@ -21,8 +21,8 @@ import { ... } from '@bridge/fetch-definition'
 
 The `fetchDefinition` function is used to search the lightning cache database, which bridge. uses to dynamically store data from a user's project.
 
-- Signature: `fetchDefinition(fileType: string, fetchDefs: string[], fetchSearch: string, fetchAll = false)`
-- Returns: `Promise<string[]>`
+-   Signature: `fetchDefinition(fileType: string, fetchDefs: string[], fetchSearch: string, fetchAll = false)`
+-   Returns: `Promise<string[]>`
 
 ```js
 const walkAnimations = await fetchDefinition(
@@ -33,5 +33,5 @@ const walkAnimations = await fetchDefinition(
 )
 
 // With fetchAll = false you still get an array, but it will simply only contain one string
-const walkAnimation = walkAnimations[0];
+const walkAnimation = walkAnimations[0]
 ```

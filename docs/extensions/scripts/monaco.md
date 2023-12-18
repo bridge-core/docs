@@ -1,5 +1,5 @@
 ---
-title: 🔩 @bridge/monaco
+title: '@bridge/monaco'
 description: Learn about the @bridge/monaco module that allows you to modify monaco's behaviors.
 sidebar: scripts
 ---
@@ -21,8 +21,8 @@ import { ... } from '@bridge/monaco'
 
 This function registers a [file formatter](https://microsoft.github.io/monaco-editor/api/modules/monaco.languages.html#registerdocumentformattingeditprovider) into the monaco editor system inside of bridge.
 
-- Signature: `registerDocumentFormattingEditProvider(languageId: string, provider: DocumentFormattingEditProvider)`
-- Returns: `Promise<void>`
+-   Signature: `registerDocumentFormattingEditProvider(languageId: string, provider: DocumentFormattingEditProvider)`
+-   Returns: `Promise<void>`
 
 ```js
 //TODO

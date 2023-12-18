@@ -1,5 +1,5 @@
 ---
-title: 🎴 @bridge/ui
+title: '@bridge/ui'
 description: Learn more about the @bridge/ui module that provides programmatic access to Vue components defined inside of the plugin's ui/ folder.
 sidebar: scripts
 ---
@@ -21,7 +21,7 @@ import { ... } from '@bridge/ui'
 
 TODO
 
-- Type: `BuiltIn`
+-   Type: `BuiltIn`
 
 ```js
 //TODO
@@ -38,7 +38,7 @@ BridgeSheet
 
 This variable is of `any` type variable which references the name of your Vue filename located in `ui/` folder.
 
-- Type: `any`
+-   Type: `any`
 
 ```js
 //Accesses the component inside of the ui/Main.vue file

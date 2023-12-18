@@ -1,5 +1,5 @@
 ---
-title: 🧰 @bridge/toolbar
+title: '@bridge/toolbar'
 description: Learn about the @bridge/toolbar which allows access to bridge's toolbar system.
 sidebar: scripts
 ---
@@ -18,10 +18,11 @@ import { ... } from "@bridge/toolbar"
 ## ⚡ Functions
 
 ### addCategory
+
 TODO
 
-- Signature: `addCategory(category: ToolbarCategory)`
-- Returns: `Promise<void>`
+-   Signature: `addCategory(category: ToolbarCategory)`
+-   Returns: `Promise<void>`
 
 ```js
 TODO

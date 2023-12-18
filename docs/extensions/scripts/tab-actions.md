@@ -1,5 +1,5 @@
 ---
-title: 🏃‍♂️ @bridge/tab-actions
+title: '@bridge/tab-actions'
 description: Learn more about @bridge/tab-actions module that allows access to bridge.'s tab action system.
 sidebar: scripts
 ---
@@ -21,8 +21,8 @@ import { ... } from '@bridge/tab-actions'
 
 The addTabActions function adds the default tab actions for the specific file tab.
 
-- Signature: `addTabActions(tab: any)`
-- Returns: `Promise<void>`
+-   Signature: `addTabActions(tab: any)`
+-   Returns: `Promise<void>`
 
 ```js
 TODO
@@ -34,8 +34,8 @@ TODO
 
 The register function registers a new tab action.
 
-- Signature: <code>register(definition: <a href="#itabactionconfig">ITabActionConfig</a>)</code>
-- Returns: `Promise<IDisposable>`
+-   Signature: <code>register(definition: <a href="#itabactionconfig">ITabActionConfig</a>)</code>
+-   Returns: `Promise<IDisposable>`
 
 ```js
 TODO
@@ -47,8 +47,8 @@ TODO
 
 The register function registers a new tab preview.
 
-- Signature: <code>registerPreview(definition: <a href="#itabpreviewconfig">ITabPreviewConfig</a>)</code>
-- Returns: `Promise<IDisposable>`
+-   Signature: <code>registerPreview(definition: <a href="#itabpreviewconfig">ITabPreviewConfig</a>)</code>
+-   Returns: `Promise<IDisposable>`
 
 ```js
 TODO

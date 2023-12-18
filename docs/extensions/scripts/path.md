@@ -1,5 +1,5 @@
 ---
-title: 📕 @bridge/path
+title: '@bridge/path'
 description: Learn about the @bridge/path module that gives access to the node 'path' module.
 sidebar: scripts
 ---
@@ -21,8 +21,8 @@ import { ... } from '@bridge/path'
 
 This returns the directory name of a given path.
 
-- Signature: `dirname(path: string)`
-- Returns: `string`
+-   Signature: `dirname(path: string)`
+-   Returns: `string`
 
 ```js
 console.log(dirname('path/to/folder'))
@@ -34,8 +34,8 @@ console.log(dirname('path/to/folder'))
 
 The `join` function joins the arguments together and normalises the resulting path.
 
-- Signature: `join(...paths: string[])`
-- Returns: `string`
+-   Signature: `join(...paths: string[])`
+-   Returns: `string`
 
 ```js
 let userInput
@@ -43,8 +43,8 @@ let userInput
 
 // resolvePackPath from @bridge/env
 const behaviorPath = resolvePackPath(
-    'behaviorPack',
-    join('entities', userInput)
+	'behaviorPack',
+	join('entities', userInput)
 )
 // This path will point to the file 'BP/entities/${userInput}'
 ```
@@ -55,21 +55,21 @@ const behaviorPath = resolvePackPath(
 
 This function returns the extension of the path, from the last '.' to end of string in the last portion of the path. If there is no '.' in the last portion of the path or the first character of it is '.', then it returns an empty string
 
-- Signature: `extname(path: string)`
-- Returns: `string`
+-   Signature: `extname(path: string)`
+-   Returns: `string`
 
 ```js
 const fileType = extname(myPath)
 switch (fileType) {
-    case '.json':
-        console.log('This is a json file')
-        break
-    case '.html':
-        console.log('This is a html file')
-        break
-    case '.css':
-        console.log('This is a css file')
-        break
+	case '.json':
+		console.log('This is a json file')
+		break
+	case '.html':
+		console.log('This is a html file')
+		break
+	case '.css':
+		console.log('This is a css file')
+		break
 }
 ```
 
@@ -79,8 +79,8 @@ switch (fileType) {
 
 The `basename` function returns the last section of the given path. This is often used to extract the file name from a path. An extension can be specified to be removed from the result.
 
-- Signature: `basename(path: string, extension?: string)`
-- Returns: `string`
+-   Signature: `basename(path: string, extension?: string)`
+-   Returns: `string`
 
 ```js
 const fileName = basename('BP/entities/allay.json')
@@ -96,8 +96,8 @@ console.log(fileNameNoExt) // allay
 
 From left to right, this function joins each segment together and resolves to an absolute path.
 
-- Signature: `resolve(...pathSegments: string[])`
-- Returns: `string`
+-   Signature: `resolve(...pathSegments: string[])`
+-   Returns: `string`
 
 ```js
 console.log(resolve('BP/templates', '../entities/pig.json')) // BP/entities/pig.json
@@ -109,8 +109,8 @@ console.log(resolve('BP/templates', '../entities/pig.json')) // BP/entities/pig.
 
 This solves the relative path from `from` to `to`. At times we have two absolute paths, and we need to derive the relative path from one to the other.
 
-- Signature: `relative(from: string, to: string)`
-- Returns: `string`
+-   Signature: `relative(from: string, to: string)`
+-   Returns: `string`
 
 ```js
 const start = 'RP/textures/entity/pig/pig.png'

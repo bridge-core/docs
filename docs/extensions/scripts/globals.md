@@ -1,5 +1,5 @@
 ---
-title: 🌐 @bridge/globals
+title: '@bridge/globals'
 description: Learn about the @bridge/globals module that allows custom components, custom commands and other plugins to access shared data inside of a globals.json file in the project root.
 sidebar: scripts
 ---
@@ -19,11 +19,11 @@ This file should always be named `globals.json` and must be located in the root 
 
 ```json
 {
-    "settings": {
-        "a": true,
-        "b": false
-    },
-    "maximumLength": 164
+	"settings": {
+		"a": true,
+		"b": false
+	},
+	"maximumLength": 164
 }
 ```
 
@@ -32,6 +32,7 @@ This file should always be named `globals.json` and must be located in the root 
 In order to access the data in the globals.json file, you simply need to import the `@bridge/globals` module and this will contain an object representing the globals.json file.
 
 Example (continuing from the example above):
+
 ```js
 import { settings, maximumLength } from '@bridge/globals'
 

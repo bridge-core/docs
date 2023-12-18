@@ -1,5 +1,5 @@
 ---
-title: 🧱 @bridge/model-viewer
+title: '@bridge/model-viewer'
 description: Learn about the @bridge/model-viewer... TODO
 sidebar: scripts
 ---
@@ -19,8 +19,8 @@ import { ... } from "@bridge/model-viewer"
 
 ### Model
 
-- Signature: `Model()`
-- Returns: `TODO`
+-   Signature: `Model()`
+-   Returns: `TODO`
 
 ```js
 Model()
@@ -30,8 +30,8 @@ Model()
 
 ### StandaloneModelViewer
 
-- Signature: `StandaloneModelViewer()`
-- Returns: `TODO`
+-   Signature: `StandaloneModelViewer()`
+-   Returns: `TODO`
 
 ```js
 StandaloneModelViewer()

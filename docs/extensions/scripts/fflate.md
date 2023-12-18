@@ -1,5 +1,5 @@
 ---
-title: 💽 @bridge/fflate
+title: '@bridge/fflate'
 description: Learn about the @bridge/fflate which allows access to the fflate library.
 sidebar: scripts
 ---

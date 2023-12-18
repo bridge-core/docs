@@ -1,5 +1,5 @@
 ---
-title: 📎 @bridge/tab
+title: '@bridge/tab'
 description: Learn more about @bridge/tab module that allows access to bridge.'s tab system.
 sidebar: scripts
 ---
@@ -21,8 +21,8 @@ import { ... } from '@bridge/tab'
 
 The `register` function registers new FileTabs to be picked up by the isTabFor tab system method
 
-- Signature: `register(FileTabClass: typeof FileTab)`
-- Returns: `IDisposable`
+-   Signature: `register(FileTabClass: typeof FileTab)`
+-   Returns: `IDisposable`
 
 ```js
 //TODO
@@ -34,8 +34,8 @@ The `register` function registers new FileTabs to be picked up by the isTabFor t
 
 Given a file path relative to the project root, open the corresponding file inside of bridge.'s tab system
 
-- Signature: `openFilePath(filePath: string, selectTab: boolean)`
-- Returns: `Promise<void>`
+-   Signature: `openFilePath(filePath: string, selectTab: boolean)`
+-   Returns: `Promise<void>`
 
 ```js
 await openFilePath('example/example.json', true) //When selectTab is set to true it will automatically select the tab when opened.
@@ -47,8 +47,8 @@ await openFilePath('example/example.json', true) //When selectTab is set to true
 
 The `openTab` function is useful for ContentTabs: Programmatically adds and opens the tab to the tab system
 
-- Signature: `openTab(FileTabClass: typeof Tab, splitScreen: boolean)`
-- Returns: `Promise<void>`
+-   Signature: `openTab(FileTabClass: typeof Tab, splitScreen: boolean)`
+-   Returns: `Promise<void>`
 
 ```ts
 //Import our page from ui/ folder
@@ -58,23 +58,22 @@ import { Example } from '@bridge/ui'
 await openTab(ExampleTab)
 
 //Declare a new class which sets up the tab.
-class ExampleTab extends ContentTab
-{
-    component = Example;
-    type = "ExampleTab";
+class ExampleTab extends ContentTab {
+	component = Example
+	type = 'ExampleTab'
 
-    async isFor() {
-        return false
-    }
-    get icon() {
-        return 'mdi-tools'
-    }
-    get iconColor() {
-        return 'warning'
-    }
-    get name() {
-        return 'Loop Tool'
-    }
+	async isFor() {
+		return false
+	}
+	get icon() {
+		return 'mdi-tools'
+	}
+	get iconColor() {
+		return 'warning'
+	}
+	get name() {
+		return 'Loop Tool'
+	}
 }
 ```
 
@@ -88,8 +87,8 @@ This function is deprecated however it still works. Please use addTab instead
 
 The `addTab` function programmatically adds and opens the tab to the tab system
 
-- Signature: `addTab(tab: Tab)`
-- Returns: `void`
+-   Signature: `addTab(tab: Tab)`
+-   Returns: `void`
 
 ```js
 //Import our page from ui/ folder
@@ -99,23 +98,22 @@ import { Example } from '@bridge/ui'
 addTab(new ExampleTab(getCurrentTabSystem())) // getCurrentTabSystem is from @bridge/tab
 
 //Declare a new class which sets up the tab.
-class ExampleTab extends ContentTab
-{
-    component = Example;
-    type = "ExampleTab";
+class ExampleTab extends ContentTab {
+	component = Example
+	type = 'ExampleTab'
 
-    async isFor() {
-        return false
-    }
-    get icon() {
-        return 'mdi-tools'
-    }
-    get iconColor() {
-        return 'warning'
-    }
-    get name() {
-        return 'Loop Tool'
-    }
+	async isFor() {
+		return false
+	}
+	get icon() {
+		return 'mdi-tools'
+	}
+	get iconColor() {
+		return 'warning'
+	}
+	get name() {
+		return 'Loop Tool'
+	}
 }
 ```
 
@@ -125,8 +123,8 @@ class ExampleTab extends ContentTab
 
 The `getCurrentTabSystem` function returns the tabSystem.
 
-- Signature: `getCurrentTabSystem()`
-- Returns: `IVE WASTED 1 HOUR TRYING TO FIND THIS`
+-   Signature: `getCurrentTabSystem()`
+-   Returns: `IVE WASTED 1 HOUR TRYING TO FIND THIS`
 
 ```js
 console.log(getCurrentTabSystem())
@@ -139,22 +137,21 @@ console.log(getCurrentTabSystem())
 https://github.com/bridge-core/editor/blob/main/src/components/TabSystem/CommonTab.ts
 
 ```js
-class ExampleTab extends ContentTab
-{
-    component = exampleVuePage;
-    type = "exampleContentTab";
-    async isFor() {
-        return false
-    }
-    get icon() {
-        return 'mdi-tools'
-    }
-    get iconColor() {
-        return 'warning'
-    }
-    get name() {
-        return 'Example Content Tab'
-    }
+class ExampleTab extends ContentTab {
+	component = exampleVuePage
+	type = 'exampleContentTab'
+	async isFor() {
+		return false
+	}
+	get icon() {
+		return 'mdi-tools'
+	}
+	get iconColor() {
+		return 'warning'
+	}
+	get name() {
+		return 'Example Content Tab'
+	}
 }
 ```
 
@@ -171,11 +168,10 @@ https://github.com/bridge-core/editor/blob/main/src/components/Editors/ThreePrev
 https://github.com/bridge-core/editor/blob/main/src/components/Editors/IframeTab/IframeTab.ts
 
 ```js
-class ExampleTab extends IframeTab
-{
-    type = "exampleTab";
-    static is() {
-        return false
+class ExampleTab extends IframeTab {
+	type = 'exampleTab'
+	static is() {
+		return false
 	}
 	get icon() {
 		return 'mdi-book-open-page-variant'
@@ -184,7 +180,7 @@ class ExampleTab extends IframeTab
 		return 'primary'
 	}
 	get name() {
-		return "Example Tab";
+		return 'Example Tab'
 	}
 }
 ```

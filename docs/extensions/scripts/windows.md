@@ -1,5 +1,5 @@
 ---
-title: 🏠 @bridge/windows
+title: '@bridge/windows'
 description: Learn about the @bridge/windows which allows access to bridge's windows system.
 sidebar: scripts
 ---
@@ -21,11 +21,11 @@ import { ... } from "@bridge/windows"
 
 The `createInformationWindow` function creates a new information window that pop's up and tells the user some information.
 
-- Signature: `createInformationWindow(displayName: string, displayContent: string)`
-- Returns: `void`
+-   Signature: `createInformationWindow(displayName: string, displayContent: string)`
+-   Returns: `void`
 
 ```js
-createInformationWindow("Title", "Your information content");
+createInformationWindow('Title', 'Your information content')
 ```
 
 ---
@@ -34,12 +34,12 @@ createInformationWindow("Title", "Your information content");
 
 The `createInputWindow` function creates a new window specifically for text inputs.
 
-- Signature: `createInputWindow(displayName: string, inputLabel: string, defaultValue: string, onConfirm: (input: string) => void, expandText?: string)`
-- Returns: `void`
+-   Signature: `createInputWindow(displayName: string, inputLabel: string, defaultValue: string, onConfirm: (input: string) => void, expandText?: string)`
+-   Returns: `void`
 
 ```js
-createInputWindow("Title", "TextInputTitle", "Default Value", () => {
-    console.log("Yeet")
+createInputWindow('Title', 'TextInputTitle', 'Default Value', () => {
+	console.log('Yeet')
 })
 ```
 
@@ -49,28 +49,35 @@ createInputWindow("Title", "TextInputTitle", "Default Value", () => {
 
 The `createDropdownWindow` function creates a new window for a dropdown input.
 
-- Signature: `createDropdownInput(displayName: string, placeholder: string, options: Array<string>, defaultSelected: string, onConfirm: (input: string) => void)`
-- Returns: `void`
+-   Signature: `createDropdownInput(displayName: string, placeholder: string, options: Array<string>, defaultSelected: string, onConfirm: (input: string) => void)`
+-   Returns: `void`
 
 ```js
-const options = ["Option1", "Option2"]
-createDropdownWindow("Title", "PlaceHolder", options, "Option1", (result) => {
-    console.log(`You have chosen: ${result}`)
+const options = ['Option1', 'Option2']
+createDropdownWindow('Title', 'PlaceHolder', options, 'Option1', (result) => {
+	console.log(`You have chosen: ${result}`)
 })
 ```
 
 ---
+
 ### createConfirmWindow
 
 The `createConfirmWindow` function creates a new window for either a cancel or confirm action.
 
-- Signature: `createConfirmWindow(displayContent: string, confirmText: string, cancelText: string, onConfirm: () => void, onCancel: () => void)`
-- Returns: `void`
+-   Signature: `createConfirmWindow(displayContent: string, confirmText: string, cancelText: string, onConfirm: () => void, onCancel: () => void)`
+-   Returns: `void`
 
 ```js
-createConfirmWindow("Confirmation Description", "Confirm", "Deny", () => {
-    console.log("Confirmed")
-}, () => {
-    console.log("Denied")
-})
+createConfirmWindow(
+	'Confirmation Description',
+	'Confirm',
+	'Deny',
+	() => {
+		console.log('Confirmed')
+	},
+	() => {
+		console.log('Denied')
+	}
+)
 ```

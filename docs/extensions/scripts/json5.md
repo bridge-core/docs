@@ -1,5 +1,5 @@
 ---
-title: 🏗️ @bridge/json5
+title: '@bridge/json5'
 description: Learn about the @bridge/json5 module that gives access to json parsing with the json5 npm package.
 sidebar: scripts
 ---
@@ -21,8 +21,8 @@ import { ... } from '@bridge/json5'
 
 The `parse` function parses a string that is in JSON format to a JavaScript object. This can be benefical over using the default `JSON.parse` since this parses the [json5 format](https://json5.org/) which means features like comments and trailing commas will not throw errors.
 
-- Signature: `parse(str: string)`
-- Returns: `any`
+-   Signature: `parse(str: string)`
+-   Returns: `any`
 
 ```js
 const jsonStr = '{ "example": "Example Value" }'
@@ -37,12 +37,12 @@ console.log(parsedJSON.example)
 
 The `stringify` function converts a JavaScript object to a JSON string with the specified formatting.
 
-- Signature: `stringify(obj: any, replacer?: ((this: any, key: string, value: any) => any), space?: space?: string | number)`
-- Returns: `string`
+-   Signature: `stringify(obj: any, replacer?: ((this: any, key: string, value: any) => any), space?: space?: string | number)`
+-   Returns: `string`
 
 ```js
 const jsonObj = {
-    example: 'ExampleValue'
+	example: 'ExampleValue',
 }
 
 const convertedJson = stringify(jsonObj)

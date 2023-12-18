@@ -1,5 +1,5 @@
 ---
-title: 💾 @bridge/persistent-storage
+title: '@bridge/persistent-storage'
 description: Learn about the @bridge/persistent-storage module that allows your extension to store data between sessions.
 sidebar: scripts
 ---
@@ -21,15 +21,15 @@ import { ... } from "@bridge/persistent-storage"
 
 This allows you to save any type of data into persistent storage for your extension to access it at a later point.
 
-- Signature: `save(data: any)`
-- Returns: `Promise<void>`
+-   Signature: `save(data: any)`
+-   Returns: `Promise<void>`
 
 ```js
 const settings = {
-    a: {
-        b: 'c'
-    },
-    d: ['e', 'f', 'g']
+	a: {
+		b: 'c',
+	},
+	d: ['e', 'f', 'g'],
 }
 
 await save(settings)
@@ -39,8 +39,8 @@ await save(settings)
 
 The `load` function is used to access data that has been saved in local storage previously.
 
-- Signature: `load()`
-- Returns: `Promise<any>`
+-   Signature: `load()`
+-   Returns: `Promise<any>`
 
 ```js
 const settings = await load()
@@ -52,8 +52,8 @@ console.log(settings.a.b)
 
 This function clears any data that has been stored by your extension.
 
-- Signature: `delete()`
-- Returns: `Promise<void>`
+-   Signature: `delete()`
+-   Returns: `Promise<void>`
 
 ```js
 await delete()

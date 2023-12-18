@@ -1,5 +1,5 @@
 ---
-title: ❕ @bridge/notifications
+title: '@bridge/notifications'
 description: Learn about the @bridge/notification module that allows extensions to create notifications.
 sidebar: scripts
 ---
@@ -21,8 +21,8 @@ import { ... } from '@bridge/notification'
 
 The `create` function allows you to create notifications in bridge's notification system. This will show up in the sidebar.
 
-- Signature: <code>create(config: <a href="#inotificationconfig">INotificationConfig</a>)</code>
-- Returns: `Notification`
+-   Signature: <code>create(config: <a href="#inotificationconfig">INotificationConfig</a>)</code>
+-   Returns: `Notification`
 
 ```js
 create(
@@ -46,18 +46,17 @@ create(
 
 The `create` function allows you to create a new error notification. This will show up in the sidebar.
 
-- Signature: `createError(error: Error)`
-- Returns: `IDisposable`
+-   Signature: `createError(error: Error)`
+-   Returns: `IDisposable`
 
 ```js
 createError(new Error('Oops, something went wrong :('))
 
 try {
-    const t = 0
-    t = 2 // Throws error, can't reassign constant
-} 
-catch (error) {
-    createError(error)
+	const t = 0
+	t = 2 // Throws error, can't reassign constant
+} catch (error) {
+	createError(error)
 }
 ```
 
