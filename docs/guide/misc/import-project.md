@@ -1,6 +1,6 @@
 ---
 title: 📬 Importing Projects
-sidebar: misc
+sidebar: Misc
 ---
 
 # 📬 Importing Projects

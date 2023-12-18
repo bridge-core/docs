@@ -1,7 +1,7 @@
 ---
 title: '🛠 Migration Guide'
 description: 'Find out how to migrate your bridge. v1 projects to bridge. v2!'
-sidebar: 'guide'
+sidebar: Guide
 author: 'joelant05'
 nav_order: 9
 ---

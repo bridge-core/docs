@@ -1,7 +1,7 @@
 ---
 title: 📚 Script Modules
 description: Discover how scripts can be written to further build on bridge.'s extension capabilties.
-sidebar: scripts
+sidebar: Scripts
 nav_order: -1
 ---
 

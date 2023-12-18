@@ -1,7 +1,7 @@
 ---
 title: '🧱 Presets'
 description: "Learn about bridge.'s presets and how to create them."
-sidebar: 'presets'
+sidebar: Presets
 nav_order: -1
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: '🧩 Extension API'
 description: ''
-sidebar: 'extensions'
+sidebar: Extensions
 nav_order: -1
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: '💡 Why bridge.?'
-sidebar: 'guide'
+sidebar: Guide
 nav_order: -10
 ---
 

@@ -46,5 +46,23 @@
 			{ "icon": "github", "link": "https://github.com/pascal541" },
 			{ "icon": "twitter", "link": "https://twitter.com/Pascal5419" }
 		]
+	},
+	{
+		"avatar": "https://www.github.com/tschipp.png",
+		"name": "Tschipp",
+		"title": "Contributor",
+		"links": [
+			{ "icon": "github", "link": "https://github.com/tschipp" },
+			{ "icon": "twitter", "link": "https://twitter.com/MrTschipp" }
+		]
+	},
+	{
+		"avatar": "https://www.github.com/jasonjgardner.png",
+		"name": "Jason",
+		"title": "Contributor",
+		"links": [
+			{ "icon": "github", "link": "https://github.com/jasonjgardner" },
+			{ "icon": "twitter", "link": "https://twitter.com/JasonGardner" }
+		]
 	}
 ]

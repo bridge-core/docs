@@ -1,7 +1,7 @@
 ---
 title: 📝 Extension Manifest
 description: Learn about the structure of an extension manifest.
-sidebar: extensions
+sidebar: Extensions
 ---
 
 # 📝 Extension Manifest

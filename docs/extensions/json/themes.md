@@ -1,6 +1,6 @@
 ---
 description: 'Theme documentation.'
-sidebar: 'extensions'
+sidebar: Extensions
 ---
 
 # Themes

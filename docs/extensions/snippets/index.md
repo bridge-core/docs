@@ -1,7 +1,7 @@
 ---
 title: '🔗 Snippets'
 description: Learn about snippets and how to create your own.
-sidebar: 'snippets'
+sidebar: Snippets
 nav_order: -1
 ---
 

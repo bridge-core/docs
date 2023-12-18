@@ -1,10 +1,8 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from './generateSidebar'
-import { getLatestBridgeVersion } from './latestBridgeVersion'
+import { latestBridgeVersion } from './latestBridgeVersion'
 import { loadAuthors } from './loadAuthors'
 import { loadCreations } from './loadCreations'
-
-// const latestBridgeVersion = await getLatestBridgeVersion()
 
 loadCreations()
 loadAuthors()
@@ -40,13 +38,17 @@ export default defineConfig({
 
 	themeConfig: {
 		logo: '/favicon.svg',
+		outline: 'deep',
 		editLink: {
 			text: 'Suggest changes to this page',
 			pattern: 'https://github.com/bridge-core/docs/edit/main/docs/:path',
 		},
 		socialLinks: [
 			{ icon: 'github', link: 'https://github.com/bridge-core' },
-			{ icon: 'twitter', link: 'https://twitter.com/bridgeIde' },
+			{
+				icon: 'twitter',
+				link: 'https://twitter.com/intent/follow?region=follow_link&screen_name=bridgeIde',
+			},
 			{ icon: 'discord', link: 'https://discord.gg/uj8K2S9' },
 		],
 		footer: {
@@ -96,8 +98,12 @@ export default defineConfig({
 			},
 
 			{
-				text: `v2.3.3`,
+				text: latestBridgeVersion,
 				items: [
+					{
+						text: 'Download',
+						link: '/guide/download/',
+					},
 					{
 						text: 'Release Notes ',
 						link: 'https://github.com/bridge-core/editor/releases',

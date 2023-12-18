@@ -1,6 +1,6 @@
 ---
 title: '💬 Community'
-sidebar: 'guide'
+sidebar: Guide
 nav_order: 100
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 👣 Getting Started
 description: Learn where to get started with bridge.!
-sidebar: 'guide'
+sidebar: Guide
 nav_order: 0
 ---
 
@@ -87,8 +87,8 @@ It is important that you set the project target version to whatever Minecraft ve
 
 There are a couple of miscellaneous toggles that you can enable or disable in your project.
 
-- Whether to add the pack name and description directly to the manifest. If you do this, the pack name and description will not be translatable to other languages through lang files.
-- Whether the pack is designed for Bedrock Dedicated Servers. This is used do decide whether the `mojang-net` and `mojang-minecraft-server-admin` modules should be available in GameTest scripts.
+-   Whether to add the pack name and description directly to the manifest. If you do this, the pack name and description will not be translatable to other languages through lang files.
+-   Whether the pack is designed for Bedrock Dedicated Servers. This is used do decide whether the `mojang-net` and `mojang-minecraft-server-admin` modules should be available in GameTest scripts.
 
 :::warning
 Do not forget to scroll down in the project creation window, as you may miss some inputs!
@@ -211,7 +211,6 @@ You can either [create your own extensions](/extensions/index) or download exten
 ## Need Help?
 
 If you have more questions about bridge., or creating Add-Ons, feel free to ask in the [official bridge. Discord server](https://discord.gg/jj2PmqU). Also, check out our [community page](/guide/community) for more useful links.
-
 
 :::tip
 Now that you've covered the basics, why don't you check out bridge.'s powerful [extension API](/extensions/index)!

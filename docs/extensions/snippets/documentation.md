@@ -1,7 +1,7 @@
 ---
 title: '📝 Documentation'
 description: Read about what properties make up a snippet's JSON file.
-sidebar: 'snippets'
+sidebar: Snippets
 ---
 
 # 📝 Snippet Documentation
@@ -88,16 +88,16 @@ The data that your snippet should insert is defined here; if it is a JSON file t
 
 ```json
 {
-    "data": {
-        "minecraft:behavior.look_at_player": {
+	"data": {
+		"minecraft:behavior.look_at_player": {
 			"priority": 5
 		}
-    }
+	}
 }
 ```
 
 ```json
 {
-    "data": "# Hello World\nsay test"
+	"data": "# Hello World\nsay test"
 }
 ```

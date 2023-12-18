@@ -1,6 +1,6 @@
 ---
 description: 'Documentation on how to register new file types to bridge.'
-sidebar: 'extensions'
+sidebar: Extensions
 ---
 
 # File Definitions
@@ -13,7 +13,7 @@ File definitions allow you to register new file types to bridge. File definition
 
 The following interfaces describe the JSON format of file definition files.
 
-```typescript
+```ts
 interface IFileType {
 	type?: 'json' | 'text' | 'nbt'
 	id: string

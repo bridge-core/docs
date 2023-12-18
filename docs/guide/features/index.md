@@ -1,7 +1,7 @@
 ---
 title: 🚀 Features
 description: An overview of bridge.'s most notable features.
-sidebar: 'guide'
+sidebar: Guide
 nav_order: -9
 ---
 
@@ -77,7 +77,7 @@ And lots more settings...
 
 :jigsaw: bridge. ships with a flexible extension API where you can add your own tools and features to bridge., or use an extension from our [vast library of community made extensions](https://github.com/bridge-core/plugins/tree/master/plugins).
 
-- bridge. has an extension store which makes it easy to find, download and update extensions that have been made and published by our community and developers.
+-   bridge. has an extension store which makes it easy to find, download and update extensions that have been made and published by our community and developers.
 
 [Learn more about extensions here.](/extensions/index)
 
@@ -87,10 +87,10 @@ And lots more settings...
 
 :bulb: Inside of both bridge.'s text editor and tree editor, you will recieve dynamic, up-to-date and accurate auto-completions to greatly assist your development experience and guide you through a file.
 
-- In our text editor, you will notice that your file is validated against [our schemas](https://github.com/bridge-core/editor-packages) and syntax errors will be pointed out to you!
-- In the background, bridge. scans your packs and caches important data, such as identifiers, tags, events and more, so they can conveniently be proposed to you in auto-completions.
-- You will only see auto-completions for features that you should be using; they will be filtered based on the `format_version` that you set in the file and the experimental toggles that are toggled in your [project config](/guide/misc/project-config).
-- When opening files from outside of bridge., it will intelligently guess what type of file you have opened and show you relevant auto-completions.
+-   In our text editor, you will notice that your file is validated against [our schemas](https://github.com/bridge-core/editor-packages) and syntax errors will be pointed out to you!
+-   In the background, bridge. scans your packs and caches important data, such as identifiers, tags, events and more, so they can conveniently be proposed to you in auto-completions.
+-   You will only see auto-completions for features that you should be using; they will be filtered based on the `format_version` that you set in the file and the experimental toggles that are toggled in your [project config](/guide/misc/project-config).
+-   When opening files from outside of bridge., it will intelligently guess what type of file you have opened and show you relevant auto-completions.
 
 ![screenshot showing bridge.'s entity component auto-completions](./auto-completion-1.png)
 
@@ -102,9 +102,9 @@ And lots more settings...
 
 :bookmark_tabs: Our tab system is designed to be flexible and supports many features that you'll be used to from typical code editors.
 
-- Tabs can be opened in split-screen mode to easily view two files at once. This is convienient for [file previews](#file-previews), where the code can be viewed alongside the preview.
-- bridge. supports a variety of tab types with more to come. This includes, tabs that render 3d models, tabs that display code in a custom editor, such as the tree editor, and more.
-- By default, tabs will be temporary when opened initially; editing them or double clicking the tab will make them persistent. This helps keep your screen less cluttered with tabs.
+-   Tabs can be opened in split-screen mode to easily view two files at once. This is convienient for [file previews](#file-previews), where the code can be viewed alongside the preview.
+-   bridge. supports a variety of tab types with more to come. This includes, tabs that render 3d models, tabs that display code in a custom editor, such as the tree editor, and more.
+-   By default, tabs will be temporary when opened initially; editing them or double clicking the tab will make them persistent. This helps keep your screen less cluttered with tabs.
 
 ![screenshot of the tab system in split screen mode](./tab-system.png)
 
@@ -112,7 +112,7 @@ And lots more settings...
 
 :mag_right: Ever needed to change the identifier of an item across your entire project, or just see where you have referenced some block? Well bridge. comes with a global find and replace system, similar to VSCode, where you can find any text in your project almost instantly.
 
-- Search by string or Regex, it is up to you!
-- Replacing supports Regex capture groups, as you would expect.
+-   Search by string or Regex, it is up to you!
+-   Replacing supports Regex capture groups, as you would expect.
 
 ![screenshot showing the find and replace tab](./find-and-replace.png)
