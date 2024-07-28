@@ -146,7 +146,7 @@ This field is not yet utilized by bridge. and in order to see the progress of th
 ```json
 {
 	"packDefinitions": {
-		"socreboardObjectives": {
+		"scoreboardObjectives": {
 			"type": "dummy",
 			"include": ["red_team_score", "blue_team_score"]
 		},
