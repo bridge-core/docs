@@ -38,8 +38,8 @@ bridge. is trusted by some of the biggest Minecraft marketplace teams and was us
 | ----------------------------------------------------------- | ------------------ | --------------------- | ------------------------------------------- |
 | [Entity Component Previews](/guide/features/#file-previews) | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
 | [Block Component Previews](/guide/features/#file-previews)  | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
-| [Custom Commands](/guide/advanced/custom-commands/)         | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
-| [Custom Components](/guide/advanced/custom-components/)     | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
+| [Custom Commands](/guide/advanced/dash-commands/)           | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
+| [Custom Components](/guide/advanced/dash-components/)       | :white_check_mark: | :no_entry_sign:       | :no_entry_sign:                             |
 
 ### Resource Packs
 
