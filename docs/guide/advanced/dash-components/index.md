@@ -1,26 +1,26 @@
 ---
-title: '📦 Custom Components'
-description: Learn how you can write custom components for Minecraft entities, blocks and items!
+title: '📦 Dash Components'
+description: Learn how you can write Dash components for Minecraft entities, blocks and items!
 sidebar: Advanced
 ---
 
-# 📦 Custom Components
+# 📦 Dash Components
 
-This page serves as an introduction to bridge.'s custom components which are available for use within your entity, block and item files.
+This page serves as an introduction to bridge.'s Dash components which are available for use within your entity, block and item files.
 This article will cover the following topics:
 
-:ballot_box_with_check: What is a custom component?<br/>
-:ballot_box_with_check: How to install a custom component.<br/>
-:ballot_box_with_check: How to use a custom component.<br/>
-:ballot_box_with_check: How to write custom components.<br/>
+:ballot_box_with_check: What is a Dash component?<br/>
+:ballot_box_with_check: How to install a Dash component.<br/>
+:ballot_box_with_check: How to use a Dash component.<br/>
+:ballot_box_with_check: How to write Dash components.<br/>
 
 ## Basics
 
-Custom components allow you to extract common logic from entity, block and item files and to generate JSON using JavaScript or TypeScript. They integrate seamlessly into bridge. by appearing alongside Minecraft's built-in components within auto-completions.
+Dash components allow you to extract common logic from entity, block and item files and to generate JSON using JavaScript or TypeScript. They integrate seamlessly into bridge. by appearing alongside Minecraft's built-in components within auto-completions.
 
 ### Component Locations
 
-Custom components are loaded from the `components/` folder within your behavior pack.
+Dash components are loaded from the `components/` folder within your behavior pack.
 
 -   Item components are expected to be within the `components/item/` folder
 -   Block components are expected to be within the `components/block/` folder
@@ -28,15 +28,15 @@ Custom components are loaded from the `components/` folder within your behavior 
 
 ## Installation
 
-If you do not feel confident in writing your own custom components, you can install pre-written components from bridge.'s [extension store](/extensions/#installing-extensions). Simply select the "components" tab within the sidebar and choose the component you need.
+If you do not feel confident in writing your own Dash components, you can install pre-written components from bridge.'s [extension store](/extensions/#installing-extensions). Simply select the "components" tab within the sidebar and choose the component you need.
 
 ## Usage
 
-After installing or writing your first custom component, it will naturally appear within auto-completions within your entity, block and item files. You can then use the component as you would any other component.
+After installing or writing your first Dash component, it will naturally appear within auto-completions within your entity, block and item files. You can then use the component as you would any other component.
 
-![Screenshot of a custom component being used within bridge.](./component-usage.png)
+![Screenshot of a Dash component being used within bridge.](./component-usage.png)
 
-## Writing Custom Components
+## Writing Dash Components
 
 Start by creating a JavaScript or TypeScript file within the location described [here](#component-locations). You can only write a single component per file which should be exported as the default export.
 
@@ -69,7 +69,7 @@ export default defineComponent(({ schema }) => {
 		properties: {
 			my_property: {
 				type: 'number',
-				description: 'This is a custom component property',
+				description: 'This is a Dash component property',
 			},
 		},
 	})
@@ -115,12 +115,12 @@ export default defineComponent(({ template }) => {
 
 You can call `create(...)` to create a JSON template. The first argument is the JSON to create and the second argument is the path within the JSON file where the template should be created. Omitting the second argument will create the template at the root of the JSON file.
 
-And that's it, you have just written your first basic custom component! :tada:
+And that's it, you have just written your first basic Dash component! :tada:
 
 <!-- TODO: Document ITemplateContext -->
 <!-- ## Advanced
 
--   `create(...)` can also accept a third optional argument to implement a custom merge strategy:
+-   `create(...)` can also accept a third optional argument to implement a Dash merge strategy:
 
 ```ts
 const myMergeStrategy = (
