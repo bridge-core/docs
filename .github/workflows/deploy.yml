@@ -34,7 +34,7 @@ jobs:
             - name: Install Node 🧰
               uses: actions/setup-node@v3
               with:
-                  node-version: 16
+                  node-version: 18
                   cache: 'npm'
 
             - name: Install and Build 🔧
@@ -43,7 +43,7 @@ jobs:
                   npm run build
 
             - name: Upload artifact ⬆️
-              uses: actions/upload-pages-artifact@v1
+              uses: actions/upload-artifact@v4
               with:
                   path: './docs/.vitepress/dist'
 
