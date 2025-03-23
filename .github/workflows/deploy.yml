@@ -42,21 +42,9 @@ jobs:
                   npm install
                   npm run build
 
-            - name: Validate artifact 📦
-              run: |
-                  if find ./docs/.vitepress/dist -type l | read; then
-                      echo "Error: Artifact contains symlinks" >&2
-                      exit 1
-                  fi
-                  if [ $(du -s ./docs/.vitepress/dist | cut -f1) -gt 10485760 ]; then
-                      echo "Error: Artifact size exceeds 10GB" >&2
-                      exit 1
-                  fi
-
             - name: Upload artifact ⬆️
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-pages-artifact@v3
               with:
-                  name: 'github-pages'
                   path: './docs/.vitepress/dist'
 
             - name: Deploy to GitHub Pages 🚀
