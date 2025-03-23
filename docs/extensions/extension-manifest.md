@@ -194,7 +194,7 @@ Sometimes your extension may need to add files to the user's project and that is
 Internally, this field works by checking the extension for a `.installed` file; if it exists then the extension is already installed and nothing will happen. When the file isn't present, bridge. will install the files to the project. You should **delete this file to in order to trigger bridge.'s file installation** and test this field.
 
 :::tip
-The main purpose of this field is to add [custom components](/guide/advanced/dash-components/), [custom commands](/guide/advanced/dash-commands/) and [custom molang files](/guide/advanced/molang-files/) to the user's project.
+The main purpose of this field is to add [custom components](/guide/advanced/custom-components/), [custom commands](/guide/advanced/custom-commands/) and [custom molang files](/guide/advanced/molang-files/) to the user's project.
 :::
 
 Copying over files:

@@ -194,8 +194,8 @@ bridge. has many different custom syntax capabilities due to powerful [Dash comp
 
 Built-in custom syntax includes:
 
--   [Custom components](/guide/advanced/dash-components/index)
--   [Custom commands](/guide/advanced/dash-commands/index)
+-   [Custom components](/guide/advanced/custom-components/index)
+-   [Custom commands](/guide/advanced/custom-commands/index)
 -   [Custom molang](/guide/advanced/molang-files/index)
 
 With more available on the extension store!

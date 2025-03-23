@@ -16,7 +16,7 @@ You will learn about the following topics inside of this article:
 
 ## Basics
 
-[Dash](https://github.com/bridge-core/dash-compiler/) is the default compiler all bridge. projects use. It powers custom syntax such as [custom components](/guide/advanced/dash-components/), [custom commands](/guide/advanced/dash-commands/) and [molang files](/guide/advanced/molang-files/). Additionally, Dash is also responsible for moving your compiled projects to the com.mojang folder.
+[Dash](https://github.com/bridge-core/dash-compiler/) is the default compiler all bridge. projects use. It powers custom syntax such as [custom components](/guide/advanced/custom-components/), [custom commands](/guide/advanced/custom-commands/) and [molang files](/guide/advanced/molang-files/). Additionally, Dash is also responsible for moving your compiled projects to the com.mojang folder.
 
 :::tip
 A compiler is a program that takes a source file, applies a set of transformations to it and writes the result to a destination file.
@@ -222,7 +222,7 @@ This plugin register aliases for entity files which other plugins can use.
 
 ### customEntityComponents
 
-This plugin powers [custom entity components](/guide/advanced/dash-components/). You can configure the plugin to run legacy custom entity components from bridge. v1.
+This plugin powers [custom entity components](/guide/advanced/custom-components/). You can configure the plugin to run legacy custom entity components from bridge. v1.
 
 ```json
 [
@@ -237,7 +237,7 @@ This plugin powers [custom entity components](/guide/advanced/dash-components/).
 
 ### customItemComponents
 
-This plugin powers [custom item components](/guide/advanced/dash-components/). You can configure the plugin to run legacy custom item components from bridge. v1.
+This plugin powers [custom item components](/guide/advanced/custom-components/). You can configure the plugin to run legacy custom item components from bridge. v1.
 
 ```json
 [
@@ -252,7 +252,7 @@ This plugin powers [custom item components](/guide/advanced/dash-components/). Y
 
 ### customBlockComponents
 
-This plugin powers [custom block components](/guide/advanced/dash-components/). You can configure the plugin to run legacy custom block components from bridge. v1.
+This plugin powers [custom block components](/guide/advanced/custom-components/). You can configure the plugin to run legacy custom block components from bridge. v1.
 
 ```json
 [
@@ -267,7 +267,7 @@ This plugin powers [custom block components](/guide/advanced/dash-components/). 
 
 ### customCommands
 
-This plugin powers [custom commands](/guide/advanced/dash-commands/). Its options allow you to run old v1 custom commands and to add new command locations.
+This plugin powers [custom commands](/guide/advanced/custom-commands/). Its options allow you to run old v1 custom commands and to add new command locations.
 
 ```json
 [
