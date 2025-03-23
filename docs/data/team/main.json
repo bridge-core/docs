@@ -24,9 +24,12 @@
 	{
 		"avatar": "https://www.github.com/OuterCloudStudio.png",
 		"name": "OuterCloudStudio",
-		"title": "Contributor",
+		"title": "Lead Maintainer",
+		"org": "bridge.",
+		"orgLink": "https://github.com/bridge-core/",
 		"links": [
-			{ "icon": "github", "link": "https://github.com/OuterCloudStudio" }
+			{ "icon": "github", "link": "https://github.com/OuterCloudStudio" },
+			{ "icon": "youtube", "link": "https://www.youtube.com/@outercloud" }
 		]
 	},
 	{
