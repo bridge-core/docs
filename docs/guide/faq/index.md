@@ -50,4 +50,4 @@ bridge. v2 is the next generation of bridge., and is currently being actively up
 
 ## Is bridge. available for mobile devices?
 
-Yes, [bridge. v2](https://editor.bridge-core.app) is avaliable for mobile devices. However you will need to download your project in order to completely save your progress, because bridge. v2 requires an API that mobile browsers don't support yet.
+Yes, [bridge. v2](https://editor.bridge-core.app) is available for mobile devices. However you will need to download your project in order to completely save your progress, because bridge. v2 requires an API that mobile browsers don't support yet.
