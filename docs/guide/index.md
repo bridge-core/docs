@@ -57,7 +57,7 @@ Experimental gameplay features are specific subsets of features that are locked 
 
 ### 📃 Individual Files
 
-Upon creating your project, bridge. will always generate a `manifest.json` and `pack_icon.png` file in each pack. However, here you can configure additional files to be added to your project auomatically, that are single instance files (only one is needed in a project), for example, the `sounds.json` and `terrain_textures.json` files..
+Upon creating your project, bridge. will always generate a `manifest.json` and `pack_icon.png` file in each pack. However, here you can configure additional files to be added to your project automatically, that are single instance files (only one is needed in a project), for example, the `sounds.json` and `terrain_textures.json` files..
 
 ### 🖊️ Name
 
