@@ -31,6 +31,10 @@
 			{
 				"ext": ".deb",
 				"name": "Debian Package"
+			},
+			{
+				"ext": ".rpm",
+				"name": "RPM Package"
 			}
 		]
 	},
