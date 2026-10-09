@@ -216,6 +216,8 @@ You can configure the TypeScript plugin with the following options:
 ]
 ```
 
+For more advanced behavior, such as bundling and configuring external modules, see [esbuildTypeScript](#esbuildtypescript).
+
 ### entityIdentifierAlias
 
 This plugin register aliases for entity files which other plugins can use.
@@ -236,7 +238,6 @@ This plugin powers [custom entity components](/guide/advanced/custom-components/
 ```
 
 ### customItemComponents
-
 This plugin powers [custom item components](/guide/advanced/custom-components/). You can configure the plugin to run legacy custom item components from bridge. v1.
 
 ```json
@@ -396,6 +397,59 @@ This plugin is used to rewrite files within an add-on so that the project can la
 	}
 ]
 ```
+
+### esbuildTypeScript
+
+The `esbuildTypeScript` plugin is an alternative to `typeScript` for compiling JavaScript and TypeScript files in the behavior pack's `scripts` directory. Use it when you want to bundle imported project code or npm packages into your output, or explicitly control which dependencies stay external.
+
+Configure the plugin in a build profile like this:
+
+```json
+[
+	"esbuildTypeScript",
+	{
+		"bundle": true,
+		"entryPoints": ["main.ts", "systems/**/*.ts"],
+		"externals": ["my-external-package"],
+		"outDir": "dist",
+		"splitting": true,
+		"sourcemap": "linked"
+	}
+]
+```
+
+The plugin exposes the following options:
+
+| Option | Type | Default | Description |
+| --- | --- | --- | --- |
+| `bundle` | `boolean` | `true` | Bundle imported files. When false, all JavaScript and TypeScript files in the behavior pack's `scripts` directory are processed as separate entry points. |
+| `entryFile` | `string` | `"main.ts"` | Entry file used when `entryPoints` is not provided. |
+| `entryPoints` | `string[]` | `[entryFile]` | Files to build. Glob patterns are supported when bundling. |
+| `outFile` | `string` | `"main.js"` | Output file for a single-file build. A `.ts` entry file's extension is changed to `.js` by default. |
+| `outDir` | `string` | Not set | Output directory. Use this for builds that produce multiple output files. |
+| `splitting` | `boolean` | `true` with multiple bundled entry points; otherwise `false` | Split shared code across bundled entry points. Enabling splitting requires directory output. |
+| `externals` | `string[]` | Minecraft modules listed below | Additional import paths or patterns to leave external instead of bundling. |
+| `sourcemap` | `boolean \| "linked" \| "external" \| "inline" \| "both"` | `false` | Generate source maps. |
+| `sourceRoot` | `string` | Not set | Set the source root in generated source maps. |
+| `useBPAsSourceRoot` | `boolean` | `false` | Use the behavior pack's scripts directory as the source root in generated source maps. |
+| `dropLabels` | `string[]` | Not set | Remove code guarded by the specified labels. |
+| `define` | `Record<string, string>` | Not set | Replace global identifiers with the specified constant expressions. Values must be strings. |
+| `keepNames` | `boolean` | `false` | Preserve function and class names in the output. |
+
+These Minecraft modules are external by default when bundling. Their imports remain in the output for Minecraft to provide at runtime:
+
+- `@minecraft/server`
+- `@minecraft/server-ui`
+- `@minecraft/server-graphics`
+- `@minecraft/server-editor`
+- `@minecraft/server-net`
+- `@minecraft/server-admin`
+- `@minecraft/debug-utilities`
+- `@minecraft/diagnostics`
+- `@minecraft/server-gametest`
+- `@minecraft/common`
+
+Custom entries in `externals` are added to this list. For more information about the esbuild concepts used by these options, see the [esbuild API documentation](https://esbuild.github.io/api/). Only the options listed above are configurable through this plugin.
 
 ## Installing Plugins
 
