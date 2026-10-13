@@ -29,3 +29,12 @@
 .vp-doc img {
 	border-radius: 12px;
 }
+
+.vp-doc h1 .VPBadge,
+.vp-doc h2 .VPBadge,
+.vp-doc h3 .VPBadge,
+.vp-doc h4 .VPBadge,
+.vp-doc h5 .VPBadge,
+.vp-doc h6 .VPBadge {
+	vertical-align: middle;
+}
